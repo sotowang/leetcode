@@ -2,19 +2,22 @@ package byteDance.array.t9;
 
 public class Search {
     int search(int[] nums, int target) {
-        int lo = 0, hi = nums.length - 1;
-        while (lo < hi) {
-            int mid = (lo + hi) / 2;
-            if ((nums[0] > target) ^ (nums[0] > nums[mid]) ^ (target > nums[mid]))
-                lo = mid + 1;
-            else
-                hi = mid;
+        int low = 0;
+        int high = nums.length - 1;
+        int mid = 0;
+        while (low < high) {
+            mid = (low + high) >>> 1;
+            if ((nums[mid] < nums[0]) ^ (nums[0] > target) ^ (nums[mid] < target)) {
+                low = mid + 1;
+            } else {
+                high = mid;
+            }
         }
-        return lo == hi && nums[lo] == target ? lo : -1;
+        return low == high && nums[low] == target ? low : -1;
     }
 
     public static void main(String[] args) {
-//        System.out.println(new Search().search(new int[]{4, 5, 6, 7, 0, 1, 2}, 3));
+        System.out.println(new Search().search(new int[]{4, 5, 6, 7, 0, 1, 2}, 3));
         System.out.println(new Search().search(new int[]{4, 5, 6, 7, 0, 1, 2}, 0));
     }
 }
