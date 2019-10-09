@@ -12,6 +12,7 @@ public class UniquePathsWithObstacles {
         int[][] path = new int[row][col];
         for (int i = 0; i < row; i++) {
             if (obstacleGrid[i][0] == 0 ) {
+                //当某个大于1的行，该点上方有障碍，或者上方路径为0，则该点路径为0，因为不可达
                 if (i > 0 && (obstacleGrid[i - 1][0] == 1 || path[i - 1][0] == 0)) {
                     path[i][0] = 0;
                 } else {
@@ -24,6 +25,7 @@ public class UniquePathsWithObstacles {
         }
         for (int i = 0; i < col; i++) {
             if (obstacleGrid[0][i] == 0) {
+                //当某个大于1的列，该点左方有障碍，或者左方路径为0，则该点路径为0，因为不可达
                 if (i > 0 && (obstacleGrid[0][i - 1] == 1 || path[0][i - 1] == 0)) {
                     path[0][i] = 0;
                 } else {
