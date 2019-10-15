@@ -6,20 +6,11 @@ package 动态规划.t123;
  */
 public class MaxProfit {
     public int maxProfit(int[] prices) {
-        if (prices == null || prices.length == 0) {
-            return 0;
-        }
-        int n = prices.length;
-        //第i天持有状态，交易笔数
-        int[][][] dp = new int[n][2][2];
-        dp[0][0][0] = 0;
-        dp[0][1][0] = -prices[0];
-        for (int i = 1; i < n; i++) {
-            for (int j = 0; j < dp[0][0].length; j++) {
-                dp[i][0][j] = Math.max();
-                dp[i][1][j] = Math.max();
-            }
-        }
         return 0;
+        }
+    public static void main(String[] args) {
+        System.out.println(new MaxProfit().maxProfit(new int[]{3,3,5,0,0,3,1,4}));
+        System.out.println(new MaxProfit().maxProfit(new int[]{1,2,3,4,5}));
+        System.out.println(new MaxProfit().maxProfit(new int[]{7,6,4,3,1}));
     }
 }
