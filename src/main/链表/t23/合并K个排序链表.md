@@ -16,7 +16,7 @@
 
 ---
 
- https://leetcode-cn.com/problems/merge-k-sorted-lists/solution/tan-xin-suan-fa-you-xian-dui-lie-fen-zhi-fa-python/ 
+ https://leetcode-cn.com/problems/merge-k-sorted-lists/addTwoNumbers/tan-xin-suan-fa-you-xian-dui-lie-fen-zhi-fa-python/ 
 
 **思路分析**：
 

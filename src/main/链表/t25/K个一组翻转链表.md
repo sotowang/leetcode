@@ -22,4 +22,4 @@ k 是一个正整数，它的值小于或等于链表的长度。
 
 ---
 
- https://leetcode-cn.com/problems/reverse-nodes-in-k-group/solution/fei-di-gui-ba-kge-jie-dian-kan-zuo-yi-ge-zheng-ti-/ 
+ https://leetcode-cn.com/problems/reverse-nodes-in-k-group/addTwoNumbers/fei-di-gui-ba-kge-jie-dian-kan-zuo-yi-ge-zheng-ti-/ 

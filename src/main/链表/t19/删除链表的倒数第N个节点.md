@@ -20,7 +20,7 @@
 
 ---
 
- https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/solution/hua-jie-suan-fa-19-shan-chu-lian-biao-de-dao-shu-d/ 
+ https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/addTwoNumbers/hua-jie-suan-fa-19-shan-chu-lian-biao-de-dao-shu-d/ 
 
 **思路**
 
