@@ -72,7 +72,7 @@
 
 ## 147 对链表进行插入排序
 
-* ![img](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
+![img](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
 
 * 从第一个元素开始，该链表可以被认为已经部分排序（用黑色表示）。
 
@@ -102,6 +102,10 @@
 ## 234 回文链表
 
 * 请判断一个链表是否为回文链表。
+
+## 237 删除链表中的节点
+
+* 请编写一个函数，使其可以删除某个链表中给定的（非末尾）节点，你将只被给定要求被删除的节点。
 
 # 字节跳动
 

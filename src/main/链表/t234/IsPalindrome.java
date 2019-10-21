@@ -8,10 +8,7 @@ import 链表.ListNode;
  */
 public class IsPalindrome {
     public boolean isPalindrome(ListNode head) {
-        if (head == null) {
-            return false;
-        }
-        if (head.next == null) {
+        if (head == null || head.next == null) {
             return true;
         }
         //快慢指针找中点
@@ -28,7 +25,7 @@ public class IsPalindrome {
         //此时链表长度为奇数,slow指向中间结点
         ListNode revList = slow;
         if (fast.next == null) {
-             revList= reverse(slow.next);
+             revList= reverse(slow);
         } else if (fast.next.next == null) {//此时链表长度为偶数,slow指向右半部分首结点
              revList = reverse(slow);
         }
@@ -68,9 +65,12 @@ public class IsPalindrome {
         ListNode l11 = new ListNode(1);
         ListNode l12 = new ListNode(1);
         l1.next = l2;
-        l2.next = l21;
-        l21.next = l2;
+//        l2.next = l21;
+//        l21.next = l11;
 
+        l2.next = l11;
+
+//        l2.next = l21;
         System.out.println(new IsPalindrome().isPalindrome(l1));
 
     }
