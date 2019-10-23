@@ -31,16 +31,20 @@ public class CopyRandomList {
             cur = cur.next.next;
         }
         cur = head;
-        Node cpNode = cur.next;
-        Node cphead = cur.next;
+
         while (cur != null) {
-            cpNode.random = cur.random == null ? null : cur.random.next;
+            cur.next.random = cur.random == null ? null : cur.random.next;
             cur = cur.next.next;
-            if (cur == null) {
-                break;
-            }
-            cpNode.next = cur.next;
-            cpNode = cur.next;
+        }
+        Node curcp = head.next;
+        Node cphead = head.next;
+
+        cur = head;
+        while (cur != null) {
+            cur.next = cur.next.next;
+            curcp.next = curcp.next != null ? curcp.next.next : null;
+            curcp = curcp.next;
+            cur = cur.next;
         }
         return cphead;
     }
@@ -57,8 +61,8 @@ public class CopyRandomList {
 
         Node l_1 = new Node();
         l_1.val = -1;
-//        Node res = new CopyRandomList().copyRandomList(l1);
-        Node res = new CopyRandomList().copyRandomList(l_1);
+        Node res = new CopyRandomList().copyRandomList(l1);
+//        Node res = new CopyRandomList().copyRandomList(l_1);
 
     }
 
