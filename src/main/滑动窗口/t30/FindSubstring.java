@@ -1,4 +1,4 @@
-package 双指针.t30;
+package 滑动窗口.t30;
 
 import java.util.ArrayList;
 import java.util.HashMap;
