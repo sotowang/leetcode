@@ -35,3 +35,12 @@ struct Node {
 
 ---
 
+ https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node-ii/solution/c-o1kong-jian-jian-ji-di-gui-by-qqqun902025048/ 
+
+* 对于任意一次递归，只考虑如何设置子节点的 next 属性,分为三种情况：
+* 没有子节点：直接返回
+* 有一个子节点：将这个子节点的 `next `属性设置为同层的下一个节点，即为 `root.next` 的最左边的一个节点，如果 `root.next` 没有子节点，则考虑 `root.next.next`，依次类推
+* 有两个节点：左子节点指向右子节点，然后右子节点同第二种情况的做法
+
+*  注意递归的顺序需要从右到左 
+

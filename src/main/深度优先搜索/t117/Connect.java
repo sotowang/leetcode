@@ -8,23 +8,28 @@ import 深度优先搜索.Node;
  */
 public class Connect {
     public Node connect(Node root) {
-        if (root == null) {
-            return null;
-        }
-        Node left = root.left;
-        Node right = root.right;
-        while (left != null) {
-            //在分支内遍历时,每二次可能被null指针覆盖
-            if (left.next == null) {
-                left.next = right;
+        if (root != null && (root.left != null || root.right != null)) {
+            //有左右子节点
+            if (root.left != null && root.right != null) {
+                root.left.next = root.right;
             }
-            left = left.right == null ? left.left : left.right;
-            if (right != null) {
-                right = right.left == null ? right.right : right.left;
+            //有一个节点
+            Node node = root.right != null ? root.right : root.left;
+            //头节点右移
+            Node head = root.next;
+            while (head != null && !(head.left != null || head.right != null)) {
+                //head不断右移
+                head = head.next;
             }
+            if (head != null) {
+                node.next = head.left == null ? head.right : head.left;
+            } else {
+                node.next = null;
+            }
+
+            connect(root.right);
+            connect(root.left);
         }
-        connect(root.left);
-        connect(root.right);
         return root;
     }
 
@@ -63,5 +68,9 @@ public class Connect {
         Node n1 = new Node(1, n2, n3, null);
 
         Node root = new Connect().connect(n1);
+
+//        Node n1 = new Node(1, null, null, null);
+////
+//        Node root = new Connect().connect(n1);
     }
 }
