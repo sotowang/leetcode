@@ -22,18 +22,29 @@ public class NumIslands {
                 }
             }
         }
-
-        dfs(grid, 0, 0);
-
+        return count;
     }
 
-    private int dfs(char[][] grid, int i, int j) {
-        int rows = grid.length;
-        int cols = grid[0].length;
-        grid[i][j] = 0;
-        for (int k = 0; k < dirs.length; k++) {
-            int tem_i =
+    private void dfs(char[][] grid, int i, int j) {
+        if (i < 0 || i >= grid.length || j < 0 || j >=  grid[0].length || grid[i][j] == '0') {
+            return;
         }
+        grid[i][j] = '0';
+        for (int[] dir :
+                dirs) {
+            int tem_i = i + dir[0];
+            int tem_j = j + dir[1];
+            dfs(grid, tem_i, tem_j);
+        }
+    }
 
+    public static void main(String[] args) {
+        char[][] grid = new char[][]{
+                {'1', '1', '1', '1', '1'},
+                {'1', '1', '0', '1', '0'},
+                {'1', '1', '0', '0', '0'},
+                {'0', '0', '0', '0', '0'}
+        };
+        System.out.println(new NumIslands().numIslands(grid));
     }
 }
