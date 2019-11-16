@@ -40,14 +40,14 @@ public class HasPathSum {
         TreeNode t11 = new TreeNode(11);
         TreeNode t13 = new TreeNode(13);
 
-//        t5.left = t4;
+//        t5.left = 二分查找.t4;
 //        t5.right = t8;
-//        t4.left = t11;
+//        二分查找.t4.left = t11;
 //        t8.left = t13;
 //        t8.right = t41;
 //        t11.left = t7;
 //        t11.right = t2;
-//        t4.right = t1;
+//        二分查找.t4.right = t1;
 //
 //        System.out.println(new HasPathSum().hasPathSum(t5, 22));
 

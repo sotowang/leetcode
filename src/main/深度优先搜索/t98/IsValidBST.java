@@ -29,9 +29,9 @@ public class IsValidBST {
         TreeNode t4 = new TreeNode(4);
         TreeNode t6 = new TreeNode(6);
 //        t5.left = t1;
-//        t5.right = t4;
-//        t4.left = t3;
-//        t4.right = t6;
+//        t5.right = 二分查找.t4;
+//        二分查找.t4.left = t3;
+//        二分查找.t4.right = t6;
 //        System.out.println(new IsValidBST().isValidBST(t5));
 
 //        t2.left = t1;
