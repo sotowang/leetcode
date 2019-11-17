@@ -34,9 +34,9 @@ public class IsValidBST {
 //        二分查找.t4.right = t6;
 //        System.out.println(new IsValidBST().isValidBST(t5));
 
-//        t2.left = t1;
-//        t2.right = t3;
-//        System.out.println(new IsValidBST().isValidBST(t2));
+//        链表.t2.left = t1;
+//        链表.t2.right = t3;
+//        System.out.println(new IsValidBST().isValidBST(链表.t2));
 
 
         TreeNode t0 = new TreeNode(-2147483648);

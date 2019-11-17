@@ -1,4 +1,4 @@
-# [重复的DNA序列](https://leetcode-cn.com/problems/repeated-dna-sequences/)
+# [ 重复的DNA序列](https://leetcode-cn.com/problems/repeated-dna-sequences/)
 
 所有 DNA 都由一系列缩写为 A，C，G 和 T 的核苷酸组成，例如：“ACGAATTCCG”。在研究 DNA 时，识别 DNA 中的重复序列有时会对研究非常有帮助。
 
@@ -13,3 +13,8 @@
 
 ---
 
+ https://leetcode-cn.com/problems/repeated-dna-sequences/solution/chao-ji-jian-dan-si-lu-yi-kan-jiu-dong-hua-dong-ch/ 
+
+思路
+
+* 使用滑动窗口

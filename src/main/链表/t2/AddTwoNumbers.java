@@ -1,4 +1,4 @@
-package t2;
+package 链表.t2;
 
 /**
  * @author wst

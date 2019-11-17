@@ -29,12 +29,12 @@ public class IsSameTree {
         TreeNode t21 = new TreeNode(2);
         TreeNode t3 = new TreeNode(3);
 
-//        t1.left = t2;
+//        t1.left = 链表.t2;
 //        t1.right = t3;
 //        System.out.println(new IsSameTree().isSameTree(t1, t1));
 
 
-//        t1.left = t2;
+//        t1.left = 链表.t2;
 //        t1.right = t11;
 //        t12.left = t13;
 //        t12.right = t21;

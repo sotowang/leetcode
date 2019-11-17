@@ -46,7 +46,7 @@ public class HasPathSum {
 //        t8.left = t13;
 //        t8.right = t41;
 //        t11.left = t7;
-//        t11.right = t2;
+//        t11.right = 链表.t2;
 //        二分查找.t4.right = t1;
 //
 //        System.out.println(new HasPathSum().hasPathSum(t5, 22));
