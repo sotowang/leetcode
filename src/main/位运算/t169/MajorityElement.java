@@ -9,12 +9,24 @@ public class MajorityElement {
         int res = 0;
         for (int i = 0; i < 32; i++) {
             int countOne = 0;
+            int countZero = 0;
             for (int j = 0; j < nums.length; j++) {
                 //nums[j]的第i位是否为1
-                if ((nums[j] >>> j & 1) == 1) {
-
+                if ((nums[j] >>> i & 1) == 1) {
+                    countOne++;
+                } else {
+                    countZero++;
                 }
             }
+            if (countOne > countZero) {
+                res = res | 1 << i;
+            }
         }
+        return res;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {3,2,3};
+        System.out.println(new MajorityElement().majorityElement(nums));
     }
 }
