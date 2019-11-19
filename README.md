@@ -355,6 +355,30 @@
 
 * 你可以假设 `nums1` 和 `nums2` 不会同时为空。
 
+## 29 [两数相除](https://leetcode-cn.com/problems/divide-two-integers/)
+
+* 给定两个整数，被除数 `dividend` 和除数 `divisor`。将两数相除，要求不使用乘法、除法和 mod 运算符。 
+
+*  返回被除数 `dividend` 除以除数 `divisor` 得到的商。
+*  **说明:** 
+  * 被除数和除数均为 32 位有符号整数。
+  * 除数不为 0。
+  * 假设我们的环境只能存储 32 位有符号整数，其数值范围是 `[−2^31,  2^31 − 1]`。本题中，如果除法结果溢出，则返回` 2^31 − 1`。
+
+## 34 [在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+
+* 给定一个按照升序排列的整数数组 `nums`，和一个目标值 `target`。找出给定目标值在数组中的开始位置和结束位置。 
+
+* 你的算法时间复杂度必须是 *O*(log *n*) 级别。 
+
+* 如果数组中不存在目标值，返回 `[-1, -1]`。 
+
+## 35 [搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
+
+* 给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。 
+
+* 你可以假设数组中无重复元素。 
+
 # 深度优先搜索
 
 ## 98 验证二叉搜索树
