@@ -379,6 +379,48 @@
 
 * 你可以假设数组中无重复元素。 
 
+## 50 [Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
+
+* 实现 [pow(*x*, *n*)](https://www.cplusplus.com/reference/valarray/pow/) ，即计算 x 的 n 次幂函数。 
+* **说明:**
+  - `-100.0 < x < 100.0`
+  - *n* 是 32 位有符号整数，其数值范围是`[−2^31, 2^31 − 1] `。
+
+## 69 [x 的平方根](https://leetcode-cn.com/problems/sqrtx/)
+
+* 实现 `int sqrt(int x)` 函数。 
+
+* 计算并返回 *x* 的平方根，其中 *x* 是非负整数。 
+
+* 由于返回类型是整数，结果只保留整数的部分，小数部分将被舍去。 
+
+## 74 [搜索二维矩阵](https://leetcode-cn.com/problems/search-a-2d-matrix/)
+
+* 编写一个高效的算法来判断 *m* x *n* 矩阵中，是否存在一个目标值。该矩阵具有如下特性： 
+  * 每行中的整数从左到右按升序排列。
+  * 每行的第一个整数大于前一行的最后一个整数。
+
+## 81 [ 搜索旋转排序数组 II](https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/)
+
+* 假设按照升序排序的数组在预先未知的某个点上进行了旋转。 
+
+* ( 例如，数组 `[0,0,1,2,2,5,6]` 可能变为 `[2,5,6,0,0,1,2]` )。 
+
+* 编写一个函数来判断给定的目标值是否存在于数组中。若存在返回 `true`，否则返回 `false`。 
+*  **进阶:** 
+  * 这是 [搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/description/) 的延伸题目，本题中的 `nums` 可能包含重复元素。
+  * 这会影响到程序的时间复杂度吗？会有怎样的影响，为什么？
+
+## 153 [寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)
+
+* 假设按照升序排序的数组在预先未知的某个点上进行了旋转。 
+
+* ( 例如，数组 `[0,1,2,4,5,6,7]` 可能变为 `[4,5,6,7,0,1,2]` )。 
+
+* 请找出其中最小的元素。 
+
+* 你可以假设数组中不存在重复元素。
+
 # 深度优先搜索
 
 ## 98 验证二叉搜索树
