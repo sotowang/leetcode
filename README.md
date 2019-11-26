@@ -222,13 +222,49 @@
 
 # 树
 
-## [不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/)
+## 95 [不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/)
 
 * 给定一个整数 *n*，生成所有由 1 ... *n* 为节点所组成的**二叉搜索树**。 
 
+## 144 [二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
 
+* 给定一个二叉树，返回它的 *前序* 遍历。 
+*  **进阶:**
+  * 递归算法很简单，你可以通过迭代算法完成吗？ 
 
+## 145 [二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)
 
+* 给定一个二叉树，返回它的 *后序* 遍历。 
+*  **进阶:**
+  *  递归算法很简单，你可以通过迭代算法完成吗？ 
+
+## 173 [二叉搜索树迭代器](https://leetcode-cn.com/problems/binary-search-tree-iterator/)
+
+* 实现一个二叉搜索树迭代器。你将使用二叉搜索树的根节点初始化迭代器。 
+
+* 调用 `next()` 将返回二叉搜索树中的下一个最小的数。 
+*  **提示：** 
+  * `next()` 和 `hasNext()` 操作的时间复杂度是 O(1)，并使用 O(*h*) 内存，其中 *h* 是树的高度。 
+  *  你可以假设 `next()` 调用总是有效的，也就是说，当调用 `next()` 时，`BST` 中至少存在一个下一个最小的数。 
+
+## 226 [翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
+
+* 翻转一棵二叉树。 
+
+*  **备注:**
+
+  * 这个问题是受到 [Max Howell ](https://twitter.com/mxcl)的 [原问题](https://twitter.com/mxcl/status/608682016205344768) 启发的 ： 
+
+  >  谷歌：我们90％的工程师使用您编写的软件(Homebrew)，但是您却无法在面试时在白板上写出翻转二叉树这道题，这太糟糕了。 
+
+## 235 [二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+
+* 给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。 
+
+* 百度百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”
+*  **说明:** 
+  - 所有节点的值都是唯一的。
+  - p、q 为不同节点且均存在于给定的二叉搜索树中。
 
 ---
 
