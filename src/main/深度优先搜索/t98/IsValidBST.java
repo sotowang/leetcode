@@ -31,7 +31,7 @@ public class IsValidBST {
 //        t5.left = t1;
 //        t5.right = 二分查找.t4;
 //        二分查找.t4.left = t3;
-//        二分查找.t4.right = t6;
+//        二分查找.t4.right = 字符串.t6;
 //        System.out.println(new IsValidBST().isValidBST(t5));
 
 //        链表.t2.left = t1;
