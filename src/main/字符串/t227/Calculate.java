@@ -21,8 +21,13 @@ public class Calculate {
             }
             if (sr.charAt(i) == '*' || sr.charAt(i) == '/') {
                 int num1 = numStack.pop();
+                char op = sr.charAt(i);
                 int num2 = sr.charAt(i + 1) - '0';
-                if (sr.charAt(i) == '*') {
+                while (i < sr.length() - 2 && sr.charAt(i + 2) - '0' >= 0 && sr.charAt(i + 2) - '0' <= 9) {
+                    num2 = num2 * 10 + (sr.charAt(i + 2) - '0');
+                    i++;
+                }
+                if (op == '*') {
                     numStack.push(num1 * num2);
                 } else {
                     numStack.push(num1 / num2);
@@ -42,26 +47,29 @@ public class Calculate {
             }
         }
         int res = 0;
-        while (!numStack.isEmpty()) {
-            for (int i = numStack.size()-1; i >= 0; i--) {
-                char op1 = opStack.getLast();
-                opStack.remove(opStack.size() - 1);
-                int num1 = numStack.get(i);
-                int num2 = numStack.get(i - 1);
-                if (op1 == '+') {
-                    res = num1 + num2;
-                } else {
-                    res = num1 - num2;
-                }
-                numStack.push(res);
-                i--;
+        while (numStack.size() > 1) {
+            int i = numStack.size() - 1;
+            char op1 = opStack.getLast();
+            opStack.remove(opStack.size() - 1);
+            int num1 = numStack.get(i);
+            numStack.remove(i);
+            int num2 = numStack.get(i - 1);
+            numStack.remove(i - 1);
+            if (op1 == '+') {
+                res = num1 + num2;
+            } else {
+                res = num1 - num2;
             }
+            numStack.addLast(res);
+            i--;
         }
 
-        return res;
+        return numStack.pop();
     }
 
     public static void main(String[] args) {
+        System.out.println(new Calculate().calculate("1*2*3*4*5*6*7*8*9*10"));
+        System.out.println(new Calculate().calculate("1*2-3/4+5*6-7*8+9/10"));
         System.out.println(new Calculate().calculate("1-2+1"));
         System.out.println(new Calculate().calculate("0-2147483647"));
         System.out.println(new Calculate().calculate("1-1+1"));

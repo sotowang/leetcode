@@ -1177,6 +1177,42 @@ M             1000
 
 ---
 
+# 设计
+
+## 146 [LRU缓存机制](https://leetcode-cn.com/problems/lru-cache/)
+
+* 运用你所掌握的数据结构，设计和实现一个 [LRU (最近最少使用) 缓存机制](https://baike.baidu.com/item/LRU)。它应该支持以下操作： 获取数据 `get` 和 写入数据 `put` 。
+
+* 获取数据 `get(key)` - 如果密钥 (key) 存在于缓存中，则获取密钥的值（总是正数），否则返回 -1。
+
+* 写入数据 `put(key, value)` - 如果密钥不存在，则写入其数据值。当缓存容量达到上限时，它应该在写入新数据之前删除最近最少使用的数据值，从而为新的数据值留出空间。
+
+* **进阶:**
+  * 你是否可以在 **O(1)** 时间复杂度内完成这两种操作？
+
+## 208  [实现 Trie (前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)
+
+* 实现一个 `Trie` (前缀树)，包含 `insert`, `search`, 和 `startsWith` 这三个操作。
+* **说明:**
+
+  - 你可以假设所有的输入都是由小写字母 `a-z` 构成的。
+  - 保证所有输入均为非空字符串。
+
+## 211 [添加与搜索单词 - 数据结构设计](https://leetcode-cn.com/problems/add-and-search-word-data-structure-design/)
+
+设计一个支持以下两种操作的数据结构：
+
+```java
+void addWord(word)
+bool search(word)
+```
+
+* `search(word)` 可以搜索文字或正则表达式字符串，字符串只包含字母 `.` 或 `a-z` 。 `.` 可以表示任何一个字母。
+* **说明:**
+  * 你可以假设所有单词都是由小写字母 `a-z` 组成的。
+
+---
+
 # 字节跳动
 
 ## 字符串
