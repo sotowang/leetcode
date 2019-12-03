@@ -28,13 +28,13 @@ public class IsValidBST {
         TreeNode t3 = new TreeNode(3);
         TreeNode t4 = new TreeNode(4);
         TreeNode t6 = new TreeNode(6);
-//        t5.left = t1;
+//        t5.left = 数组.t1;
 //        t5.right = 二分查找.t4;
 //        二分查找.t4.left = t3;
 //        二分查找.t4.right = 字符串.t6;
 //        System.out.println(new IsValidBST().isValidBST(t5));
 
-//        链表.t2.left = t1;
+//        链表.t2.left = 数组.t1;
 //        链表.t2.right = t3;
 //        System.out.println(new IsValidBST().isValidBST(链表.t2));
 
