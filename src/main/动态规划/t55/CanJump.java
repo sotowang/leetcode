@@ -1,4 +1,4 @@
-package 数组.t55;
+package 动态规划.t55;
 
 /**
  * @auther: sotowang
