@@ -326,8 +326,31 @@ M             1000
 ## 79 [单词搜索](https://leetcode-cn.com/problems/word-search/)
 
 * 给定一个二维网格和一个单词，找出该单词是否存在于网格中。
-
 * 单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用
+
+## 90 [子集 II](https://leetcode-cn.com/problems/subsets-ii/)
+
+* 给定一个可能包含重复元素的整数数组 ***`nums`***，返回该数组所有可能的子集（幂集）。
+
+* **说明：**解集不能包含重复的子集。
+
+## 118 [杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)
+
+* 给定一个非负整数 *`numRows`，*生成杨辉三角的前 *`numRows`* 行。
+
+![img](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
+
+* 在杨辉三角中，每个数是它左上方和右上方的数的和。
+
+## 119 [杨辉三角 II](https://leetcode-cn.com/problems/pascals-triangle-ii/)
+
+* 给定一个非负索引 *k*，其中 *k* ≤ 33，返回杨辉三角的第 *k* 行。
+
+![img](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
+
+* 在杨辉三角中，每个数是它左上方和右上方的数的和。
+
+
 
 ---
 
@@ -1115,6 +1138,17 @@ M             1000
 ## 78 子集
 
 * 给定一组**不含重复元素**的整数数组` nums`，返回该数组所有可能的子集（幂集）。
+* **说明：**解集不能包含重复的子集。
+
+## 79 [单词搜索](https://leetcode-cn.com/problems/word-search/)
+
+* 给定一个二维网格和一个单词，找出该单词是否存在于网格中。
+* 单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用
+
+## 90 [子集 II](https://leetcode-cn.com/problems/subsets-ii/)
+
+* 给定一个可能包含重复元素的整数数组 ***`nums`***，返回该数组所有可能的子集（幂集）。
+
 * **说明：**解集不能包含重复的子集。
 
 ## 113 路径总和 II
