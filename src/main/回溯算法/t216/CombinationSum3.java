@@ -1,7 +1,6 @@
-package 数组.t216;
+package 回溯算法.t216;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 /**
