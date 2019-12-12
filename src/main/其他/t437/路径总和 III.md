@@ -29,3 +29,9 @@ root = [10,5,-3,3,2,null,11,3,-2,null,1], sum = 8
 ```
 
 ---
+
+https://leetcode-cn.com/problems/path-sum-iii/comments/
+
+java 双重递归 
+
+思路：首先先序递归遍历每个节点，再以每个节点作为起始点递归寻找满足条件的路径。
