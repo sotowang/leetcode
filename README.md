@@ -1384,6 +1384,12 @@ M             1000
 * **说明**:
   * 你可以认为每种硬币的数量是无限的。
 
+## 337 [打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii/)
+
+* 在上次打劫完一条街道之后和一圈房屋后，小偷又发现了一个新的可行窃的地区。这个地区只有一个入口，我们称之为“根”。 除了“根”之外，每栋房子有且只有一个“父“房子与之相连。一番侦察之后，聪明的小偷意识到“这个地方的所有房屋的排列类似于一棵二叉树”。 如果两个直接相连的房子在同一天晚上被打劫，房屋将自动报警。
+
+* 计算在不触动警报的情况下，小偷一晚能够盗取的最高金额。
+
 ---
 
 # 设计
@@ -1470,6 +1476,16 @@ bool search(word)
 * **说明：**
   * 拆分时可以重复使用字典中的单词。
   * 你可以假设字典中没有重复的单词。
+
+## 171 [Excel表列序号](https://leetcode-cn.com/problems/excel-sheet-column-number/)
+
+* 给定一个Excel表格中的列名称，返回其相应的列序号。
+
+## 172 [阶乘后的零](https://leetcode-cn.com/problems/factorial-trailing-zeroes/)
+
+* 给定一个整数 *n*，返回 *n*! 结果尾数中零的数量。
+* **说明:** 
+  * 你算法的时间复杂度应为 *O*(log *n*) 。
 
 ## 198 [打家劫舍](https://leetcode-cn.com/problems/house-robber/)
 
@@ -1599,6 +1615,16 @@ bool search(word)
 ### 60 第k个排列
 
 # 其他
+
+## 168 [Excel表列名称](https://leetcode-cn.com/problems/excel-sheet-column-title/)
+
+* 给定一个正整数，返回它在 Excel 表中相对应的列名称。
+
+## 213 [打家劫舍 II](https://leetcode-cn.com/problems/house-robber-ii/)
+
+* 你是一个专业的小偷，计划偷窃沿街的房屋，每间房内都藏有一定的现金。这个地方所有的房屋都围成一圈，这意味着第一个房屋和最后一个房屋是紧挨着的。同时，相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
+
+* 给定一个代表每个房屋存放金额的非负整数数组，计算你**在不触动警报装置的情况下，**能够偷窃到的最高金额。
 
 ## 437 [路径总和 III](https://leetcode-cn.com/problems/path-sum-iii/)
 
