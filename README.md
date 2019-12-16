@@ -1659,6 +1659,27 @@ bool search(word)
 
 * 丑数就是只包含质因数 `2, 3, 5` 的**正整数**。
 
+## 303 [区域和检索 - 数组不可变](https://leetcode-cn.com/problems/range-sum-query-immutable/)
+
+* 给定一个整数数组  *`nums`*，求出数组从索引 *`i`* 到 *`j`* (*i* ≤ *j*) 范围内元素的总和，包含 *i, j* 两点。
+* **说明:**
+  1. 你可以假设数组不可变。
+  2. 会多次调用 *`sumRange`* 方法。
+
+## 304 [二维区域和检索 - 矩阵不可变](https://leetcode-cn.com/problems/range-sum-query-2d-immutable/)
+
+* 给定一个二维矩阵，计算其子矩形范围内元素的总和，该子矩阵的左上角为` (row1, col1)` ，右下角为` (row2, col2)`。
+
+  ![Range Sum Query 2D](https://assets.leetcode-cn.com/aliyun-lc-upload/images/304.png)
+
+* 上图子矩阵左上角` (row1, col1) = (2, 1)` ，右下角`(row2, col2) `= **`(4, 3)`，**该子矩形内元素的总和为 8。
+
+* **说明:**
+
+  1. 你可以假设矩阵不可变。
+  2. 会多次调用` sumRegion `方法。
+  3. 你可以假设 `row1 ≤ row2` 且` col1 ≤ col2`。
+
 ## 437 [路径总和 III](https://leetcode-cn.com/problems/path-sum-iii/)
 
 * 给定一个二叉树，它的每个结点都存放着一个整数值。
