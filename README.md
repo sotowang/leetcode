@@ -1389,6 +1389,27 @@ M             1000
 * **进阶:** 
   * 你能将算法的时间复杂度降低到 `O(*n* log *n*)` 吗? 
 
+## 303 [区域和检索 - 数组不可变](https://leetcode-cn.com/problems/range-sum-query-immutable/)
+
+* 给定一个整数数组  *`nums`*，求出数组从索引 *`i`* 到 *`j`* (*i* ≤ *j*) 范围内元素的总和，包含 *i, j* 两点。
+* **说明:**
+  1. 你可以假设数组不可变。
+  2. 会多次调用 *`sumRange`* 方法。
+
+## 304 [二维区域和检索 - 矩阵不可变](https://leetcode-cn.com/problems/range-sum-query-2d-immutable/)
+
+* 给定一个二维矩阵，计算其子矩形范围内元素的总和，该子矩阵的左上角为` (row1, col1)` ，右下角为` (row2, col2)`。
+
+  ![Range Sum Query 2D](https://assets.leetcode-cn.com/aliyun-lc-upload/images/304.png)
+
+* 上图子矩阵左上角` (row1, col1) = (2, 1)` ，右下角`(row2, col2) `= **`(4, 3)`，**该子矩形内元素的总和为 8。
+
+* **说明:**
+
+  1. 你可以假设矩阵不可变。
+  2. 会多次调用` sumRegion `方法。
+  3. 你可以假设 `row1 ≤ row2` 且` col1 ≤ col2`。
+
 ## 309 [最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
 
 * 给定一个整数数组，其中第 *`i`* 个元素代表了第 *i* 天的股票价格 。
@@ -1659,26 +1680,14 @@ bool search(word)
 
 * 丑数就是只包含质因数 `2, 3, 5` 的**正整数**。
 
-## 303 [区域和检索 - 数组不可变](https://leetcode-cn.com/problems/range-sum-query-immutable/)
+## 307 [区域和检索 - 数组可修改](https://leetcode-cn.com/problems/range-sum-query-mutable/)
 
-* 给定一个整数数组  *`nums`*，求出数组从索引 *`i`* 到 *`j`* (*i* ≤ *j*) 范围内元素的总和，包含 *i, j* 两点。
+* 给定一个整数数组  *`nums`*，求出数组从索引 *i* 到 *j* (*i* ≤ *j*) 范围内元素的总和，包含 *i, j* 两点。
+
+* *`update(i, val)`* 函数可以通过将下标为 *i* 的数值更新为 *val*，从而对数列进行修改。
 * **说明:**
-  1. 你可以假设数组不可变。
-  2. 会多次调用 *`sumRange`* 方法。
-
-## 304 [二维区域和检索 - 矩阵不可变](https://leetcode-cn.com/problems/range-sum-query-2d-immutable/)
-
-* 给定一个二维矩阵，计算其子矩形范围内元素的总和，该子矩阵的左上角为` (row1, col1)` ，右下角为` (row2, col2)`。
-
-  ![Range Sum Query 2D](https://assets.leetcode-cn.com/aliyun-lc-upload/images/304.png)
-
-* 上图子矩阵左上角` (row1, col1) = (2, 1)` ，右下角`(row2, col2) `= **`(4, 3)`，**该子矩形内元素的总和为 8。
-
-* **说明:**
-
-  1. 你可以假设矩阵不可变。
-  2. 会多次调用` sumRegion `方法。
-  3. 你可以假设 `row1 ≤ row2` 且` col1 ≤ col2`。
+  1. 数组仅可以在 *`update`* 函数下进行修改。
+  2. 你可以假设 *`update`* 函数与 *`sumRange`* 函数的调用次数是均匀分布的。
 
 ## 437 [路径总和 III](https://leetcode-cn.com/problems/path-sum-iii/)
 
