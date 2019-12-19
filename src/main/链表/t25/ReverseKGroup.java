@@ -2,6 +2,8 @@ package 链表.t25;
 
 import 链表.ListNode;
 
+import java.util.Stack;
+
 /**
  * @auther: wangsongtao_sx
  * @date: 2019/10/17 20:05
@@ -11,34 +13,46 @@ public class ReverseKGroup {
         if (head == null || k == 0) {
             return head;
         }
-        ListNode firNode = head;
-        ListNode kNode = head;
-        for (int i = 1; i < k && kNode != null; i++) {
-            kNode = kNode.next;
+        ListNode pre = new ListNode(-1);
+        ListNode dumy = new ListNode(-1);
+        //翻转链表前驱
+        pre.next = head;
+        dumy = pre;
+        //翻转链表末尾
+        ListNode end = pre;
+        while (end.next != null) {
+            for (int i = 0; i < k && end != null; i++) {
+                end = end.next;
+            }
+            if (end == null) {
+                break;
+            }
+            ListNode endNext = end.next;
+            //翻转 start-->end
+            ListNode start = pre.next;
+            end.next = null;
+            pre.next = reverse(start);
+
+            //更新位置
+            start.next = endNext;
+            pre = end = start;
         }
-        rollBack(head, kNode);
-        if (kNode == null) {
-            return head;
-        }
-        return head;
+        return dumy.next;
+
     }
 
-    private ListNode rollBack(ListNode firHead, ListNode kNode) {
-        ListNode pre = new ListNode(-1);
-        pre.next = firHead;
-        ListNode p = pre.next.next;
-        pre.next.next = null;
-        ListNode q;
-        while (p != kNode) {
-            q = p.next;
-            p.next = pre.next;
-            pre.next = p;
-            p = q;
+    private ListNode reverse(ListNode head) {
+        ListNode pre = null;
+        ListNode cur = head;
+        while (cur != null) {
+            ListNode next = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = next;
         }
-        kNode.next = pre.next;
-        pre.next = kNode;
-        return pre.next;
+        return pre;
     }
+
 
     public static void main(String[] args) {
         ListNode l1 = new ListNode(1);
@@ -51,7 +65,7 @@ public class ReverseKGroup {
         l2.next = l3;
         l3.next = l4;
         l4.next = l5;
-        ListNode res = new ReverseKGroup().rollBack(l1, l4);
+        ListNode res = new ReverseKGroup().reverseKGroup(l1, 2);
         while (res != null) {
             System.out.println(res.val);
             res = res.next;
