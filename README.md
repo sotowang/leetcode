@@ -1664,6 +1664,14 @@ bool search(word)
 
 # 其他
 
+## 10 [正则表达式匹配](https://leetcode-cn.com/problems/regular-expression-matching/)
+
+## 41 [缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/)
+
+* 给定一个未排序的整数数组，找出其中没有出现的最小的正整数。
+* **说明:**
+  * 你的算法的时间复杂度应为O(*n*)，并且只能使用常数级别的空间。
+
 ## 168 [Excel表列名称](https://leetcode-cn.com/problems/excel-sheet-column-title/)
 
 * 给定一个正整数，返回它在 Excel 表中相对应的列名称。

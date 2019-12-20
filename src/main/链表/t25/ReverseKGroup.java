@@ -2,8 +2,6 @@ package 链表.t25;
 
 import 链表.ListNode;
 
-import java.util.Stack;
-
 /**
  * @auther: wangsongtao_sx
  * @date: 2019/10/17 20:05
@@ -65,9 +63,9 @@ public class ReverseKGroup {
         l2.next = l3;
         l3.next = l4;
         l4.next = l5;
-        ListNode res = new ReverseKGroup().reverseKGroup(l1, 2);
+        ListNode res = new ReverseKGroup().reverseKGroup(l1, 3);
         while (res != null) {
-            System.out.println(res.val);
+            System.out.print(res.val + "->");
             res = res.next;
         }
     }

@@ -22,4 +22,6 @@ k 是一个正整数，它的值小于或等于链表的长度。
 
 ---
 
- https://leetcode-cn.com/problems/reverse-nodes-in-k-group/addTwoNumbers/fei-di-gui-ba-kge-jie-dian-kan-zuo-yi-ge-zheng-ti-/ 
+https://leetcode-cn.com/problems/reverse-nodes-in-k-group/solution/tu-jie-kge-yi-zu-fan-zhuan-lian-biao-by-user7208t/
+
+![k个一组翻转链表.png](https://pic.leetcode-cn.com/866b404c6b0b52fa02385e301ee907fc015742c3766c80c02e24ef3a8613e5ad-k%E4%B8%AA%E4%B8%80%E7%BB%84%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8.png)
