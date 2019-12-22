@@ -1,4 +1,4 @@
-package 其他.t32;
+package 动态规划.t32;
 
 /**
  * @auther: sotowang

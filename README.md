@@ -1236,6 +1236,16 @@ M             1000
 
 # 贪心算法
 
+## 45 [跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)
+
+* 给定一个非负整数数组，你最初位于数组的第一个位置。
+
+* 数组中的每个元素代表你在该位置可以跳跃的最大长度。
+
+* 你的目标是使用最少的跳跃次数到达数组的最后一个位置。
+* **说明:**
+  * 假设你总是可以到达数组的最后一个位置。
+
 # 分治算法
 
 ## 241 [为运算表达式设计优先级](https://leetcode-cn.com/problems/different-ways-to-add-parentheses/)
@@ -1247,6 +1257,10 @@ M             1000
 ## 5 最长回文子串
 
 * 给定一个字符串 `s`，找到 `s` 中最长的回文子串。你可以假设 `s` 的最大长度为 1000。
+
+## 32 [最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/)
+
+* 给定一个只包含 `'('` 和 `')'` 的字符串，找出最长的包含有效括号的子串的长度。
 
 ## 42 接雨水
 
@@ -1671,6 +1685,18 @@ bool search(word)
 * 给定一个未排序的整数数组，找出其中没有出现的最小的正整数。
 * **说明:**
   * 你的算法的时间复杂度应为O(*n*)，并且只能使用常数级别的空间。
+
+## 51 [N皇后](https://leetcode-cn.com/problems/n-queens/)
+
+* *n* 皇后问题研究的是如何将 *n* 个皇后放置在 *n*×*n* 的棋盘上，并且使皇后彼此之间不能相互攻击。
+
+![img](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/12/8-queens.png)
+
+* 上图为 8 皇后问题的一种解法。
+
+* 给定一个整数 *n*，返回所有不同的 *n* 皇后问题的解决方案。
+
+* 每一种解法包含一个明确的 *n* 皇后问题的棋子放置方案，该方案中 `'Q'` 和 `'.'` 分别代表了皇后和空位。
 
 ## 168 [Excel表列名称](https://leetcode-cn.com/problems/excel-sheet-column-title/)
 
