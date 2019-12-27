@@ -2,28 +2,41 @@ package 深度优先搜索.t1123;
 
 import 深度优先搜索.TreeNode;
 
+import java.util.Map;
+
 /**
  * @auther: sotowang
  * @date: 2019/12/26 21:51
  */
 public class LcaDeepestLeaves {
-    private TreeNode parent;
-
     public TreeNode lcaDeepestLeaves(TreeNode root) {
-        dfs(root, 0);
-        return parent;
+        if (root == null) {
+            return null;
+        }
+        //后序遍历
+        int left = dfs(root.left);
+        int right = dfs(root.right);
+        if (left == right) {
+            return root;
+        } else if (left > right) {
+            return lcaDeepestLeaves(root.left);
+        } else {
+            return lcaDeepestLeaves(root.right);
+        }
     }
 
-    private int dfs(TreeNode root, int dept) {
+    /**
+     * 二叉树深度
+     * @param root
+     * @return
+     */
+    private int dfs(TreeNode root) {
         if (root == null) {
             return 0;
         }
-        int left = 1 + dfs(root.left);
-        int right = 1 + dfs(root.right);
-        if (left == right) {
-            return root;
-        }
-        return null;
+        int left = dfs(root.left) + 1;
+        int right = dfs(root.right) + 1;
+        return Math.max(left, right);
     }
 
     public static void main(String[] args) {
