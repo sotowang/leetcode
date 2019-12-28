@@ -1804,6 +1804,13 @@ bool search(word)
   1. 数组仅可以在 *`update`* 函数下进行修改。
   2. 你可以假设 *`update`* 函数与 *`sumRange`* 函数的调用次数是均匀分布的。
 
+## 382 [链表随机节点](https://leetcode-cn.com/problems/linked-list-random-node/)
+
+* 给定一个单链表，随机选择链表的一个节点，并返回相应的节点值。保证每个节点**被选的概率一样**。
+
+* **进阶:**
+  * 如果链表十分大且长度未知，如何解决这个问题？你能否使用常数级空间复杂度实现？
+
 ## 437 [路径总和 III](https://leetcode-cn.com/problems/path-sum-iii/)
 
 * 给定一个二叉树，它的每个结点都存放着一个整数值。
