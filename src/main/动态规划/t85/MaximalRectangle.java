@@ -6,6 +6,6 @@ package 动态规划.t85;
  */
 public class MaximalRectangle {
     public int maximalRectangle(char[][] matrix) {
-
+        return 0;
     }
 }
