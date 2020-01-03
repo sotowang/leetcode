@@ -6,6 +6,6 @@ package 动态规划.t87;
  */
 public class IsScramble {
     public boolean isScramble(String s1, String s2) {
-
+        return false;
     }
 }
