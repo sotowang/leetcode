@@ -1385,6 +1385,13 @@ M             1000
 * **说明:**
   * 假设你总是可以到达数组的最后一个位置。
 
+## 984 [不含 AAA 或 BBB 的字符串](https://leetcode-cn.com/problems/string-without-aaa-or-bbb/)
+
+* 给定两个整数 `A` 和 `B`，返回**任意**字符串 `S`，要求满足：
+  * `S` 的长度为 `A + B`，且正好包含 `A` 个 `'a'` 字母与 `B` 个 `'b'` 字母；
+  * 子串 `'aaa'` 没有出现在 `S` 中；
+  * 子串 `'bbb'` 没有出现在 `S` 中。
+
 # 分治算法
 
 ## 241 [为运算表达式设计优先级](https://leetcode-cn.com/problems/different-ways-to-add-parentheses/)
