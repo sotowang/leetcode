@@ -1,4 +1,4 @@
-package 动态规划.t87;
+package 字符串.t87;
 
 import java.util.Arrays;
 
