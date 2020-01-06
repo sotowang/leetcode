@@ -62,20 +62,25 @@ public class CalcEquation {
 
     private double dfs(Map<String, List<Edges>> edgeMap, String q1, String q2,  List<String> visited ,double ans) {
         List<Edges> edges = edgeMap.get(q1);
+        double res = -1.0;
         for (Edges edge :
                 edges
         ) {
             String to = edge.to;
             double val = edge.weight;
             if (to.equals(q2)) {
-                return ans * val;
+                res = ans * val;
+                return res;
             }
             if (!visited.contains(to)) {
                 visited.add(to);
-                return dfs(edgeMap, to, q2, visited, ans * val);
+                res = dfs(edgeMap, to, q2, visited, ans * val);
+                if (res != -1.0) {
+                    return res;
+                }
             }
         }
-        return 0.0;
+        return -1.0;
     }
 
     public static void main(String[] args) {
