@@ -1455,6 +1455,12 @@ r   g  ta  e
 * **说明:**
   * 假设你总是可以到达数组的最后一个位置。
 
+## 406 [根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/)
+
+* 假设有打乱顺序的一群人站成一个队列。 每个人由一个整数对`(h, k)`表示，其中`h`是这个人的身高，`k`是排在这个人前面且身高大于或等于`h`的人数。 编写一个算法来重建这个队列。
+
+* **注意：** 总人数少于1100人。
+
 ## 984 [不含 AAA 或 BBB 的字符串](https://leetcode-cn.com/problems/string-without-aaa-or-bbb/)
 
 * 给定两个整数 `A` 和 `B`，返回**任意**字符串 `S`，要求满足：
