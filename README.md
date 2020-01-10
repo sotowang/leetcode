@@ -745,6 +745,14 @@ r   g  ta  e
   - 所有节点的值都是唯一的。
   - p、q 为不同节点且均存在于给定的二叉树中。
 
+## 538 [把二叉搜索树转换为累加树](https://leetcode-cn.com/problems/convert-bst-to-greater-tree/)
+
+* 给定一个二叉搜索树（Binary Search Tree），把它转换成为累加树（Greater Tree)，使得每个节点的值是原来的节点值加上所有大于它的节点值之和。
+
+## 543 [二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
+
+* 给定一棵二叉树，你需要计算它的直径长度。一棵二叉树的直径长度是任意两个结点路径长度中的最大值。这条路径可能穿过根结点。
+
 ## 617 [合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees/)
 
 * 给定两个二叉树，想象当你将它们中的一个覆盖到另一个上时，两个二叉树的一些节点便会重叠。
@@ -973,6 +981,14 @@ r   g  ta  e
 *  给定一个包含 `0, 1, 2, ..., n` 中 *n* 个数的序列，找出 0 .. *n* 中没有出现在序列中的那个数。
 *  **说明:**
   * 你的算法应具有线性时间复杂度。你能否仅使用额外常数空间来实现? 
+
+## 538 [汉明距离](https://leetcode-cn.com/problems/hamming-distance/)
+
+* 两个整数之间的[汉明距离](https://baike.baidu.com/item/汉明距离)指的是这两个数字对应二进制位不同的位置的数目。
+
+* 给出两个整数 `x` 和 `y`，计算它们之间的汉明距离。
+
+* **注意：** 0 ≤ `x`, `y` < 231.
 
 # 二分查找
 
