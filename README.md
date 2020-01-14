@@ -605,6 +605,10 @@ r   g  ta  e
   * 你可以假设给定的 *k* 总是合理的，且 1 ≤ k ≤ 数组中不相同的元素的个数。
   * 你的算法的时间复杂度**必须**优于 O(*n*log *n*) , *n* 是数组的大小。
 
+## 378 [有序矩阵中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/)
+
+* 给定一个 *n x n* 矩阵，其中每行和每列元素均按升序排序，找到矩阵中第k小的元素。 请注意，它是排序后的第k小元素，而不是第k个元素。
+
 # 哈希表
 
 ## 36 [有效的数独](https://leetcode-cn.com/problems/valid-sudoku/)
