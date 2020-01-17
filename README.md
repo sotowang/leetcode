@@ -2086,6 +2086,20 @@ bool search(word)
 
 ### 60 第k个排列
 
+# 数学
+
+## 342 [4的幂](https://leetcode-cn.com/problems/power-of-four/)
+
+* 给定一个整数 (32 位有符号整数)，请编写一个函数来判断它是否是 4 的幂次方。
+
+## 892 [三维形体的表面积](https://leetcode-cn.com/problems/surface-area-of-3d-shapes/)
+
+* 在 `N * N` 的网格上，我们放置一些 `1 * 1 * 1` 的立方体。
+
+* 每个值 `v = grid[i][j]` 表示 `v` 个正方体叠放在对应单元格 `(i, j)` 上。
+
+* 请你返回最终形体的表面积。
+
 # 其他
 
 ## 10 [正则表达式匹配](https://leetcode-cn.com/problems/regular-expression-matching/)
