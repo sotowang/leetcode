@@ -18,10 +18,6 @@
 
 * 将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
 
-## 23 合并k个排序链表
-
-* 合并 *k* 个排序链表，返回合并后的排序链表。请分析和描述算法的复杂度。  
-
 ---
 
 ## 24 两两交换链表中的节点
@@ -632,6 +628,10 @@ r   g  ta  e
 
 # 堆
 
+## 23 合并k个排序链表
+
+- 合并 *k* 个排序链表，返回合并后的排序链表。请分析和描述算法的复杂度。  
+
 ## 295 [数据流的中位数](https://leetcode-cn.com/problems/find-median-from-data-stream/)
 
 * 中位数是有序列表中间的数。如果列表长度是偶数，中位数则是中间两个数的平均值。
@@ -654,9 +654,30 @@ r   g  ta  e
   * 你可以假设给定的 *k* 总是合理的，且 1 ≤ k ≤ 数组中不相同的元素的个数。
   * 你的算法的时间复杂度**必须**优于 O(*n*log *n*) , *n* 是数组的大小。
 
+## 355 [设计推特](https://leetcode-cn.com/problems/design-twitter/)
+
+* 设计一个简化版的推特(Twitter)，可以让用户实现发送推文，关注/取消关注其他用户，能够看见关注人（包括自己）的最近十条推文。你的设计需要支持以下的几个功能：
+
+1. **postTweet(userId, tweetId)**: 创建一条新的推文
+2. **getNewsFeed(userId)**: 检索最近的十条推文。每个推文都必须是由此用户关注的人或者是用户自己发出的。推文必须按照时间顺序由最近的开始排序。
+3. **follow(followerId, followeeId)**: 关注一个用户
+4. **unfollow(followerId, followeeId)**: 取消关注一个用户
+
 ## 378 [有序矩阵中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/)
 
 * 给定一个 *n x n* 矩阵，其中每行和每列元素均按升序排序，找到矩阵中第k小的元素。 请注意，它是排序后的第k小元素，而不是第k个元素。
+
+## 692 [前K个高频单词](https://leetcode-cn.com/problems/top-k-frequent-words/)
+
+* 给一非空的单词列表，返回前 *k* 个出现次数最多的单词。
+
+* 返回的答案应该按单词出现频率由高到低排序。如果不同的单词有相同出现频率，按字母顺序排序。
+
+## 703 [两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/)
+
+* 设计一个找到数据流中第K大元素的类（class）。注意是排序后的第K大元素，不是第K个不同的元素。
+
+* 你的 `KthLargest` 类需要一个同时接收整数 `k` 和整数数组`nums` 的构造器，它包含数据流中的初始元素。每次调用 `KthLargest.add`，返回当前数据流中第K大的元素。
 
 # 哈希表
 

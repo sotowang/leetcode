@@ -1,7 +1,6 @@
-package 链表.t23;
+package 堆.t23;
 
 import 链表.ListNode;
-import 链表.t21.MergeTwoLists;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
