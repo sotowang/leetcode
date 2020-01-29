@@ -27,12 +27,9 @@ public class RemoveInvalidParentheses {
             res.add(str.toString());
             return;
         }
-        for (int i = startIndex; i < ; i++) {
-
-        }
         char c = chars[index];
         str.append(c);
-        backTrace(chars, res, str, index + 1, deleteIndex + 1);
+//        backTrace(chars, res, str, index + 1,  + 1);
         str.deleteCharAt(str.length() - 1);
     }
 
