@@ -622,6 +622,14 @@ r   g  ta  e
 * **提示：
   * `气温` 列表长度的范围是 `[1, 30000]`。每个气温的值的均为华氏度，都是在 `[30, 100]` 范围内的整数。
 
+## 747 [至少是其他数字两倍的最大数](https://leetcode-cn.com/problems/largest-number-at-least-twice-of-others/)
+
+* 在一个给定的数组`nums`中，总是存在一个最大元素 。
+
+* 查找数组中的最大元素是否至少是数组中每个其他数字的两倍。
+
+* 如果是，则返回最大元素的索引，否则返回-1。
+
 ## 1111 [有效括号的嵌套深度](https://leetcode-cn.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/)
 
 * **有效括号字符串** 仅由 `"("` 和 `")"` 构成，并符合下述几个条件之一：
@@ -778,6 +786,14 @@ r   g  ta  e
 * 请注意秘密数字和朋友的猜测数都可能含有重复数字。 
 *  **说明:** 
   * 你可以假设秘密数字和朋友的猜测数都只包含数字，并且它们的长度永远相等。 
+
+## 463 [岛屿的周长](https://leetcode-cn.com/problems/island-perimeter/)
+
+* 给定一个包含 0 和 1 的二维网格地图，其中 1 表示陆地 0 表示水域。
+
+* 网格中的格子水平和垂直方向相连（对角线方向不相连）。整个网格被水完全包围，但其中恰好有一个岛屿（或者说，一个或多个表示陆地的格子相连组成的岛屿）。
+
+* 岛屿中没有“湖”（“湖” 指水域在岛屿内部且不和岛屿周围的水相连）。格子是边长为 1 的正方形。网格为长方形，且宽度和高度均不超过 100 。计算这个岛屿的周长。
 
 ## 560 [和为K的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)
 
@@ -1541,6 +1557,31 @@ r   g  ta  e
 ## 22 [括号生成](https://leetcode-cn.com/problems/generate-parentheses/)
 
 * 给出 *n* 代表生成括号的对数，请你写出一个函数，使其能够生成所有可能的并且**有效的**括号组合。
+
+### 37 [解数独](https://leetcode-cn.com/problems/sudoku-solver/)
+
+* 编写一个程序，通过已填充的空格来解决数独问题。
+
+* 一个数独的解法需**遵循如下规则**：
+
+1. 数字 `1-9` 在每一行只能出现一次。
+2. 数字 `1-9` 在每一列只能出现一次。
+3. 数字 `1-9` 在每一个以粗实线分隔的 `3x3` 宫内只能出现一次。
+
+空白格用 `'.'` 表示。
+
+![img](http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png)
+
+一个数独。
+
+![img](http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/250px-Sudoku-by-L2G-20050714_solution.svg.png)
+
+* 答案被标成红色。
+
+* **Note:**
+  * 给定的数独序列只包含数字 `1-9` 和字符 `'.'` 。
+  * 你可以假设给定的数独只有唯一解。
+  * 给定数独永远是 `9x9` 形式的。
 
 ## 39 组合总和
 
