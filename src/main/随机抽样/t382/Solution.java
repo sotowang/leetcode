@@ -1,4 +1,4 @@
-package 其他.t382;
+package 随机抽样.t382;
 
 import 链表.ListNode;
 
