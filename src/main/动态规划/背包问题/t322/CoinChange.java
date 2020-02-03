@@ -1,4 +1,4 @@
-package 动态规划.t322;
+package 动态规划.背包问题.t322;
 
 import java.util.Arrays;
 

@@ -1,6 +1,4 @@
-package 动态规划.t494;
-
-import com.sun.org.apache.regexp.internal.RE;
+package 动态规划.背包问题.t494;
 
 import java.util.Arrays;
 
