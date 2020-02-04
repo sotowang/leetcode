@@ -1,7 +1,5 @@
 package 动态规划.背包问题.ol背包;
 
-import 数组.t152.MaxProduct;
-
 /**
  * @auther: sotowang
  * @date: 2020/2/3 20:28
