@@ -1,4 +1,4 @@
-package 数学.t367;
+package 二分查找.t367;
 
 /**
  * @auther: sotowang

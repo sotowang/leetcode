@@ -1271,6 +1271,12 @@ r   g  ta  e
 
 * 你可以通过调用 `bool isBadVersion(version)` 接口来判断版本号 `version` 是否在单元测试中出错。实现一个函数来查找第一个错误的版本。你应该尽量减少对调用 `API` 的次数。  
 
+## 367 [有效的完全平方数](https://leetcode-cn.com/problems/valid-perfect-square/)
+
+* 给定一个正整数 *`num`*，编写一个函数，如果 *`num`* 是一个完全平方数，则返回 True，否则返回 False。
+
+* **说明：**不要使用任何内置的库函数，如  `sqrt`。
+
 ## 668 [乘法表中第k小的数](https://leetcode-cn.com/problems/kth-smallest-number-in-multiplication-table/)
 
 * 几乎每一个人都用 [乘法表](https://baike.baidu.com/item/乘法表)。但是你能在乘法表中快速找到第`k`小的数字吗？
@@ -1686,6 +1692,14 @@ r   g  ta  e
 * 给定一个只包含数字 `'0'-'9'` 的字符串，编写一个算法来判断给定输入是否是累加数。
 
 * **说明:** 累加序列里的数不会以 0 开头，所以不会出现 `1, 2, 03`或者 `1, 02, 3` 的情况。
+
+## 698 [分为k个相等的子集](https://leetcode-cn.com/problems/partition-to-k-equal-sum-subsets/)
+
+* 给定一个整数数组  `nums` 和一个正整数 `k`，找出是否有可能把这个数组分成 `k` 个非空子集，其总和都相等。
+
+* **注意:**
+  * `1 <= k <= len(nums) <= 16`
+  * `0 < nums[i] < 10000`
 
 ## 967 [连续差相同的数字](https://leetcode-cn.com/problems/numbers-with-same-consecutive-differences/)
 
