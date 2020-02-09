@@ -812,8 +812,27 @@ r   g  ta  e
 ## 1342 [数组大小减半](https://leetcode-cn.com/problems/reduce-array-size-to-the-half/)
 
 * 给你一个整数数组 `arr`。你可以从中选出一个整数集合，并删除这些整数在数组中的每次出现。
-
 * 返回 **至少** 能删除数组中的一半整数的整数集合的最小大小。
+
+## 5332 [检查整数及其两倍数是否存在](https://leetcode-cn.com/problems/check-if-n-and-its-double-exist/)
+
+* 给你一个整数数组 `arr`，请你检查是否存在两个整数 `N` 和 `M`，满足 `N` 是 `M` 的两倍（即，`N = 2 * M`）。
+
+* 更正式地，检查是否存在两个下标 `i` 和 `j` 满足：
+  * `	i != j`
+
+  - `0 <= i, j < arr.length`
+  - `arr[i] == 2 * arr[j]`
+
+## 5333 [制造字母异位词的最小步骤数](https://leetcode-cn.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/)
+
+* 给你两个长度相等的字符串 `s` 和 `t`。每一个步骤中，你可以选择将 `t` 中的 **任一字符** 替换为 **另一个字符**。
+
+* 返回使 `t` 成为 `s` 的字母异位词的最小步骤数。
+
+* **字母异位词** 指字母相同，但排列不同的字符串。
+
+ 
 
 ---
 
