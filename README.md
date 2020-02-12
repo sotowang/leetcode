@@ -1176,6 +1176,10 @@ r   g  ta  e
 
 * **注意：** 0 ≤ `x`, `y` < 231.
 
+## 540 [有序数组中的单一元素](https://leetcode-cn.com/problems/single-element-in-a-sorted-array/)
+
+* 给定一个只包含整数的有序数组，每个元素都会出现两次，唯有一个数只会出现一次，找出这个数。
+
 # 二分查找
 
 ## 4 [寻找两个有序数组的中位数](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/)
@@ -1251,6 +1255,16 @@ r   g  ta  e
 * 请找出其中最小的元素。 
 
 * 你可以假设数组中不存在重复元素。
+
+## 154 [寻找旋转排序数组中的最小值 II](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/)
+
+* 假设按照升序排序的数组在预先未知的某个点上进行了旋转。
+
+* ( 例如，数组 `[0,1,2,4,5,6,7]` 可能变为 `[4,5,6,7,0,1,2]` )。
+
+* 请找出其中最小的元素。
+
+* 注意数组中可能存在重复的元素。
 
 ## 162 [寻找峰值](https://leetcode-cn.com/problems/find-peak-element/)
 
@@ -1552,6 +1566,12 @@ r   g  ta  e
 ## 199 二叉树的右视图
 
 *  给定一棵二叉树，想象自己站在它的右侧，按照从顶部到底部的顺序，返回从右侧所能看到的节点值。 
+
+## 301 [删除无效的括号](https://leetcode-cn.com/problems/remove-invalid-parentheses/)
+
+* 删除最小数量的无效括号，使得输入的字符串有效，返回所有可能的结果。
+
+* **说明:** 输入可能包含了除 `(` 和 `)` 以外的字符。
 
 ## 817 [打开转盘锁](https://leetcode-cn.com/problems/open-the-lock/)
 
