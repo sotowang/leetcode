@@ -612,6 +612,10 @@ r   g  ta  e
   * 你所使用的语言也许不支持队列。 你可以使用 `list` 或者 `deque`（双端队列）来模拟一个队列 , 只要是标准的队列操作即可。
   * 你可以假设所有操作都是有效的（例如, 对一个空的栈不会调用`pop` 或者 `top` 操作）。
 
+## 316 [去除重复字母](https://leetcode-cn.com/problems/remove-duplicate-letters/)
+
+* 给定一个仅包含小写字母的字符串，去除字符串中重复的字母，使得每个字母只出现一次。需保证返回结果的字典序最小（要求不能打乱其他字符的相对位置）。
+
 ## 394 [字符串解码](https://leetcode-cn.com/problems/decode-string/)
 
 * 给定一个经过编码的字符串，返回它解码后的字符串。
@@ -636,6 +640,10 @@ r   g  ta  e
 * 查找数组中的最大元素是否至少是数组中每个其他数字的两倍。
 
 * 如果是，则返回最大元素的索引，否则返回-1。
+
+## 1081 [不同字符的最小子序列](https://leetcode-cn.com/problems/smallest-subsequence-of-distinct-characters/)
+
+* 返回字符串 `text` 中按字典序排列最小的子序列，该子序列包含 `text` 中所有不同字符一次。
 
 ## 1111 [有效括号的嵌套深度](https://leetcode-cn.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/)
 
