@@ -1,8 +1,6 @@
 package 动态规划.t140;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * @auther: sotowang
@@ -10,49 +8,54 @@ import java.util.List;
  */
 public class WordBreak {
     public List<String> wordBreak(String s, List<String> wordDict) {
-        List<String> res = new ArrayList<>();
-        backTrace(s, 0, 1, new ArrayList<>(), res, wordDict);
-        return res;
+        boolean[] dp = new boolean[s.length() + 1];
+        dp[0] = true;
+        HashMap<Integer, List> map = new HashMap<>();
+        //catsanddog
+        //先判断，避免超出内存限制
+        for (int i = 1; i <= s.length(); i++) {
+            for (int j = 0; j <= i; j++) {
+                String str = s.substring(j, i);
+                if (dp[j] && wordDict.contains(str)) {
+                    dp[i] = true;
+                }
+            }
+        }
+        if (!dp[s.length()]) {
+            return new ArrayList<>();
+        }
+        for (int i = s.length() - 1; i >= 0; i--) {
+            for (int j = i + 1; j <= s.length(); j++) {
+                String str = s.substring(i, j);
+                if (wordDict.contains(str)) {
+                    if (str.length() + i == s.length()) {
+                        List<String> list = map.getOrDefault(i, new ArrayList<>());
+                        list.add(str);
+                        map.put(i, list);
+                    } else if (map.containsKey(str.length() + i)) {
+                        List<String> list = map.get(str.length() + i);
+                        List<String> nowList = map.getOrDefault(i, new ArrayList<>());
+                        for (String temStr :
+                                list) {
+                            nowList.add(str + " " + temStr);
+                        }
+                        map.put(i, nowList);
+                    }
+                }
+            }
+        }
+        if (!map.containsKey(0)) {
+            return new ArrayList<>();
+        }
+        return map.get(0);
     }
 
-    private boolean backTrace(String s, int start, int end,
-                              ArrayList<String> temp,
-                              List<String> res,
-                              List<String> wordDict) {
-        if (start >= s.length()) {
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < temp.size() - 1; i++) {
-                sb.append(temp.get(i)).append(" ");
-            }
-            if (temp.size() >= 1) {
-                sb.append(temp.get(temp.size() - 1));
-            }
-            res.add(sb.toString());
-            return true;
-        }
-        if (end > s.length()) {
-            return false;
-        }
-
-        String str = s.substring(start, end);
-        temp.add(str);
-        if (wordDict.contains(str) && backTrace(s, end, end + 1, temp, res, wordDict)) {
-            temp.remove(str);
-            backTrace(s, start, end + 1, temp, res, wordDict);
-            return true;
-        }
-        temp.remove(str);
-        backTrace(s, start, end + 1, temp, res, wordDict);
-
-        return false;
-    }
 
     public static void main(String[] args) {
-        List<String> wordDict4 = new ArrayList<>(Arrays.asList("aaaa", "aa", "a"));
-        System.out.println(new WordBreak().wordBreak("aaaaaaa", wordDict4));
-
-        List<String> wordDict3 = new ArrayList<>(Arrays.asList("a"));
-        System.out.println(new WordBreak().wordBreak("a", wordDict3));
+//        List<String> wordDict4 = new ArrayList<>(Arrays.asList("aaaa", "aa", "a"));
+//        System.out.println(new WordBreak().wordBreak("aaaaaaa", wordDict4));
+//        List<String> wordDict3 = new ArrayList<>(Arrays.asList("a"));
+//        System.out.println(new WordBreak().wordBreak("a", wordDict3));
         List<String> wordDict2 = new ArrayList<>(Arrays.asList("cats", "dog", "sand", "and", "cat"));
         System.out.println(new WordBreak().wordBreak("catsandog", wordDict2));
         List<String> wordDict1 = new ArrayList<>(Arrays.asList("apple", "pen", "applepen", "pine", "pineapple"));
