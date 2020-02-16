@@ -1826,6 +1826,14 @@ r   g  ta  e
   2. `costs.length` 为偶数
   3. `1 <= costs[i][0], costs[i][1] <= 1000`
 
+## 1353 [最多可以参加的会议数目](https://leetcode-cn.com/problems/maximum-number-of-events-that-can-be-attended/)
+
+* 给你一个数组 `events`，其中 `events[i] = [startDayi, endDayi]` ，表示会议` i `开始于 `startDayi `，结束于 `endDayi` 。
+
+* 你可以在满足 `startDayi <= d <= endDayi `中的任意一天 d 参加会议`i `。注意，一天只能参加一个会议。
+
+* 请你返回你可以参加的 **最大** 会议数目。
+
 # 分治算法
 
 ## 241 [为运算表达式设计优先级](https://leetcode-cn.com/problems/different-ways-to-add-parentheses/)
@@ -2168,6 +2176,21 @@ bool search(word)
   * `addAtTail(val)`：将值为 `val` 的节点追加到链表的最后一个元素。
   * `addAtIndex(index,val)`：在链表中的第 `index` 个节点之前添加值为 `val`的节点。如果 `index` 等于链表的长度，则该节点将附加到链表的末尾。如果 `index` 大于链表长度，则不会插入节点。如果`index`小于0，则在头部插入节点。
   * `deleteAtIndex(index)`：如果索引 `index` 有效，则删除链表中的第 `index`个节点。
+
+## 5341 [最后 K 个数的乘积](https://leetcode-cn.com/problems/product-of-the-last-k-numbers/)
+
+* 请你实现一个「数字乘积类」`ProductOfNumbers`，要求支持下述两种方法：
+
+* 1.` add(int num)`
+  * 将数字 `num` 添加到当前数字列表的最后面。
+
+* 2.` getProduct(int k)`
+  * 返回当前数字列表中，最后 `k` 个数字的乘积。
+  * 你可以假设当前列表中始终 **至少** 包含 `k` 个数字。
+
+* 题目数据保证：任何时候，任一连续数字序列的乘积都在 32-bit 整数范围内，不会溢出。
+
+ 
 
 ---
 
