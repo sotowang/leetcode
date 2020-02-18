@@ -1,4 +1,4 @@
-package 动态规划.t312;
+package 分治算法.t312;
 
 /**
  * @auther: sotowang
