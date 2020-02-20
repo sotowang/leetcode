@@ -1,4 +1,4 @@
-package 动态规划.背包问题.ol背包.t416;
+package 动态规划.背包问题._01背包.t416;
 
 import java.util.Arrays;
 
@@ -64,7 +64,7 @@ public class CanPartition {
      * @param nums
      * @return
      */
-    public boolean canPartition(int[] nums) {
+    public boolean canPartition3(int[] nums) {
         if (nums == null || nums.length < 2) return false;
         int sum = Arrays.stream(nums).sum();
         if ((sum & 1) == 1) {
@@ -86,6 +86,27 @@ public class CanPartition {
         }
         return dp[sum];
 
+    }
+
+    //2020/02/20
+    public boolean canPartition(int[] nums) {
+        int sum = Arrays.stream(nums).sum();
+        if ((sum & 1) == 1) {
+            return false;
+        }
+        sum >>= 1;
+        boolean[] dp = new boolean[sum + 1];
+        dp[0] = true;
+        for (int num :
+                nums) {
+            for (int i = sum; i >= num; i--) {
+                dp[i] = dp[i - num] || dp[i];
+            }
+            if (dp[sum]) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public static void main(String[] args) {

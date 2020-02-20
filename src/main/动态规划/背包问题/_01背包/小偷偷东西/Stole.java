@@ -1,4 +1,4 @@
-package 动态规划.背包问题.ol背包.小偷偷东西;
+package 动态规划.背包问题._01背包.小偷偷东西;
 
 /**
  * @auther: sotowang
