@@ -1185,6 +1185,10 @@ r   g  ta  e
 *  **说明:**
   * 你的算法应具有线性时间复杂度。你能否仅使用额外常数空间来实现? 
 
+## 371 [两整数之和](https://leetcode-cn.com/problems/sum-of-two-integers/)
+
+* **不使用**运算符 `+` 和 `-` ，计算两整数 `a` 、`b` 之和。
+
 ## 538 [汉明距离](https://leetcode-cn.com/problems/hamming-distance/)
 
 * 两个整数之间的[汉明距离](https://baike.baidu.com/item/汉明距离)指的是这两个数字对应二进制位不同的位置的数目。
