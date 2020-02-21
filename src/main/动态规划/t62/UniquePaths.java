@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.concurrent.ForkJoinPool;
 
 public class UniquePaths {
-    public int uniquePaths(int m, int n) {
+    public int uniquePaths1(int m, int n) {
         //m 列 n行
         int[][] path = new int[m][n];
 
@@ -43,10 +43,24 @@ public class UniquePaths {
         }
         return path[n - 1];
     }
+
+    public int uniquePaths(int m, int n) {
+        int[][] dp = new int[n][m];
+        Arrays.fill(dp[0], 1);
+        for (int i = 1; i < n; i++) {
+            dp[i][0] = 1;
+        }
+        for (int i = 1; i < n; i++) {
+            for (int j = 1; j < m; j++) {
+                dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+            }
+        }
+        return dp[n - 1][m - 1];
+    }
     public static void main(String[] args) {
-        System.out.println(new UniquePaths().uniquePaths2(3, 3));
-        System.out.println(new UniquePaths().uniquePaths2(7, 3));
-        System.out.println(new UniquePaths().uniquePaths2(1, 1));
+        assert new UniquePaths().uniquePaths(3, 3) == 6;
+        assert new UniquePaths().uniquePaths(7, 3) == 28;
+        assert new UniquePaths().uniquePaths(1, 1) == 1;
 
     }
 }
