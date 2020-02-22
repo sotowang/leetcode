@@ -1800,6 +1800,16 @@ r   g  ta  e
 
 * 你可以按任何顺序返回答案。
 
+## 面试题08.02 [迷路的机器人](https://leetcode-cn.com/problems/robot-in-a-grid-lcci/)
+
+* 设想有个机器人坐在一个网格的左上角，网格 r 行 c 列。机器人只能向下或向右移动，但不能走到一些被禁止的网格（有障碍物）。设计一种算法，寻找机器人从左上角移动到右下角的路径。
+
+![img](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/22/robot_maze.png)
+
+* 网格中的障碍物和空位置分别用 `1` 和 `0` 来表示。
+
+* 返回一条可行的路径，路径由经过的网格的行号和列号组成。左上角为 0 行 0 列。
+
 # 贪心算法
 
 ## 45 [跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)
@@ -2116,6 +2126,10 @@ r   g  ta  e
 
 * 给定一个字符串，你的任务是计算这个字符串中有多少个回文子串。
 * 具有不同开始位置或结束位置的子串，即使是由相同的字符组成，也会被计为是不同的子串。
+
+## 680 [验证回文字符串 Ⅱ](https://leetcode-cn.com/problems/valid-palindrome-ii/)
+
+* 给定一个非空字符串 `s`，**最多**删除一个字符。判断是否能成为回文字符串。
 
 ## 764 [最大加号标志](https://leetcode-cn.com/problems/largest-plus-sign/)
 
