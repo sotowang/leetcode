@@ -1,4 +1,4 @@
-package 动态规划.t123;
+package 动态规划.买卖股票.t123;
 
 /**
  * @auther: wangsongtao_sx

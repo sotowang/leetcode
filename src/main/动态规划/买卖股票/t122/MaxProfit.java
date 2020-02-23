@@ -1,6 +1,4 @@
-package 动态规划.t122;
-
-import jdk.management.resource.internal.inst.SocketOutputStreamRMHooks;
+package 动态规划.买卖股票.t122;
 
 /**
  * @auther: wangsongtao_sx
