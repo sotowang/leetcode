@@ -915,6 +915,12 @@ r   g  ta  e
   - 所有节点的值都是唯一的。
   - p、q 为不同节点且均存在于给定的二叉树中。
 
+## 440 [字典序的第K小数字](https://leetcode-cn.com/problems/k-th-smallest-in-lexicographical-order/)
+
+* 给定整数 `n` 和 `k`，找到 `1` 到 `n` 中字典序第 `k` 小的数字。
+
+* 注意：1 ≤ k ≤ n ≤ 109。
+
 ## 538 [把二叉搜索树转换为累加树](https://leetcode-cn.com/problems/convert-bst-to-greater-tree/)
 
 * 给定一个二叉搜索树（Binary Search Tree），把它转换成为累加树（Greater Tree)，使得每个节点的值是原来的节点值加上所有大于它的节点值之和。
@@ -1829,6 +1835,16 @@ r   g  ta  e
 * 你的目标是使用最少的跳跃次数到达数组的最后一个位置。
 * **说明:**
   * 假设你总是可以到达数组的最后一个位置。
+
+## 135 [分发糖果](https://leetcode-cn.com/problems/candy/)
+
+* 老师想给孩子们分发糖果，有 *N* 个孩子站成了一条直线，老师会根据每个孩子的表现，预先给他们评分。
+
+* 你需要按照以下要求，帮助老师给这些孩子分发糖果：
+  * 每个孩子至少分配到 1 个糖果。
+  * 相邻的孩子中，评分高的孩子必须获得更多的糖果。
+
+* 那么这样下来，老师至少需要准备多少颗糖果呢？
 
 ## 406 [根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/)
 
