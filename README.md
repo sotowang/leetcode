@@ -2271,6 +2271,12 @@ bool search(word)
 * **进阶：**
   * 你将如何拓展你的设计？使之变得通用化，从而适应所有的类型，而不只是整数型？
 
+## 297 [二叉树的序列化与反序列化](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)
+
+* 序列化是将一个数据结构或者对象转换为连续的比特位的操作，进而可以将转换后的数据存储在一个文件或者内存中，同时也可以通过网络传输到另一个计算机环境，采取相反方式重构得到原数据。
+
+* 请设计一个算法来实现二叉树的序列化与反序列化。这里不限定你的序列 / 反序列化算法执行逻辑，你只需要保证一个二叉树可以被序列化为一个字符串并且将这个字符串反序列化为原始的树结构。
+
 ## 622 [设计循环队列](https://leetcode-cn.com/problems/design-circular-queue/)
 
 * 设计你的循环队列实现。 循环队列是一种线性数据结构，其操作表现基于 FIFO（先进先出）原则并且队尾被连接在队首之后以形成一个循环。它也被称为“环形缓冲器”。
@@ -2296,6 +2302,25 @@ bool search(word)
   * `addAtTail(val)`：将值为 `val` 的节点追加到链表的最后一个元素。
   * `addAtIndex(index,val)`：在链表中的第 `index` 个节点之前添加值为 `val`的节点。如果 `index` 等于链表的长度，则该节点将附加到链表的末尾。如果 `index` 大于链表长度，则不会插入节点。如果`index`小于0，则在头部插入节点。
   * `deleteAtIndex(index)`：如果索引 `index` 有效，则删除链表中的第 `index`个节点。
+
+## 1114 [按序打印](https://leetcode-cn.com/problems/print-in-order/)
+
+* 我们提供了一个类：
+
+```
+public class Foo {
+  public void one() { print("one"); }
+  public void two() { print("two"); }
+  public void three() { print("three"); }
+}
+```
+
+* 三个不同的线程将会共用一个 `Foo` 实例。
+  * 线程 A 将会调用 `one()` 方法
+  * 线程 B 将会调用 `two()` 方法
+  * 线程 C 将会调用 `three()` 方法
+
+* 请设计修改程序，以确保 `two()` 方法在 `one()` 方法之后被执行，`three()` 方法在 `two()` 方法之后被执行。
 
 ## 5341 [最后 K 个数的乘积](https://leetcode-cn.com/problems/product-of-the-last-k-numbers/)
 
