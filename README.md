@@ -525,6 +525,14 @@ r   g  ta  e
 
 ​	要求算法的时间复杂度为 O(*n*)，空间复杂度为 O(*1*) 。
 
+## 442 [数组中重复的数据](https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/)
+
+* 给定一个整数数组 a，其中`1 ≤ a[i] ≤ n`*（*n为数组长度）, 其中有些元素出现**两次**而其他元素出现**一次**。
+
+* 找到所有出现**两次**的元素。
+
+* 你可以不用到任何额外空间并在O(*n*)时间复杂度内解决这个问题吗？
+
 ## 448 [找到所有数组中消失的数字](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/)
 
 * 给定一个范围在 1 ≤ a[i] ≤ *n* ( *n* = 数组大小 ) 的 整型数组，数组中的元素一些出现了两次，另一些只出现一次。
@@ -818,6 +826,10 @@ r   g  ta  e
 * 请注意秘密数字和朋友的猜测数都可能含有重复数字。 
 *  **说明:** 
   * 你可以假设秘密数字和朋友的猜测数都只包含数字，并且它们的长度永远相等。 
+
+## 387 [字符串中的第一个唯一字符](https://leetcode-cn.com/problems/first-unique-character-in-a-string/)
+
+* 给定一个字符串，找到它的第一个不重复的字符，并返回它的索引。如果不存在，则返回 -1。
 
 ## 463 [岛屿的周长](https://leetcode-cn.com/problems/island-perimeter/)
 
