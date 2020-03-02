@@ -2044,6 +2044,16 @@ r   g  ta  e
 * 给定一个包含非负整数的 *m* x *n* 网格，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。
 * **说明：**每次只能向下或者向右移动一步。
 
+## 72 [编辑距离](https://leetcode-cn.com/problems/edit-distance/)
+
+* 给定两个单词 *`word1`* 和 *`word2`*，计算出将 *`word1`* 转换成 *`word2`* 所使用的最少操作数 。
+
+* 你可以对一个单词进行如下三种操作：
+
+1. 插入一个字符
+2. 删除一个字符
+3. 替换一个字符
+
 ## 91 [解码方法](https://leetcode-cn.com/problems/decode-ways/)
 
 一条包含字母 `A-Z` 的消息通过以下方式进行了编码：
@@ -2282,8 +2292,7 @@ r   g  ta  e
 
 * 实现一个 `Trie` (前缀树)，包含 `insert`, `search`, 和 `startsWith` 这三个操作。
 * **说明:**
-
-  - 你可以假设所有的输入都是由小写字母 `a-z` 构成的。
+- 你可以假设所有的输入都是由小写字母 `a-z` 构成的。
   - 保证所有输入均为非空字符串。
 
 ## 211 [添加与搜索单词 - 数据结构设计](https://leetcode-cn.com/problems/add-and-search-word-data-structure-design/)
@@ -2298,6 +2307,12 @@ bool search(word)
 * `search(word)` 可以搜索文字或正则表达式字符串，字符串只包含字母 `.` 或 `a-z` 。 `.` 可以表示任何一个字母。
 * **说明:**
   * 你可以假设所有单词都是由小写字母 `a-z` 组成的。
+
+## 212 [单词搜索 II](https://leetcode-cn.com/problems/word-search-ii/)
+
+* 给定一个二维网格 **board** 和一个字典中的单词列表 **words**，找出所有同时在二维网格和字典中出现的单词。
+
+* 单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母在一个单词中不允许被重复使用。
 
 ## 284 [顶端迭代器](https://leetcode-cn.com/problems/peeking-iterator/)
 
