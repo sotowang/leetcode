@@ -376,6 +376,10 @@ r   g  ta  e
 
 * 给你一个字符串 `s`。请你按照单词在 `s` 中的出现顺序将它们全部竖直返回。 单词应该以字符串列表的形式返回，必要时用空格补位，但输出尾部的空格需要删除（不允许尾随空格）。 每个单词只能放在一列上，每一列中也只能有一个单词。
 
+## 面试题50 [第一个只出现一次的字符](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/)
+
+* 在字符串 s 中找出第一个只出现一次的字符。如果没有，返回一个单空格。
+
 # 数组
 
 ## 1 [两数之和](https://leetcode-cn.com/problems/two-sum/)
@@ -399,6 +403,12 @@ r   g  ta  e
   3,2,1 → 1,2,3
   1,1,5 → 1,5,1
   ```
+
+## 41 [缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/)
+
+- 给定一个未排序的整数数组，找出其中没有出现的最小的正整数。
+- **说明:**
+  - 你的算法的时间复杂度应为O(*n*)，并且只能使用常数级别的空间。
 
 ## 48 [旋转图像](https://leetcode-cn.com/problems/rotate-image/)
 
@@ -1739,7 +1749,7 @@ r   g  ta  e
 
 * 给出 *n* 代表生成括号的对数，请你写出一个函数，使其能够生成所有可能的并且**有效的**括号组合。
 
-### 37 [解数独](https://leetcode-cn.com/problems/sudoku-solver/)
+## 37 [解数独](https://leetcode-cn.com/problems/sudoku-solver/)
 
 * 编写一个程序，通过已填充的空格来解决数独问题。
 
@@ -2620,12 +2630,6 @@ public class Foo {
 # 其他
 
 ## 10 [正则表达式匹配](https://leetcode-cn.com/problems/regular-expression-matching/)
-
-## 41 [缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/)
-
-* 给定一个未排序的整数数组，找出其中没有出现的最小的正整数。
-* **说明:**
-  * 你的算法的时间复杂度应为O(*n*)，并且只能使用常数级别的空间。
 
 ## 168 [Excel表列名称](https://leetcode-cn.com/problems/excel-sheet-column-title/)
 

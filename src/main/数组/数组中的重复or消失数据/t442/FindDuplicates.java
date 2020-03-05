@@ -1,4 +1,4 @@
-package 数组.t442;
+package 数组.数组中的重复or消失数据.t442;
 
 import java.util.ArrayList;
 import java.util.List;

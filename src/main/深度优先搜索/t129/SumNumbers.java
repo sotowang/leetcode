@@ -48,14 +48,14 @@ public class SumNumbers {
 
         System.out.println(new SumNumbers().sumNumbers(t1));
 //        TreeNode t0 = new TreeNode(0);
-//        TreeNode 数组.t1 = new TreeNode(1);
+//        TreeNode 数组.两数之和类.t1 = new TreeNode(1);
 //        TreeNode 二分查找.t4 = new TreeNode(4);
 //        TreeNode t5 = new TreeNode(5);
 //        TreeNode t9 = new TreeNode(9);
 //        二分查找.t4.left = t9;
 //        二分查找.t4.right = t0;
 //        t9.left = t5;
-//        t9.right = 数组.t1;
+//        t9.right = 数组.两数之和类.t1;
 //
 //        System.out.println(new SumNumbers().sumNumbers(二分查找.t4));
     }

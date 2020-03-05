@@ -1,4 +1,4 @@
-package 其他.t41;
+package 数组.数组中的重复or消失数据.t41;
 
 /**
  * @auther: sotowang

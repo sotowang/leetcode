@@ -73,15 +73,15 @@ public class ZigzagLevelOrder {
         System.out.println(new ZigzagLevelOrder().zigzagLevelOrder(t3));
 
 
-//        TreeNode 数组.t1 = new TreeNode(1);
+//        TreeNode 数组.两数之和类.t1 = new TreeNode(1);
 //        TreeNode 链表.t2 = new TreeNode(2);
 //        TreeNode t3 = new TreeNode(3);
 //        TreeNode 二分查找.t4 = new TreeNode(4);
 //        TreeNode t5 = new TreeNode(5);
-//        数组.t1.left = 链表.t2;
-//        数组.t1.right = t3;
+//        数组.两数之和类.t1.left = 链表.t2;
+//        数组.两数之和类.t1.right = t3;
 //        链表.t2.left = 二分查找.t4;
 //        t3.right = t5;
-//        System.out.println(new ZigzagLevelOrder().zigzagLevelOrder(数组.t1));
+//        System.out.println(new ZigzagLevelOrder().zigzagLevelOrder(数组.两数之和类.t1));
     }
 }
