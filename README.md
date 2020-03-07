@@ -2405,7 +2405,24 @@ public class Foo {
 
 * 题目数据保证：任何时候，任一连续数字序列的乘积都在 32-bit 整数范围内，不会溢出。
 
- 
+#  队列
+
+## 933 [最近的请求次数](https://leetcode-cn.com/problems/number-of-recent-calls/)
+
+* 写一个 `RecentCounter` 类来计算最近的请求。
+
+* 它只有一个方法：`ping(int t)`，其中 `t` 代表以毫秒为单位的某个时间。
+* 　返回从 3000 毫秒前到现在的 `ping` 数。
+
+* 任何处于 `[t - 3000, t]` 时间范围之内的 `ping` 都将会被计算在内，包括当前（指 `t` 时刻）的 `ping`。
+
+* 保证每次对 `ping` 的调用都使用比之前更大的 `t` 值。
+
+## [面试题59 - II. 队列的最大值](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/)
+
+* 请定义一个队列并实现函数 `max_value` 得到队列里的最大值，要求函数`max_value`、`push_back` 和 `pop_front` 的**均摊**时间复杂度都是O(1)。
+
+* 若队列为空，`pop_front` 和 `max_value` 需要返回 -1
 
 ---
 
