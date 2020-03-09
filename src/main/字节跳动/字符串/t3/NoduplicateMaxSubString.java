@@ -1,9 +1,10 @@
 package 字节跳动.字符串.t3;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class NoduplicateMaxSubString {
-    public int lengthOfLongestSubstring(String s) {
+    public int lengthOfLongestSubstring1(String s) {
         if (s == null || s.length() == 0) {
             return 0;
         }
@@ -21,9 +22,29 @@ public class NoduplicateMaxSubString {
 
         return max;
     }
+    public int lengthOfLongestSubstring(String s) {
+        int len = s.length();
+        if(len == 0 || len ==1){
+            return len;
+        }
+        int max = 0,left=0;
+        char tem;
+        Map<Character,Integer> map = new HashMap();
+        for(int right=0;right<len;right++){
+            tem = s.charAt(right);
+            if(map.containsKey(tem)){
+                left = Math.max(left, map.get(tem) + 1);
+                max = Math.max(max, right - left + 1);
+            }
+            map.put(tem,right);
+        }
+
+        return max;
+    }
 
     public static void main(String[] args) {
-        System.out.println(new NoduplicateMaxSubString().lengthOfLongestSubstring("abcabcbb"));
-        System.out.println(new NoduplicateMaxSubString().lengthOfLongestSubstring("bbbbbb"));
+        assert new NoduplicateMaxSubString().lengthOfLongestSubstring("pwwkew") == 3;
+        assert new NoduplicateMaxSubString().lengthOfLongestSubstring("abcabcbb") == 3;
+        assert new NoduplicateMaxSubString().lengthOfLongestSubstring("bbbbbb") == 1;
     }
 }

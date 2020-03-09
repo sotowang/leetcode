@@ -557,6 +557,20 @@ r   g  ta  e
 
 * 你找到的子数组应是**最短**的，请输出它的长度。
 
+## 1103 [分糖果 II](https://leetcode-cn.com/problems/distribute-candies-to-people/)
+
+* 排排坐，分糖果。
+
+* 我们买了一些糖果 `candies`，打算把它们分给排好队的 **n = num_people** 个小朋友。
+
+* 给第一个小朋友 1 颗糖果，第二个小朋友 2 颗，依此类推，直到给最后一个小朋友 `n` 颗糖果。
+
+* 然后，我们再回到队伍的起点，给第一个小朋友 `n + 1` 颗糖果，第二个小朋友 `n + 2` 颗，依此类推，直到给最后一个小朋友 `2 * n` 颗糖果。
+
+* 重复上述过程（每次都比上一次多给出一颗糖果，当到达队伍终点后再次从队伍起点开始），直到我们分完所有的糖果。注意，就算我们手中的剩下糖果数不够（不比前一次发出的糖果多），这些糖果也会全部发给当前的小朋友。
+
+* 返回一个长度为 `num_people`、元素之和为 `candies` 的数组，以表示糖果的最终分发情况（即 `ans[i]` 表示第 `i` 个小朋友分到的糖果数）。
+
 ## 1128 [等价多米诺骨牌对的数量](https://leetcode-cn.com/problems/number-of-equivalent-domino-pairs/)
 
 * 给你一个由一些多米诺骨牌组成的列表 `dominoes`。
@@ -2246,6 +2260,12 @@ r   g  ta  e
   * 给出时间复杂度为`O(n*sizeof(integer))`的解答非常容易。但你可以在线性时间O(n)内用一趟扫描做到吗？
   * 要求算法的空间复杂度为`O(n)`。
   * 你能进一步完善解法吗？要求在C++或任何其他语言中不使用任何内置函数（如 C++ 中的 `__builtin_popcount`）来执行此操作。
+
+## 368 [最大整除子集](https://leetcode-cn.com/problems/largest-divisible-subset/)
+
+* 给出一个由**无重复的**正整数组成的集合，找出其中最大的整除子集，子集中任意一对 (Si，Sj) 都要满足：Si % Sj = 0 或 Sj % Si = 0。
+
+* 如果有多个目标子集，返回其中任何一个均可。
 
 ## 416 [分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)
 
