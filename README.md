@@ -376,6 +376,10 @@ r   g  ta  e
 
 * 给你一个字符串 `s`。请你按照单词在 `s` 中的出现顺序将它们全部竖直返回。 单词应该以字符串列表的形式返回，必要时用空格补位，但输出尾部的空格需要删除（不允许尾随空格）。 每个单词只能放在一列上，每一列中也只能有一个单词。
 
+## 面试题01.06 [字符串压缩](https://leetcode-cn.com/problems/compress-string-lcci/)
+
+* 字符串压缩。利用字符重复出现的次数，编写一种方法，实现基本的字符串压缩功能。比如，字符串`aabcccccaaa`会变为`a2b1c5a3`。若“压缩”后的字符串没有变短，则返回原先的字符串。你可以假设字符串中只包含大小写英文字母（a至z）。
+
 ## 面试题50 [第一个只出现一次的字符](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/)
 
 * 在字符串 s 中找出第一个只出现一次的字符。如果没有，返回一个单空格。
@@ -2289,6 +2293,10 @@ r   g  ta  e
 
 * 给定一个字符串，你的任务是计算这个字符串中有多少个回文子串。
 * 具有不同开始位置或结束位置的子串，即使是由相同的字符组成，也会被计为是不同的子串。
+
+## 673 [最长递增子序列的个数](https://leetcode-cn.com/problems/number-of-longest-increasing-subsequence/)
+
+* 给定一个未排序的整数数组，找到最长递增子序列的个数。
 
 ## 680 [验证回文字符串 Ⅱ](https://leetcode-cn.com/problems/valid-palindrome-ii/)
 
