@@ -8,47 +8,42 @@ import 链表.ListNode;
  */
 public class ReverseKGroup {
     public ListNode reverseKGroup(ListNode head, int k) {
-        if (head == null || k == 0) {
-            return head;
+        ListNode preHead = new ListNode(-1);
+        ListNode dump = new ListNode(-1);
+
+        dump.next = head;
+        ListNode p = head;
+        int len = 0;
+        while (p != null) {
+            p = p.next;
+            len++;
         }
-        ListNode pre = new ListNode(-1);
-        ListNode dumy = new ListNode(-1);
-        //翻转链表前驱
-        pre.next = head;
-        dumy = pre;
-        //翻转链表末尾
-        ListNode end = pre;
-        while (end.next != null) {
-            for (int i = 0; i < k && end != null; i++) {
-                end = end.next;
+        p = head;
+        for (int i = 1; i < k; i++) {
+            p = p.next;
+        }
+        dump.next = p;
+        p = head;
+        ListNode q;
+        int left = 0;
+        ListNode temHead;
+        while (left + k <= len) {
+            temHead = p;
+            for (int i = 0; i < k; i++) {
+                q = p.next;
+                p.next = preHead.next;
+                preHead.next = p;
+                p = q;
+                left++;
             }
-            if (end == null) {
-                break;
-            }
-            ListNode endNext = end.next;
-            //翻转 start-->end
-            ListNode start = pre.next;
-            end.next = null;
-            pre.next = reverse(start);
+            preHead = temHead;
 
-            //更新位置
-            start.next = endNext;
-            pre = end = start;
         }
-        return dumy.next;
-
-    }
-
-    private ListNode reverse(ListNode head) {
-        ListNode pre = null;
-        ListNode cur = head;
-        while (cur != null) {
-            ListNode next = cur.next;
-            cur.next = pre;
-            pre = cur;
-            cur = next;
+        if (left < len) {
+            preHead.next = p;
         }
-        return pre;
+        return dump.next;
+
     }
 
 

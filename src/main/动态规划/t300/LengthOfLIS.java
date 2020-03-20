@@ -22,7 +22,9 @@ public class LengthOfLIS {
     }
 
     public static void main(String[] args) {
-        int[] nums = {10, 9, 2, 5, 3, 7, 101, 18};
+//        int[] nums = {10, 9, 2, 5, 3, 7, 101, 18};
+        int[] nums1 = {1, 2, 3, 4, 5};
+        int[] nums = {2, 1, 3,3, 2, 5};
         System.out.println(new LengthOfLIS().lengthOfLIS(nums));
     }
 }

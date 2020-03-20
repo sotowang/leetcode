@@ -342,6 +342,14 @@ r   g  ta  e
   1. 版本字符串由以点 （.） 分隔的数字字符串组成。这个数字字符串可能有前导零。
   2. 版本字符串不以点开始或结束，并且其中不会有两个连续的点。
 
+## 344 [反转字符串](https://leetcode-cn.com/problems/reverse-string/)
+
+* 编写一个函数，其作用是将输入的字符串反转过来。输入字符串以字符数组 `char[]` 的形式给出。
+
+* 不要给另外的数组分配额外的空间，你必须**[原地](https://baike.baidu.com/item/原地算法)修改输入数组**、使用`O(1)`的额外空间解决这一问题。
+
+* 你可以假设数组中的所有字符都是 [ASCII](https://baike.baidu.com/item/ASCII) 码表中的可打印字符。
+
 ## 415 [字符串相加](https://leetcode-cn.com/problems/add-strings/)
 
 * 给定两个字符串形式的非负整数 `num1`和`num2` ，计算它们的和。
@@ -352,6 +360,16 @@ r   g  ta  e
 2. `num1` 和`num2` 都只包含数字 `0-9`.
 3. `num1` 和`num2` 都不包含任何前导零。
 4. **你不能使用任何內建 BigInteger 库， 也不能直接将输入的字符串转换为整数形式。**
+
+## 541 [反转字符串 II](https://leetcode-cn.com/problems/reverse-string-ii/)
+
+* 给定一个字符串和一个整数 k，你需要对从字符串开头算起的每个 2k 个字符的前k个字符进行反转。如果剩余少于 k 个字符，则将剩余的所有全部反转。如果有小于 2k 但大于或等于 k 个字符，则反转前 k 个字符，并将剩余的字符保持原样。
+
+## 557 [反转字符串中的单词 III](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/)
+
+- 给定一个字符串，你需要反转字符串中每个单词的字符顺序，同时仍保留空格和单词的初始顺序。
+- 注意
+  - 在字符串中，每个单词由单个空格分隔，并且字符串中不会有任何额外的空格。
 
 ## 696 [计数二进制子串](https://leetcode-cn.com/problems/count-binary-substrings/)
 
