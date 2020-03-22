@@ -1,6 +1,8 @@
 package 常用算法.其它;
 
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 
 /**
@@ -12,6 +14,8 @@ public class Example3 {
         StringBuilder sb = new StringBuilder("aa");
         StringBuilder sb2 = new StringBuilder("aa");
         System.out.println(sb.equals(sb2));
+        HashSet set = new HashSet();
+
     }
 
     private static void dfs(String[]  s, int start) {

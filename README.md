@@ -579,6 +579,12 @@ r   g  ta  e
 
 * 你找到的子数组应是**最短**的，请输出它的长度。
 
+## 945 [使数组唯一的最小增量](https://leetcode-cn.com/problems/minimum-increment-to-make-array-unique/)
+
+* 给定整数数组 A，每次 *move* 操作将会选择任意 `A[i]`，并将其递增 `1`。
+
+* 返回使 `A` 中的每个值都是唯一的最少操作次数。
+
 ## 1103 [分糖果 II](https://leetcode-cn.com/problems/distribute-candies-to-people/)
 
 * 排排坐，分糖果。
