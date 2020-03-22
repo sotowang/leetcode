@@ -2038,6 +2038,10 @@ r   g  ta  e
   * 你可以假设 `nums[-1] = nums[n] = 1`，但注意它们不是真实存在的所以并不能被戳破。
   * 0 ≤ `n` ≤ 500, 0 ≤ `nums[i]` ≤ 100
 
+## 395 [至少有K个重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-with-at-least-k-repeating-characters/)
+
+* 找到给定字符串（由小写字符组成）中的最长子串 **T** ， 要求 **T** 中的每一字符出现次数都不少于 *k* 。输出 **T** 的长度。
+
 # 动态规划
 
 ## 5 最长回文子串

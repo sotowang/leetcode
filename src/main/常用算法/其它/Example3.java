@@ -1,6 +1,7 @@
 package 常用算法.其它;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @auther: sotowang
@@ -8,13 +9,14 @@ import java.util.*;
  */
 public class Example3 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String[] strings = new String[]{"aaa", "bcd", "zzz", "bcdef"};
-        List<String> list = new ArrayList<>(Arrays.asList(strings));
-        Collections.sort(list);
+        StringBuilder sb = new StringBuilder("aa");
+        StringBuilder sb2 = new StringBuilder("aa");
+        System.out.println(sb.equals(sb2));
     }
 
     private static void dfs(String[]  s, int start) {
-
+        StringBuilder sb = new StringBuilder("aa");
+        StringBuilder sb2 = new StringBuilder("aa");
+        System.out.println(sb.equals(sb2));
     }
 }
