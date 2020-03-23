@@ -557,6 +557,15 @@ r   g  ta  e
 
 ​	要求算法的时间复杂度为 O(*n*)，空间复杂度为 O(*1*) 。
 
+## 409 [最长回文串](https://leetcode-cn.com/problems/longest-palindrome/)
+
+* 给定一个包含大写字母和小写字母的字符串，找到通过这些字母构造成的最长的回文串。
+
+* 在构造过程中，请注意区分大小写。比如 `"Aa"` 不能当做一个回文字符串。
+
+* *注意:**
+  * 假设字符串的长度不会超过 1010。
+
 ## 442 [数组中重复的数据](https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/)
 
 * 给定一个整数数组 a，其中`1 ≤ a[i] ≤ n`*（*n为数组长度）, 其中有些元素出现**两次**而其他元素出现**一次**。
@@ -2682,6 +2691,18 @@ public class Foo {
 ## 342 [4的幂](https://leetcode-cn.com/problems/power-of-four/)
 
 * 给定一个整数 (32 位有符号整数)，请编写一个函数来判断它是否是 4 的幂次方。
+
+## 365 [水壶问题](https://leetcode-cn.com/problems/water-and-jug-problem/)
+
+有两个容量分别为 *x*升 和 *y*升 的水壶以及无限多的水。请判断能否通过使用这两个水壶，从而可以得到恰好 *z*升 的水？
+
+如果可以，最后请用以上水壶中的一或两个来盛放取得的 *z升* 水。
+
+你允许：
+
+- 装满任意一个水壶
+- 清空任意一个水壶
+- 从一个水壶向另外一个水壶倒水，直到装满或者倒空
 
 ## 892 [三维形体的表面积](https://leetcode-cn.com/problems/surface-area-of-3d-shapes/)
 
