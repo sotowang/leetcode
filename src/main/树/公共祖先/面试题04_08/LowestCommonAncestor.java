@@ -1,4 +1,4 @@
-package 树.面试题04_08;
+package 树.公共祖先.面试题04_08;
 
 import 广度优先搜索.TreeNode;
 

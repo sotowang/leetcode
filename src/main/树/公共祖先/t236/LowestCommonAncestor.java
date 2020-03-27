@@ -1,4 +1,4 @@
-package 树.t236;
+package 树.公共祖先.t236;
 
 import 深度优先搜索.TreeNode;
 

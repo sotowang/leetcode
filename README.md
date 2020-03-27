@@ -588,6 +588,16 @@ r   g  ta  e
 
 * 你找到的子数组应是**最短**的，请输出它的长度。
 
+## 915 [分割数组](https://leetcode-cn.com/problems/partition-array-into-disjoint-intervals/)
+
+给定一个数组 `A`，将其划分为两个不相交（没有公共元素）的连续子数组 `left` 和 `right`， 使得：
+
+- `left` 中的每个元素都小于或等于 `right` 中的每个元素。
+- `left` 和 `right` 都是非空的。
+- `left` 要尽可能小。
+
+在完成这样的分组后返回 `left` 的**长度**。可以保证存在这样的划分方法。
+
 ## 945 [使数组唯一的最小增量](https://leetcode-cn.com/problems/minimum-increment-to-make-array-unique/)
 
 * 给定整数数组 A，每次 *move* 操作将会选择任意 `A[i]`，并将其递增 `1`。
@@ -1055,8 +1065,11 @@ r   g  ta  e
 ## 1339 [分裂二叉树的最大乘积](https://leetcode-cn.com/problems/maximum-product-of-splitted-binary-tree/)
 
 * 给你一棵二叉树，它的根为 `root` 。请你删除 1 条边，使二叉树分裂成两棵子树，且它们子树和的乘积尽可能大。
-
 * 由于答案可能会很大，请你将结果对 10^9 + 7 取模后再返回。
+
+## 面试题04.08 [首个共同祖先](https://leetcode-cn.com/problems/first-common-ancestor-lcci/)
+
+* 设计并实现一个算法，找出二叉树中某两个节点的第一个共同祖先。不得将其他的节点存储在另外的数据结构中。注意：这不一定是二叉搜索树。
 
 ---
 
@@ -1298,6 +1311,10 @@ r   g  ta  e
 *  给定一个包含 `0, 1, 2, ..., n` 中 *n* 个数的序列，找出 0 .. *n* 中没有出现在序列中的那个数。
 *  **说明:**
   * 你的算法应具有线性时间复杂度。你能否仅使用额外常数空间来实现? 
+
+## 318 [最大单词长度乘积](https://leetcode-cn.com/problems/maximum-product-of-word-lengths/)
+
+* 给定一个字符串数组 `words`，找到 `length(word[i]) * length(word[j])` 的最大值，并且这两个单词不含有公共字母。你可以认为每个单词只包含小写字母。如果不存在这样的两个单词，返回 0。
 
 ## 371 [两整数之和](https://leetcode-cn.com/problems/sum-of-two-integers/)
 
@@ -2338,6 +2355,10 @@ r   g  ta  e
 ## 680 [验证回文字符串 Ⅱ](https://leetcode-cn.com/problems/valid-palindrome-ii/)
 
 * 给定一个非空字符串 `s`，**最多**删除一个字符。判断是否能成为回文字符串。
+
+## 718 [最长重复子数组](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/)
+
+* 给两个整数数组 `A` 和 `B` ，返回两个数组中公共的、长度最长的子数组的长度。
 
 ## 764 [最大加号标志](https://leetcode-cn.com/problems/largest-plus-sign/)
 
