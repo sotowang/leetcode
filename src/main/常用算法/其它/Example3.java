@@ -18,8 +18,11 @@ public class Example3 {
         return node;
     }
     public static void main(String[] args) {
-        int[] nums = new int[100000000];
-        System.out.println(new StringBuilder("asdjks").reverse());
+        String[] s = {"aaa", "bb", "dddd"};
+        Arrays.sort(s,(a,b)->b.length()-a.length());
+        for (int i = 0; i < s.length; i++) {
+            System.out.println(s[i]);
+        }
     }
     public boolean canPermutePalindrome(String s) {
         HashMap<Character,Integer> map = new HashMap();
