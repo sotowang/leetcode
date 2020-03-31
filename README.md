@@ -582,6 +582,10 @@ r   g  ta  e
 
 * 您能在不使用额外空间且时间复杂度为*O(n)*的情况下完成这个任务吗? 你可以假定返回的数组不算在额外空间内。
 
+## 523 [连续的子数组和](https://leetcode-cn.com/problems/continuous-subarray-sum/)
+
+* 给定一个包含**非负数**的数组和一个目标**整数** k，编写一个函数来判断该数组是否含有连续的子数组，其大小至少为 2，总和为 **k**的倍数，即总和为 n*k，其中 n 也是一个**整数**。
+
 ## 581 [ 最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
 
 * 给定一个整数数组，你需要寻找一个**连续的子数组**，如果对这个子数组进行升序排序，那么整个数组都会变为升序排序。
@@ -1355,6 +1359,10 @@ r   g  ta  e
 ## 540 [有序数组中的单一元素](https://leetcode-cn.com/problems/single-element-in-a-sorted-array/)
 
 * 给定一个只包含整数的有序数组，每个元素都会出现两次，唯有一个数只会出现一次，找出这个数。
+
+## 912 [排序数组](https://leetcode-cn.com/problems/sort-an-array/)
+
+* 给你一个整数数组 `nums`，请你将该数组升序排列。
 
 # 二分查找
 

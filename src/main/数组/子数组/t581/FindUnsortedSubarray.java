@@ -1,4 +1,4 @@
-package 数组.t581;
+package 数组.子数组.t581;
 
 /**
  * @auther: sotowang

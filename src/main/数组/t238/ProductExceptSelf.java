@@ -8,19 +8,18 @@ import java.util.Arrays;
  */
 public class ProductExceptSelf {
     public int[] productExceptSelf(int[] nums) {
-        //记录i处左右剩积
-        int leftMul = 1;
-        int rightMul = 1;
-        int[] res = new int[nums.length];
-        Arrays.fill(res, 1);
-        for (int i = 0; i < nums.length; i++) {
-            res[i] *= leftMul;
-            res[nums.length - i - 1] *= rightMul;
-
-            leftMul *= nums[i];
-            rightMul *= nums[nums.length - 1 - i];
+        int[] output = new int[nums.length];
+        int left = 1;
+        int right = 1;
+        for(int i=0;i<nums.length;i++){
+            output[i] = left;
+            left *= nums[i];
         }
-        return res;
+        for(int i=nums.length-1;i>=0;i--){
+            output[i] *= right;
+            right *= nums[i];
+        }
+        return output;
     }
 
     public static void main(String[] args) {
