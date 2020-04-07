@@ -10,19 +10,34 @@ import java.util.*;
  * @date: 2020/3/20 8:53
  */
 public class Example3 {
-    private static ListNode reverse(ListNode head) {
-        if(head == null || head.next == null) return head;
-        ListNode node = reverse(head.next);
-        head.next.next = head;
-        head.next = null;
-        return node;
+    public int[] getLeastNumbers(int[] arr, int k) {
+        if(k>arr.length){
+            return new int[]{};
+        }
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a,b) -> (b-a));
+        for(int i=0;i<arr.length;i++){
+            if(maxHeap.size()<k){
+                maxHeap.offer(arr[i]);
+            }else{
+                if(maxHeap.peek()>arr[i]){
+                    maxHeap.poll();
+                    maxHeap.offer(arr[i]);
+                }
+            }
+        }
+        int[] nums = new int[k];
+        int index = 0;
+        while(!maxHeap.isEmpty()){
+            nums[index++] = maxHeap.poll();
+        }
+        return nums;
     }
     public static void main(String[] args) {
-        String[] s = {"aaa", "bb", "dddd"};
-        Arrays.sort(s,(a,b)->b.length()-a.length());
-        for (int i = 0; i < s.length; i++) {
-            System.out.println(s[i]);
-        }
+        String res = "ababab".replace("abab", "");
+        StringBuilder sb = new StringBuilder("abc");
+
+        System.out.println(res);
+
     }
     public boolean canPermutePalindrome(String s) {
         HashMap<Character,Integer> map = new HashMap();

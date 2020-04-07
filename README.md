@@ -608,6 +608,12 @@ r   g  ta  e
 
 * 返回使 `A` 中的每个值都是唯一的最少操作次数。
 
+## 1013 [将数组分成和相等的三个部分](https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/)
+
+* 给你一个整数数组 `A`，只有可以将其划分为三个和相等的非空部分时才返回 `true`，否则返回 `false`。
+
+* 形式上，如果可以找出索引 `i+1 < j` 且满足 `(A[0] + A[1] + ... + A[i] == A[i+1] + A[i+2] + ... + A[j-1] == A[j] + A[j-1] + ... + A[A.length - 1])` 就可以将数组三等分。
+
 ## 1103 [分糖果 II](https://leetcode-cn.com/problems/distribute-candies-to-people/)
 
 * 排排坐，分糖果。
@@ -636,7 +642,11 @@ r   g  ta  e
 * 如果第 ***i*** 行的军人数量少于第 ***j*** 行，或者两行军人数量相同但 ***i*** 小于 ***j***，那么我们认为第 ***i*** 行的战斗力比第 ***j*** 行弱。
 * 军人 **总是** 排在一行中的靠前位置，也就是说 1 总是出现在 0 之前。
 
+## [面试题01.07 旋转矩阵](https://leetcode-cn.com/problems/rotate-matrix-lcci/)
 
+给你一幅由 `N × N` 矩阵表示的图像，其中每个像素的大小为 4 字节。请你设计一种算法，将图像旋转 90 度。
+
+不占用额外内存空间能否做到？
 
 ## [面试题57 - II. 和为s的连续正数序列](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
 
@@ -1075,6 +1085,12 @@ r   g  ta  e
 
 * 设计并实现一个算法，找出二叉树中某两个节点的第一个共同祖先。不得将其他的节点存储在另外的数据结构中。注意：这不一定是二叉搜索树。
 
+
+
+## 面试题36 [二叉搜索树与双向链表](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
+
+* 输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的循环双向链表。要求不能创建任何新的节点，只能调整树中节点指针的指向。
+
 ---
 
 # 并查集
@@ -1211,6 +1227,12 @@ r   g  ta  e
   * 只能使用额外的 `O(1) `的空间。
   * 时间复杂度小于 `O(n2)` 。
   * 数组中只有一个重复的数字，但它可能不止重复出现一次。
+
+## 876 [链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/)
+
+* 给定一个带有头结点 `head` 的非空单链表，返回链表的中间结点。
+
+* 如果有两个中间结点，则返回第二个中间结点。
 
 # 排序
 
@@ -2736,6 +2758,16 @@ public class Foo {
 - 清空任意一个水壶
 - 从一个水壶向另外一个水壶倒水，直到装满或者倒空
 
+
+
+## 836 [矩形重叠](https://leetcode-cn.com/problems/rectangle-overlap/)
+
+* 矩形以列表 `[x1, y1, x2, y2]` 的形式表示，其中 `(x1, y1)` 为左下角的坐标，`(x2, y2)` 是右上角的坐标。
+
+* 如果相交的面积为正，则称两矩形重叠。需要明确的是，只在角或边接触的两个矩形不构成重叠。
+
+* 给出两个矩形，判断它们是否重叠并返回结果。
+
 ## 892 [三维形体的表面积](https://leetcode-cn.com/problems/surface-area-of-3d-shapes/)
 
 * 在 `N * N` 的网格上，我们放置一些 `1 * 1 * 1` 的立方体。
@@ -2751,6 +2783,14 @@ public class Foo {
 * 最小的 24 小时制时间是 00:00，而最大的是 23:59。从 00:00 （午夜）开始算起，过得越久，时间越大。
 
 * 以长度为 5 的字符串返回答案。如果不能确定有效时间，则返回空字符串。
+
+## 1071 [字符串的最大公因子](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)
+
+* 对于字符串 `S` 和 `T`，只有在 `S = T + ... + T`（`T` 与自身连接 1 次或多次）时，我们才认定 “`T` 能除尽 `S`”。
+
+* 返回最长字符串 `X`，要求满足 `X` 能除尽 `str1` 且 `X` 能除尽 `str2`。
+
+ 
 
 ## 1323 [ 6 和 9 组成的最大数字](https://leetcode-cn.com/problems/maximum-69-number/)
 

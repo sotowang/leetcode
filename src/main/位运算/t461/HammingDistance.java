@@ -6,14 +6,17 @@ package 位运算.t461;
  */
 public class HammingDistance {
     public int hammingDistance(int x, int y) {
-        int z = x ^ y;
-        int count = 0;
-        while (z != 0) {
-            z = z & (z - 1);
-            count++;
+        int res = 0;
+        while(x != 0 || y!=0){
+            if(((x^y)&1)==1){
+                res++;
+            }
+            x >>=1;
+            y >>=1;
         }
-        return count;
+        return res;
     }
+
 
     public static void main(String[] args) {
         assert new HammingDistance().hammingDistance(1, 4) == 2;

@@ -7,25 +7,25 @@ import java.util.Stack;
 
 public class CombinationSum {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        List result = new ArrayList();
-        if (candidates == null || candidates.length == 0) {
-            return result;
+        List<List<Integer>> resList = new ArrayList();
+        if(candidates == null || candidates.length == 0){
+            return resList;
         }
+
         Arrays.sort(candidates);
-        findCombinationSUm(candidates,0,target,result,new Stack<Integer>());
-        return result;
-
+        backTrack(candidates,target,resList,new ArrayList(),0,target);
+        return resList;
     }
-
-    private void  findCombinationSUm(int[] candidates, int start , int target, List result, Stack<Integer> path) {
-        if (target == 0) {
-            result.add(new ArrayList<>(path));
+    private void backTrack(int[] candidates,int target,
+                           List<List<Integer>> resList,List<Integer> temList,int start,int origin){
+        if(target ==0){
+            resList.add(new ArrayList(temList));
             return;
         }
-        for (int i = start; i < candidates.length && candidates[i] <= target; i++) {
-            path.push(candidates[i]);
-            findCombinationSUm(candidates, i,target - candidates[i], result, path);
-            path.pop();
+        for(int i=start;i<candidates.length && candidates[i]<=target;i++){
+            temList.add(candidates[i]);
+            backTrack(candidates,target-candidates[i],resList,temList,i,origin);
+            temList.remove(temList.size()-1);
         }
     }
 

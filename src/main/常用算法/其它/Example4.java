@@ -1,13 +1,19 @@
 package 常用算法.其它;
 
 import java.util.Arrays;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 /**
  * @auther: sotowang
  * @date: 2020/3/20 9:21
  */
-public class Example4 {
+public class Example4 extends LinkedHashMap {
+    @Override
+    public boolean removeEldestEntry(Map.Entry entry){
+        return size()>2;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] nums = new int[10];
