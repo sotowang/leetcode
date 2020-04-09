@@ -1738,6 +1738,12 @@ r   g  ta  e
 
 * 可能会有多个正确的顺序，你只要返回一种就可以了。如果不可能完成所有课程，返回一个空数组。
 
+# 快速幂
+
+## [372 超级次方](https://leetcode-cn.com/problems/super-pow/)
+
+* 你的任务是计算 *a**b* 对 1337 取模，*a* 是一个正整数，*b* 是一个非常大的正整数且会以数组形式给出。
+
 # 广度优先搜索
 
 ## 102 [二叉树的层次遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)

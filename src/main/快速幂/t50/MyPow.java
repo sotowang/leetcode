@@ -1,4 +1,4 @@
-package 二分查找.t50;
+package 快速幂.t50;
 
 /**
  * @auther: sotowang
