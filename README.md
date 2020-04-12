@@ -1074,6 +1074,10 @@ r   g  ta  e
 4. 每个未使用的空间应包含一个空的字符串`""`。
 5. 使用相同的规则输出子树。
 
+## 1302 [层数最深叶子节点的和](https://leetcode-cn.com/problems/deepest-leaves-sum/)
+
+* 给你一棵二叉树，请你返回层数最深的叶子节点的和。
+
 ## 1325 [删除给定值的叶子节点](https://leetcode-cn.com/problems/delete-leaves-with-a-given-value/)
 
 * 给你一棵以 `root` 为根的二叉树和一个整数 `target` ，请你删除所有值为 `target` 的 **叶子节点** 。

@@ -73,17 +73,36 @@ public class Example3 {
         return res;
     }
 
-    public static void main(String[] args) {
+    private int[][] dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+    public int GetMaxStaffs (char[][] pos) {
+        // write code here
+        int rows = pos.length;
+        int cols = pos[0].length;
+        int res = 0;
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if(pos[i][j] == '.'){
+                    res++;
+                    for (int k = 0; k < 4; k++) {
+                        int m = i + dirs[k][0];
+                        int n = j + dirs[k][1];
+                        if (m >= 0 && n >= 0 && m < rows && n < cols && pos[m][n] == '.') {
+                            pos[m][n] = '*';
+                        }
+                    }
+                }
+            }
+        }
+        return res;
+    }
 
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int k = sc.nextInt();
-//        String ss = "787585";
-        String ss = sc.next();
-        char[] cs = ss.toCharArray();
-        change(cs, k);
-        System.out.println(count);
-        System.out.println(res);
+    public static void main(String[] args) {
+        char[][] pos = new char[][]{{'*', '.', '*', '*', '.'},
+                {'*', '.', '*', '*', '*'},
+                {'*', '.', '*', '*', '.'}};
+
+        System.out.println(new Example3().GetMaxStaffs(pos));
+
     }
 
 

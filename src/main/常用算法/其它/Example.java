@@ -1,7 +1,5 @@
 package 常用算法.其它;
 
-import 华为笔试.April_8th.Solution;
-
 import java.util.*;
 
 /**
@@ -9,34 +7,46 @@ import java.util.*;
  * @date: 2020/3/13 20:22
  */
 public class Example {
-    private static long solution(List<Long> list) {
-        Collections.sort(list);
-        long cost = 0;
-        int size = list.size();
-        while (size>=3){
-            size--;
-            cost += list.get(size);
-            size--;
-            cost += list.get(size);
-            size--;
-        }
-        if (size > 0) {
-            for (int i = 0; i < size; i++) {
-                cost += list.get(i);
+    private static int one;
+    private static int two;
+    private static int three;
+
+    private static void solution(String exp) {
+        int len = exp.length();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < len; i++) {
+            char c = exp.charAt(i);
+            if (c == ')' || c == '(') {
+                sb.append(exp.charAt(i));
             }
         }
-        return cost;
+        exp = sb.toString();
+        len = exp.length();
+        ArrayDeque<Character> stack = new ArrayDeque<>();
+        for (int i = 0; i < len; i++) {
+            char c = exp.charAt(i);
+            if (c == '(') {
+                stack.push('(');
+            } else if (c == ')' && !stack.isEmpty()) {
+                one++;
+                stack.pop();
+            }else if(c == ')'){
+                three++;
+            }
+        }
+        while (!stack.isEmpty()) {
+            stack.pop();
+            two++;
+        }
+
     }
 
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        List<Long> list = new ArrayList<>(n);
-        for(int i = 0; i < n; i++){
-            list.add(sc.nextLong());
-        }
-        System.out.println(solution(list));
+        String s = sc.next();
+//        solution("1*2+(3+3)))(((");
+        solution(s);
+        System.out.println(one + " " + two + " " + three);
     }
 
 }
