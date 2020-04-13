@@ -1,4 +1,4 @@
-package 动态规划.t70;
+package 动态规划.斐波那契数列.t70;
 
 public class ClimbStairs {
     public int climbStairs(int n) {
