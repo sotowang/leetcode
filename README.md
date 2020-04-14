@@ -736,6 +736,12 @@ r   g  ta  e
 
 * 此外，你可以认为原始数据不包含数字，所有的数字只表示重复的次数 *k* ，例如不会出现像 `3a` 或 `2[4]` 的输入。
 
+## 456 [132模式](https://leetcode-cn.com/problems/132-pattern/)
+
+* 给定一个整数序列：a1, a2, ..., an，一个132模式的子序列 a**i**, a**j**, a**k** 被定义为：当 **i** < **j** < **k** 时，a**i** < a**k** < a**j**。设计一个算法，当给定有 n 个数字的序列时，验证这个序列中是否含有132模式的子序列。
+
+* *注意：**n 的值小于15000。
+
 ## 498 [对角线遍历](https://leetcode-cn.com/problems/diagonal-traverse/)
 
 * 给定一个含有 M x N 个元素的矩阵（M 行，N 列），请以对角线遍历的顺序返回这个矩阵中的所有元素，对角线遍历如下图所示。
@@ -2074,6 +2080,12 @@ r   g  ta  e
 
 * 你需要计算完成所有任务所需要的**最短时间**。
 
+## 738 [单调递增的数字](https://leetcode-cn.com/problems/monotone-increasing-digits/)
+
+* 给定一个非负整数 `N`，找出小于或等于 `N` 的最大的整数，同时这个整数需要满足其各个位数上的数字是单调递增。
+
+* （当且仅当每个相邻位数上的数字 `x` 和 `y` 满足 `x <= y` 时，我们称这个整数是单调递增的。）
+
 ## 984 [不含 AAA 或 BBB 的字符串](https://leetcode-cn.com/problems/string-without-aaa-or-bbb/)
 
 * 给定两个整数 `A` 和 `B`，返回**任意**字符串 `S`，要求满足：
@@ -2805,7 +2817,13 @@ public class Foo {
 - 清空任意一个水壶
 - 从一个水壶向另外一个水壶倒水，直到装满或者倒空
 
+## 598 [范围求和 II](https://leetcode-cn.com/problems/range-addition-ii/)
 
+* 给定一个初始元素全部为 **0**，大小为 m*n 的矩阵 **M** 以及在 **M** 上的一系列更新操作。
+
+* 操作用二维数组表示，其中的每个操作用一个含有两个**正整数 a** 和 **b** 的数组表示，含义是将所有符合 **0 <= i < a** 以及 **0 <= j < b** 的元素 **M[i][j]** 的值都**增加 1**。
+
+* 在执行给定的一系列操作后，你需要返回矩阵中含有最大整数的元素个数。
 
 ## 836 [矩形重叠](https://leetcode-cn.com/problems/rectangle-overlap/)
 
@@ -2938,3 +2956,16 @@ public class Foo {
 ### [面试题07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/)
 
 * 输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。
+
+# SQL
+
+## 176 [第二高的薪水](https://leetcode-cn.com/problems/second-highest-salary/)
+
+* 编写一个 SQL 查询，获取 `Employee` 表中第二高的薪水（Salary） 。
+
+## 596 [超过5名学生的课](https://leetcode-cn.com/problems/classes-more-than-5-students/)
+
+* 有一个`courses` 表 ，有: **student (学生)** 和 **class (课程)**。
+
+* 请列出所有超过或等于5名学生的课。
+

@@ -2,6 +2,7 @@ package 链表.t445;
 
 import 链表.ListNode;
 
+import java.util.ArrayDeque;
 import java.util.LinkedList;
 
 /**
@@ -10,39 +11,43 @@ import java.util.LinkedList;
  */
 public class AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        LinkedList<ListNode> stack1 = new LinkedList<>();
-        LinkedList<ListNode> stack2 = new LinkedList<>();
-        ListNode p = l1;
-        ListNode q = l2;
-        while (p != null) {
-            stack1.push(p);
-            p = p.next;
+        ArrayDeque<Integer> stack1 = new ArrayDeque<>();
+        ArrayDeque<Integer> stack2 = new ArrayDeque<>();
+        while(l1!=null){
+            stack1.push(l1.val);
+            l1 = l1.next;
         }
-        while (q != null) {
-            stack2.push(q);
-            q = q.next;
+        while(l2!=null){
+            stack2.push(l2.val);
+            l2 = l2.next;
         }
-        ListNode head = new ListNode(-1);
         int carry = 0;
-        int sum = 0;
-        while (!stack1.isEmpty() || !stack2.isEmpty()) {
-            ListNode node = null;
-            if (!stack1.isEmpty() && !stack2.isEmpty()) {
-                sum = stack1.poll().val + stack2.poll().val + carry;
-            } else if (!stack1.isEmpty()) {
-                sum = stack1.poll().val + carry;
-            }else if (!stack2.isEmpty()) {
-                sum = stack2.poll().val + carry;
-            }
-            carry = sum / 10;
-            node = new ListNode(sum % 10);
-            node.next = head.next;
-            head.next = node;
+        ListNode head = new ListNode(-1);
+        while(!stack2.isEmpty() && !stack1.isEmpty()){
+            int sum = stack1.pop() + stack2.pop()+carry;
+            carry = sum/10;
+            sum %=10;
+            ListNode p = new ListNode(sum);
+            p.next = head.next;
+            head.next =p;
         }
-        if (carry != 0) {
-            ListNode node = new ListNode(carry);
-            node.next = head.next;
-            head.next = node;
+        while(!stack1.isEmpty() || !stack2.isEmpty()){
+            int sum = 0;
+            if(!stack1.isEmpty()){
+                sum = stack1.pop()+carry;
+            }else{
+                sum = stack2.pop()+carry;
+            }
+            carry = sum/10;
+            sum %=10;
+            ListNode p = new ListNode(sum);
+            p.next = head.next;
+            head.next =p;
+        }
+        if(carry!=0){
+            ListNode p = new ListNode(carry);
+            p.next = head.next;
+            head.next = p;
         }
         return head.next;
     }

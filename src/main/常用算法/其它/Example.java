@@ -42,11 +42,7 @@ public class Example {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String s = sc.next();
-//        solution("1*2+(3+3)))(((");
-        solution(s);
-        System.out.println(one + " " + two + " " + three);
+        System.out.println(Integer.parseInt("001"));
     }
 
 }
