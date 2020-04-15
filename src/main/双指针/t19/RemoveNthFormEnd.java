@@ -7,23 +7,20 @@ package 双指针.t19;
  */
 public class RemoveNthFormEnd {
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        if (head == null) {
-            return null;
+        ListNode fast = head;
+        ListNode slow = head;
+        while(n-->0){
+            fast = fast.next;
         }
-        ListNode pre = new ListNode(0);
-        pre.next = head;
-        ListNode start = pre;
-        ListNode end = pre;
-        while (n != 0) {
-            start = start.next;
-            n--;
+        if(fast == null){
+            return head.next;
         }
-        while (start.next != null) {
-            start = start.next;
-            end = end.next;
+        while(fast.next != null){
+            slow = slow.next;
+            fast = fast.next;
         }
-        end.next = end.next.next;
-        return pre.next;
+        slow.next = slow.next.next;
+        return head;
     }
 
 
