@@ -1,4 +1,4 @@
-package 数组.t238;
+package 数组.除自身以外数组的乘积.t238;
 
 import java.util.Arrays;
 

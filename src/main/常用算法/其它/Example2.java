@@ -4,8 +4,11 @@ import 数组.t228.SummaryRanges;
 
 import java.lang.reflect.WildcardType;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * @auther: sotowang
@@ -24,37 +27,33 @@ public class Example2 extends ClassLoader implements Cloneable {
             dfs(lists, weight, sum + weight[index-1], index - 1);
         }
     }
-    public static void main(String[] args) {
-        //5 2 3 1 0 0
-        //1 20 2 3
-        //2 30 3 4 5
-        //3 50 4
-        //4 60
-        //5 80
-        Scanner sc = new Scanner(System.in);
-        int sum = sc.nextInt();
-        int[] weight = new int[sum];
-        int[] count = new int[sum];
-        List<List<Integer>> lists = new ArrayList<>();
-        for (int i = 0; i < sum; i++) {
-            int cnt = sc.nextInt();
-            count[i] = cnt;
-            List<Integer> list = new ArrayList<>();
-            lists.add(list);
+    public int[][] merge(int[][] intervals) {
+        if(intervals.length == 0){
+            return new int[][]{};
         }
-        for (int i = 0; i < sum; i++) {
-            sc.nextInt();
-            weight[i] = sc.nextInt();
-            List<Integer> list = lists.get(i);
-            for (int j = 0; j < count[i]; j++) {
-                list.add(sc.nextInt());
+        Arrays.sort(intervals,(a, b)->a[0]-b[0]);
+        int len = intervals.length;
+        int left = intervals[0][0];
+        int right = intervals[0][1];
+        List<int[]> res = new ArrayList<>();
+        for(int i=0;i<len-1;i++){
+            if(intervals[i+1][0]<=right){
+                right = intervals[i+1][1];
+            }else{
+                res.add(new int[]{left,right});
+                left = intervals[i+1][0];
+                right = intervals[i+1][1];
             }
         }
+        res.add(new int[]{left,right});
+        return res.toArray(new int[10][]);
+    }
+    public static void main(String[] args) {
+        int n = 244;
+        double res = Math.log(n) / Math.log(3);
+        res = Math.round(res);
+        System.out.println(n - Math.pow(3,res) == 0);
 
-        for (int i = 0; i < sum; i++) {
-            dfs(lists, weight, weight[i], i);
-        }
-        System.out.println(max);
 
     }
 }

@@ -133,6 +133,10 @@
 
 * 输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。
 
+## 面试题66 [构建乘积数组](https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof/)
+
+* 给定一个数组 `A[0,1,…,n-1]`，请构建一个数组 `B[0,1,…,n-1]`，其中 `B` 中的元素 `B[i]=A[0]×A[1]×…×A[i-1]×A[i+1]×…×A[n-1]`。不能使用除法。
+
 ---
 
 # 字符串
@@ -1291,8 +1295,21 @@ r   g  ta  e
 ## 274 H指数
 
 * 给定一位研究者论文被引用次数的数组（被引用次数是非负整数）。编写一个方法，计算出研究者的 h 指数。
-
 * `h 指数的定义`: “h 代表“高引用次数”（high citations），一名科研人员的 h 指数是指他（她）的 （N 篇论文中）至多有 h 篇论文分别被引用了至少 h 次。（其余的 N - h 篇论文每篇被引用次数不多于 h 次。）”
+
+
+
+## 763 [划分字母区间](https://leetcode-cn.com/problems/partition-labels/)
+
+* 字符串 `S` 由小写字母组成。我们要把这个字符串划分为尽可能多的片段，同一个字母只会出现在其中的一个片段。返回一个表示每个字符串片段的长度的列表。
+
+## 986 [区间列表的交集](https://leetcode-cn.com/problems/interval-list-intersections/)
+
+* 给定两个由一些**闭区间**组成的列表，每个区间列表都是成对不相交的，并且已经排序。
+
+* 返回这两个区间列表的交集。
+
+* （形式上，闭区间 [a, b]（其中 a <= b）表示实数 x 的集合，而 a <= x <= b。两个闭区间的交集是一组实数，要么为空集，要么为闭区间。例如，[1, 3] 和 [2, 4] 的交集为 [2, 3]。）
 
 # 位运算
 
@@ -1843,6 +1860,10 @@ r   g  ta  e
 * 我们这里说的距离是『曼哈顿距离』（ Manhattan Distance）：`(x0, y0)` 和 `(x1, y1)`这两个区域之间的距离是 `|x0 - x1| + |y0 - y1|` 。
 
 * 如果我们的地图上只有陆地或者海洋，请返回 `-1`。
+
+## 面试题04.03 [特定深度节点链表](https://leetcode-cn.com/problems/list-of-depth-lcci/)
+
+* 给定一棵二叉树，设计一个算法，创建含有某一深度上所有节点的链表（比如，若一棵树的深度为 `D`，则会创建出 `D` 个链表）。返回一个包含所有深度的链表的数组。
 
 # 滑动窗口
 
@@ -2811,6 +2832,10 @@ public class Foo {
 
 # 数学
 
+## 326 [3的幂](https://leetcode-cn.com/problems/power-of-three/)
+
+* 给定一个整数，写一个函数来判断它是否是 3 的幂次方。
+
 ## 342 [4的幂](https://leetcode-cn.com/problems/power-of-four/)
 
 * 给定一个整数 (32 位有符号整数)，请编写一个函数来判断它是否是 4 的幂次方。
@@ -2972,6 +2997,18 @@ public class Foo {
 ## 176 [第二高的薪水](https://leetcode-cn.com/problems/second-highest-salary/)
 
 * 编写一个 SQL 查询，获取 `Employee` 表中第二高的薪水（Salary） 。
+
+## 181 [超过经理收入的员工](https://leetcode-cn.com/problems/employees-earning-more-than-their-managers/)
+
+* `Employee` 表包含所有员工，他们的经理也属于员工。每个员工都有一个 Id，此外还有一列对应员工的经理的 Id。
+
+## 182 [查找重复的电子邮箱](https://leetcode-cn.com/problems/duplicate-emails/)
+
+* 编写一个 SQL 查询，查找 `Person` 表中所有重复的电子邮箱。
+
+## 183 [从不订购的客户](https://leetcode-cn.com/problems/customers-who-never-order/)
+
+* 某网站包含两个表，`Customers`表和 `Orders` 表。编写一个 SQL 查询，找出所有从不订购任何东西的客户。
 
 ## 596 [超过5名学生的课](https://leetcode-cn.com/problems/classes-more-than-5-students/)
 
