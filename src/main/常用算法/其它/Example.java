@@ -8,57 +8,33 @@ import java.util.*;
  * @date: 2020/3/13 20:22
  */
 public class Example {
-    private static boolean check(String s) {
-        int len = s.length();
-        if (s.charAt(0) < 'A' || s.charAt(0) > 'Z') {
-            return false;
-        }
-        for (int i = 1; i < len; i++) {
-            if (s.charAt(i) >= 'a' && s.charAt(i) <= 'z') {
-                continue;
-            } else {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    private static String solution(String votes) {
-        String[] names = votes.split(",");
-        HashMap<String, Integer> map = new HashMap<>();
-        for (int i = 0; i < names.length; i++) {
-            if(!check(names[i])){
-                return "error.0001";
-            }
-            map.put(names[i], map.getOrDefault(names[i], 0) + 1);
-        }
-        List<String> list = new ArrayList<>(map.size());
-        for (Map.Entry<String, Integer> entry : map.entrySet()) {
-            list.add(entry.getKey());
-        }
-        Collections.sort(list, (a, b) -> map.get(b) - map.get(a));
-        int size = list.size();
-        if (map.get(list.get(0)) > 99) {
-            return "error.0001";
-        }
-        String res = list.get(0);
-        for (int i = 0; i < size-1; i++) {
-            if (map.get(list.get(i)) == map.get(list.get(i + 1))) {
-                if (res.compareTo(list.get(i + 1)) > 0) {
-                    res = list.get(i + 1);
-                }
-            } else {
-                return res;
-            }
-        }
+    private int res = 0;
+    public int numWays(int n, int[][] relation, int k) {
+        check(relation,n-1,k,0);
         return res;
+    }
+    private void check(int[][] relation,int target,int k,int count){
+        if(count ==k && target==0){
+            res++;
+            return;
+        }
+        if(count>=k){
+            return;
+        }
+        int len = relation.length;
+        for(int i=0;i<len;i++){
+            if(relation[i][1] == target){
+                check(relation,relation[i][0],k,count+1);
+            }
+        }
     }
 
     public static void main(String[] args) {
-//        "Tom,Lily,Tom,Lucy,Lucy,Jack,Amy,Amy,Amy"
-        Scanner sc = new Scanner(System.in);
-        String s = sc.next();
-        System.out.println(solution(s));
+        int[][] relation = new int[][]{{0, 2}, {2, 1}, {3, 4}, {2, 3}, {1, 4}
+                , {2, 0}, {0, 4}};
+        System.out.println(new Example()
+                .numWays(5, relation, 3
+                ));
     }
 
 }
