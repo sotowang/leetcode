@@ -599,6 +599,12 @@ r   g  ta  e
 
 * 你找到的子数组应是**最短**的，请输出它的长度。
 
+## 605 [种花问题](https://leetcode-cn.com/problems/can-place-flowers/)
+
+* 假设你有一个很长的花坛，一部分地块种植了花，另一部分却没有。可是，花卉不能种植在相邻的地块上，它们会争夺水源，两者都会死去。
+
+* 给定一个花坛（表示为一个数组包含0和1，其中0表示没种植花，1表示种植了花），和一个数 **n** 。能否在不打破种植规则的情况下种入 **n** 朵花？能则返回True，不能则返回False。
+
 ## 915 [分割数组](https://leetcode-cn.com/problems/partition-array-into-disjoint-intervals/)
 
 给定一个数组 `A`，将其划分为两个不相交（没有公共元素）的连续子数组 `left` 和 `right`， 使得：
@@ -970,6 +976,11 @@ r   g  ta  e
 * **说明 :**
   1. 数组的长度为 `[1, 20,000]`。
   2. 数组中元素的范围是 `[-1000, 1000]` ，且整数 **k** 的范围是 `[-1e7, 1e7]`。
+
+## 1296 [划分数组为连续数字的集合](https://leetcode-cn.com/problems/divide-array-in-sets-of-k-consecutive-numbers/)
+
+* 给你一个整数数组 `nums` 和一个正整数 `k`，请你判断是否可以把这个数组划分成一些由 `k` 个连续数字组成的集合。
+  如果可以，请返回 `True`；否则，返回 `False`。
 
 ## 1342 [数组大小减半](https://leetcode-cn.com/problems/reduce-array-size-to-the-half/)
 
