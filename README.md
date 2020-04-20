@@ -1098,6 +1098,12 @@ r   g  ta  e
 4. 每个未使用的空间应包含一个空的字符串`""`。
 5. 使用相同的规则输出子树。
 
+## 1305 [两棵二叉搜索树中的所有元素](https://leetcode-cn.com/problems/all-elements-in-two-binary-search-trees/)
+
+* 给你 `root1` 和 `root2` 这两棵二叉搜索树。
+
+* 请你返回一个列表，其中包含 **两棵树** 中的所有整数并按 **升序** 排序。.
+
 ## 1302 [层数最深叶子节点的和](https://leetcode-cn.com/problems/deepest-leaves-sum/)
 
 * 给你一棵二叉树，请你返回层数最深的叶子节点的和。
