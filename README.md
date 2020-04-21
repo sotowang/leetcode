@@ -977,6 +977,14 @@ r   g  ta  e
   1. 数组的长度为 `[1, 20,000]`。
   2. 数组中元素的范围是 `[-1000, 1000]` ，且整数 **k** 的范围是 `[-1e7, 1e7]`。
 
+## 1248 [ 统计「优美子数组」](https://leetcode-cn.com/problems/count-number-of-nice-subarrays/)
+
+* 给你一个整数数组 `nums` 和一个整数 `k`。
+
+* 如果某个 **连续** 子数组中恰好有 `k` 个奇数数字，我们就认为这个子数组是「**优美子数组**」。
+
+* 请返回这个数组中「优美子数组」的数目。
+
 ## 1296 [划分数组为连续数字的集合](https://leetcode-cn.com/problems/divide-array-in-sets-of-k-consecutive-numbers/)
 
 * 给你一个整数数组 `nums` 和一个正整数 `k`，请你判断是否可以把这个数组划分成一些由 `k` 个连续数字组成的集合。
@@ -1436,6 +1444,18 @@ r   g  ta  e
 ## 912 [排序数组](https://leetcode-cn.com/problems/sort-an-array/)
 
 * 给你一个整数数组 `nums`，请你将该数组升序排列。
+
+## 1404 [将二进制表示减到 1 的步骤数](https://leetcode-cn.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/)
+
+* 给你一个以二进制形式表示的数字 `s` 。请你返回按下述规则将其减少到 1 所需要的步骤数：
+  * 如果当前数字为偶数，则将其除以 2 。
+  * 如果当前数字为奇数，则将其加上 1 。
+
+* 题目保证你总是可以按上述规则将测试用例变为 1 。
+
+## 面试题17.10 [主要元素](https://leetcode-cn.com/problems/find-majority-element-lcci/)
+
+* 如果数组中多一半的数都是同一个，则称之为主要元素。给定一个**整数**数组，找到它的主要元素。若没有，返回-1
 
 # 二分查找
 
