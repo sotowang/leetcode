@@ -1,6 +1,8 @@
 package 常用算法.其它;
 
 
+import java.util.LinkedList;
+
 /**
  * @auther: sotowang
  * @date: 2020/3/13 20:22
@@ -15,7 +17,8 @@ public class Example {
         StringBuilder sb = new StringBuilder("111");
         System.out.println(sb.replace(2, 3, "3"));
         System.out.println(Integer.valueOf("1101",2));
-
+        System.out.println(Integer.MIN_VALUE);
+        System.out.println((long) 50000*50000);
     }
 
 }

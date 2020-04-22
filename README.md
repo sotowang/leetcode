@@ -573,6 +573,10 @@ r   g  ta  e
 * *注意:**
   * 假设字符串的长度不会超过 1010。
 
+## 414 [第三大的数](https://leetcode-cn.com/problems/third-maximum-number/)
+
+* 给定一个非空数组，返回此数组中第三大的数。如果不存在，则返回数组中最大的数。要求算法时间复杂度必须是O(n)。
+
 ## 442 [数组中重复的数据](https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/)
 
 * 给定一个整数数组 a，其中`1 ≤ a[i] ≤ n`*（*n为数组长度）, 其中有些元素出现**两次**而其他元素出现**一次**。
@@ -604,6 +608,12 @@ r   g  ta  e
 * 假设你有一个很长的花坛，一部分地块种植了花，另一部分却没有。可是，花卉不能种植在相邻的地块上，它们会争夺水源，两者都会死去。
 
 * 给定一个花坛（表示为一个数组包含0和1，其中0表示没种植花，1表示种植了花），和一个数 **n** 。能否在不打破种植规则的情况下种入 **n** 朵花？能则返回True，不能则返回False。
+
+## 713 [乘积小于K的子数组](https://leetcode-cn.com/problems/subarray-product-less-than-k/)
+
+* 给定一个正整数数组 `nums`。
+
+* 找出该数组内乘积小于 `k` 的连续的子数组的个数。
 
 ## 915 [分割数组](https://leetcode-cn.com/problems/partition-array-into-disjoint-intervals/)
 
