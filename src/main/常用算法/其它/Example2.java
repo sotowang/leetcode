@@ -1,44 +1,73 @@
 package 常用算法.其它;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * @auther: sotowang
  * @date: 2020/3/13 20:52
  */
 public class Example2 extends ClassLoader  {
-    public int[] getTriggerTime(int[][] increase, int[][] requirements) {
-        int len = requirements.length;
-        int[] res = new int[len];
-        int day = increase.length;
-        Arrays.fill(res,-1);
-        for(int i=0;i<len;i++){
-            if (requirements[i][0] == 0 && requirements[i][1] == 0 && requirements[i][2] == 0) {
-                res[i] = 0;
+//5a 12 5b ba 34 5b bb 88 05 5a 75 cd bb 62 5a 34 cd 78 cc da fb 06 5a
+
+    private static String check(String s) {
+        int lens = s.length();
+        int start = -1;
+        for (int i = 0; i < lens-1; i++) {
+            if (s.charAt(i) == '5' && s.charAt(i + 1) == 'a') {
+                start = i;
+                break;
             }
         }
-
-        int[] sum = new int[3];
-        for(int i=0;i<day;i++){
-            sum[0] += increase[i][0];
-            sum[1] += increase[i][1];
-            sum[2] += increase[i][2];
-            for(int j=0;j<len;j++){
-                if (res[j] == -1 && sum[0] >= requirements[j][0] && sum[1] >= requirements[j][1] && sum[2] >= requirements[j][2]) {
-                    res[j] = i + 1;
+        s = s.substring(start, lens);
+        if(start == -1){
+            return "";
+        }
+        start = -1;
+        for (int i = s.length()-1; i >0 ; i--) {
+            if (s.charAt(i) == 'a' && s.charAt(i - 1) == '5') {
+                start = i;
+                break;
+            }
+        }
+        s = s.substring(0, start + 1);
+        String[] ss = s.split("5a");
+        StringBuilder res = new StringBuilder();
+        StringBuilder tem = new StringBuilder();
+        for (int i = 0; i < ss.length; i++) {
+            if(ss[i].isEmpty() || ss[i].equals(" ")){
+                continue;
+            }
+            String[] sub = ss[i].trim().split(" ");
+            int len = Integer.valueOf(sub[sub.length - 1], 16);
+            int count = 0;
+            for (int j = 0; j < sub.length - 1; j++) {
+                if ((sub[j].equals("5b") && sub[j + 1].equals("ba")) || sub[j].equals("5b") && sub[j + 1].equals("bb")) {
+                    count++;
+                    tem.append(sub[j]).append(" ").append(sub[j+1]).append(" ");
+                    j++;
+                } else{
+                    tem.append(sub[j]).append(" ");
+                    count++;
                 }
             }
+            if (count == len) {
+                res.append("5a ").append(tem.toString()).append(sub[sub.length - 1]).append(" ");
+            }
+            tem.delete(0, tem.length());
         }
-        return res;
+        if (!res.toString().equals("")) {
+            res.append("5a");
+        }
+        return res.toString().trim();
     }
-
     public static void main(String[] args) {
-        int[][] increase = new int[][]{
-                {2, 8, 4}, {2, 5, 0}, {10, 9, 8}
-        };
-        int[][] requirements = new int[][]{
-                {2, 11, 3}, {15, 10, 7}, {9, 17, 12}, {8, 1, 14}
-        };
-        new Example2().getTriggerTime(increase, requirements);
+        System.out.println(check("5a 5b 5a"));
+        System.out.println(check("5a 12 5b ba 34 5a bb 88 05 5a 75 cd bb 62 5a 34 cd 78 cc da fb 06 5a"));
+        System.out.println(check("12 5b ba 34 5b bb 88 05 5a 75 cd bb 62 5a 34 cd 78 cc da fb 06"));
+//        Scanner sc = new Scanner(System.in);
+//        String s = sc.nextLine();
+//        System.out.println(check(s));
     }
 }
