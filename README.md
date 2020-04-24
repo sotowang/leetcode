@@ -1353,6 +1353,18 @@ r   g  ta  e
 
 * （形式上，闭区间 [a, b]（其中 a <= b）表示实数 x 的集合，而 a <= x <= b。两个闭区间的交集是一组实数，要么为空集，要么为闭区间。例如，[1, 3] 和 [2, 4] 的交集为 [2, 3]。）
 
+## 1288 [删除被覆盖区间](https://leetcode-cn.com/problems/remove-covered-intervals/)
+
+* 给你一个区间列表，请你删除列表中被其他区间所覆盖的区间。
+
+* 只有当 `c <= a` 且 `b <= d` 时，我们才认为区间 `[a,b)`被区间 `[c,d)` 覆盖。
+
+* 在完成所有删除操作后，请你返回列表中剩余区间的数目。
+
+## 面试题51 [数组中的逆序对](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)
+
+* 在数组中的两个数字，如果前面一个数字大于后面的数字，则这两个数字组成一个逆序对。输入一个数组，求出这个数组中的逆序对的总数。
+
 # 位运算
 
 ## 136  [只出现一次的数字](https://leetcode-cn.com/problems/single-number/)
@@ -1800,6 +1812,14 @@ r   g  ta  e
 * **提示：**
   1. `1 <= A.length = A[0].length <= 100`
   2. `A[i][j] == 0` 或 `A[i][j] == 1`
+
+## 1080 [根到叶路径上的不足节点](https://leetcode-cn.com/problems/insufficient-nodes-in-root-to-leaf-paths/)
+
+* 给定一棵二叉树的根 `root`，请你考虑它所有 **从根到叶的路径**：从根到任何叶的路径。（所谓一个叶子节点，就是一个没有子节点的节点）
+
+* 假如通过节点 `node` 的每种可能的 “根-叶” 路径上值的总和全都小于给定的 `limit`，则该节点被称之为「不足节点」，需要被删除。
+
+* 请你删除所有不足节点，并返回生成的二叉树的根。
 
 ## 1123 [最深叶节点的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-deepest-leaves/)
 
