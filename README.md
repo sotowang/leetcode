@@ -1361,6 +1361,10 @@ r   g  ta  e
 
 * 在完成所有删除操作后，请你返回列表中剩余区间的数目。
 
+## 1329 [ 将矩阵按对角线排序](https://leetcode-cn.com/problems/sort-the-matrix-diagonally/)
+
+* 给你一个 `m * n` 的整数矩阵 `mat` ，请你将同一条对角线上的元素（从左上到右下）按升序排序后，返回排好序的矩阵。
+
 ## 面试题51 [数组中的逆序对](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)
 
 * 在数组中的两个数字，如果前面一个数字大于后面的数字，则这两个数字组成一个逆序对。输入一个数组，求出这个数组中的逆序对的总数。
@@ -1482,9 +1486,15 @@ r   g  ta  e
 
 * 题目保证你总是可以按上述规则将测试用例变为 1 。
 
+## 面试题17.01 [不用加号的加法](https://leetcode-cn.com/problems/add-without-plus-lcci/)
+
+- 设计一个函数把两个数字相加。不得使用 + 或者其他算术运算符。
+
 ## 面试题17.10 [主要元素](https://leetcode-cn.com/problems/find-majority-element-lcci/)
 
 * 如果数组中多一半的数都是同一个，则称之为主要元素。给定一个**整数**数组，找到它的主要元素。若没有，返回-1
+
+
 
 # 二分查找
 
@@ -2693,6 +2703,14 @@ public class Foo {
   * 线程 C 将会调用 `three()` 方法
 
 * 请设计修改程序，以确保 `two()` 方法在 `one()` 方法之后被执行，`three()` 方法在 `two()` 方法之后被执行。
+
+## 1268 [搜索推荐系统](https://leetcode-cn.com/problems/search-suggestions-system/)
+
+* 给你一个产品数组 `products` 和一个字符串 `searchWord` ，`products`  数组中每个产品都是一个字符串。
+
+* 请你设计一个推荐系统，在依次输入单词 `searchWord`的每一个字母后，推荐 `products` 数组中前缀与 `searchWord` 相同的最多三个产品。如果前缀相同的可推荐产品超过三个，请按字典序返回最小的三个。
+
+* 请你以二维列表的形式，返回在输入 `searchWord` 每个字母后相应的推荐产品的列表。
 
 ## 5341 [最后 K 个数的乘积](https://leetcode-cn.com/problems/product-of-the-last-k-numbers/)
 
