@@ -26,10 +26,12 @@ public class Example {
         return sb.toString();
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String s = sc.next();
-        System.out.println(find(s));
-
+        System.out.println(Integer.valueOf("-0"));
+        System.out.println("1.1.1.1.1".endsWith("."));
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(1, 0);
+        HashSet<Integer> set = new HashSet<>(map.keySet());
+        System.out.println();
     }
 
 }

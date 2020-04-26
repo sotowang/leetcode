@@ -991,6 +991,12 @@ r   g  ta  e
   1. 数组的长度为 `[1, 20,000]`。
   2. 数组中元素的范围是 `[-1000, 1000]` ，且整数 **k** 的范围是 `[-1e7, 1e7]`。
 
+## 1207 [独一无二的出现次数](https://leetcode-cn.com/problems/unique-number-of-occurrences/)
+
+* 给你一个整数数组 `arr`，请你帮忙统计数组中每个数的出现次数。
+
+* 如果每个数的出现次数都是独一无二的，就返回 `true`；否则返回 `false`。
+
 ## 1248 [ 统计「优美子数组」](https://leetcode-cn.com/problems/count-number-of-nice-subarrays/)
 
 * 给你一个整数数组 `nums` 和一个整数 `k`。
@@ -2197,6 +2203,14 @@ r   g  ta  e
 
 * （当且仅当每个相邻位数上的数字 `x` 和 `y` 满足 `x <= y` 时，我们称这个整数是单调递增的。）
 
+## 881 [救生艇](https://leetcode-cn.com/problems/boats-to-save-people/)
+
+* 第 `i` 个人的体重为 `people[i]`，每艘船可以承载的最大重量为 `limit`。
+
+* 每艘船最多可同时载两人，但条件是这些人的重量之和最多为 `limit`。
+
+* 返回载到每一个人所需的最小船数。(保证每个人都能被船载)。
+
 ## 984 [不含 AAA 或 BBB 的字符串](https://leetcode-cn.com/problems/string-without-aaa-or-bbb/)
 
 * 给定两个整数 `A` 和 `B`，返回**任意**字符串 `S`，要求满足：
@@ -2565,6 +2579,10 @@ F(N) = F(N - 1) + F(N - 2), 其中 N > 1.
 * **词链**是单词 `[word_1, word_2, ..., word_k]` 组成的序列，`k >= 1`，其中 `word_1` 是 `word_2` 的前身，`word_2` 是 `word_3` 的前身，依此类推。
 
 * 从给定单词列表 `words` 中选择单词组成词链，返回词链的最长可能长度。
+
+## 1312 [让字符串成为回文串的最少插入次数](https://leetcode-cn.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/)
+
+* 给定一个字符串`s`，找到其中最长的回文子序列。可以假设`s`的最大长度为`1000`。
 
 ## 1326 [灌溉花园的最少水龙头数目](https://leetcode-cn.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/)
 

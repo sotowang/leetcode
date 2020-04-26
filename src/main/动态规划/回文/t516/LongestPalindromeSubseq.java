@@ -1,4 +1,4 @@
-package 动态规划.t516;
+package 动态规划.回文.t516;
 
 /**
  * @auther: sotowang
