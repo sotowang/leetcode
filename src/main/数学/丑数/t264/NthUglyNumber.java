@@ -1,4 +1,4 @@
-package 动态规划.t264;
+package 数学.丑数.t264;
 
 /**
  * @auther: sotowang

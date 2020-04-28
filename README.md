@@ -679,6 +679,10 @@ r   g  ta  e
 
 * 给定一个整数数组，编写一个函数，找出索引`m`和`n`，只要将索引区间`[m,n]`的元素排好序，整个数组就是有序的。注意：`n-m`尽量最小，也就是说，找出符合条件的最短序列。函数返回值为`[m,n]`，若不存在这样的`m`和`n`（例如整个数组是有序的），请返回`[-1,-1]`。
 
+## 面试题56-I [数组中数字出现的次数](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/)
+
+* 一个整型数组 `nums` 里除两个数字之外，其他数字都出现了两次。请写程序找出这两个只出现一次的数字。要求时间复杂度是O(n)，空间复杂度是O(1)。
+
 ## [面试题57 - II. 和为s的连续正数序列](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
 
 * 输入一个正整数 `target` ，输出所有和为 `target` 的连续正整数序列（至少含有两个数）。
@@ -1293,6 +1297,10 @@ r   g  ta  e
   * 只能使用额外的 `O(1) `的空间。
   * 时间复杂度小于 `O(n2)` 。
   * 数组中只有一个重复的数字，但它可能不止重复出现一次。
+
+## 658 [找到 K 个最接近的元素](https://leetcode-cn.com/problems/find-k-closest-elements/)
+
+* 给定一个排序好的数组，两个整数 `k` 和 `x`，从数组中找到最靠近 `x`（两数之差最小）的 `k` 个数。返回的结果必须要是按升序排好的。如果有两个数与 `x`的差值一样，优先选择数值较小的那个数。
 
 ## 876 [链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/)
 
@@ -2427,14 +2435,6 @@ r   g  ta  e
 
 * 在一个由 0 和 1 组成的二维矩阵内，找到只包含 1 的最大正方形，并返回其面积。
 
-## 264 [丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/)
-
-* 编写一个程序，找出第 `n` 个丑数。
-* 丑数就是只包含质因数 `2, 3, 5` 的**正整数**。
-* **说明:** 
-  1. `1` 是丑数。
-  2. `n` **不超过**1690。
-
 ## 279 [完全平方数](https://leetcode-cn.com/problems/perfect-squares/)
 
 * 给定正整数 *n*，找到若干个完全平方数（比如 `1, 4, 9, 16, ...`）使得它们的和等于 *n*。你需要让组成和的完全平方数的个数最少。
@@ -2476,12 +2476,6 @@ r   g  ta  e
 * 设计一个算法计算出最大利润。在满足以下约束条件下，你可以尽可能地完成更多的交易（多次买卖一支股票）:
   * 你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。
   * 卖出股票后，你无法在第二天买入股票 (即冷冻期为 1 天)。
-
-## 313 [超级丑数](https://leetcode-cn.com/problems/super-ugly-number/)
-
-* 编写一段程序来查找第 `*n*` 个超级丑数。
-
-* 超级丑数是指其所有质因数都是长度为 `k` 的质数列表 `primes` 中的正整数。
 
 ## 322 [零钱兑换](https://leetcode-cn.com/problems/coin-change/)
 
@@ -2946,6 +2940,24 @@ public class Foo {
 
 # 数学
 
+## 263 [丑数](https://leetcode-cn.com/problems/ugly-number/)
+
+- 编写一个程序判断给定的数是否为丑数。
+- 丑数就是只包含质因数 `2, 3, 5` 的**正整数**。
+
+## 264 [丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/)
+
+- 编写一个程序，找出第 `n` 个丑数。
+- 丑数就是只包含质因数 `2, 3, 5` 的**正整数**。
+- **说明:** 
+  1. `1` 是丑数。
+  2. `n` **不超过**1690。
+
+## 313 [超级丑数](https://leetcode-cn.com/problems/super-ugly-number/)
+
+- 编写一段程序来查找第 `*n*` 个超级丑数。
+- 超级丑数是指其所有质因数都是长度为 `k` 的质数列表 `primes` 中的正整数。
+
 ## 326 [3的幂](https://leetcode-cn.com/problems/power-of-three/)
 
 * 给定一个整数，写一个函数来判断它是否是 3 的幂次方。
@@ -3014,6 +3026,10 @@ public class Foo {
 
 * 请返回你可以得到的最大数字。
 
+## 面试题17.09 [第 k 个数](https://leetcode-cn.com/problems/get-kth-magic-number-lcci/)
+
+* 有些数的素因子只有 3，5，7，请设计一个算法找出第 k 个数。注意，不是必须有这些素因子，而是必须不包含其他的素因子。例如，前几个数按顺序应该是 1，3，5，7，9，15，21。
+
 # 随机抽样
 
 ## 382 [链表随机节点](https://leetcode-cn.com/problems/linked-list-random-node/)
@@ -3043,11 +3059,7 @@ public class Foo {
 * 给定一个非负整数 `num`，反复将各个位上的数字相加，直到结果为一位数。
 * 你可以不使用循环或者递归，且在 O(1) 时间复杂度内解决这个问题吗？
 
-## 263 [丑数](https://leetcode-cn.com/problems/ugly-number/)
 
-* 编写一个程序判断给定的数是否为丑数。
-
-* 丑数就是只包含质因数 `2, 3, 5` 的**正整数**。
 
 ## 307 [区域和检索 - 数组可修改](https://leetcode-cn.com/problems/range-sum-query-mutable/)
 

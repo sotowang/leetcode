@@ -1,4 +1,4 @@
-package 其他.t263;
+package 数学.丑数.t263;
 
 /**
  * @auther: sotowang
