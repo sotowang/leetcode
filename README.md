@@ -1307,6 +1307,14 @@ r   g  ta  e
 * 给定一个带有头结点 `head` 的非空单链表，返回链表的中间结点。
 * 如果有两个中间结点，则返回第二个中间结点。
 
+## 1095 [山脉数组中查找目标值](https://leetcode-cn.com/problems/find-in-mountain-array/)
+
+* （这是一个 **交互式问题** ）
+
+* 给你一个 **山脉数组** `mountainArr`，请你返回能够使得 `mountainArr.get(index)` **等于** `target` **最小** 的下标 `index` 值。
+
+* 如果不存在这样的下标 `index`，就请返回 `-1`。
+
 ## 面试题16.06 [最小差](https://leetcode-cn.com/problems/smallest-difference-lcci/)
 
 * 给定两个整数数组`a`和`b`，计算具有最小差绝对值的一对数值（每个数组中取一个值），并返回该对数值的差

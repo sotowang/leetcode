@@ -35,6 +35,37 @@ public class LongestPalindrome {
         return result.toString();
     }
 
+    /**
+     *
+     * @param s
+     * @return
+     */
+    public String longestPalindrome2(String s) {
+        if(s == null || s.isEmpty()){
+            return "";
+        }
+        int len = s.length();
+        boolean[][] dp = new boolean[len][len];
+        for(int i=0;i<len;i++){
+            dp[i][i] = true;
+        }
+        int max = 1;
+        String res = String.valueOf(s.charAt(0));
+        for(int i=len-2;i>=0;i--){
+            for(int j=i+1;j<len;j++){
+                if(s.charAt(i) == s.charAt(j) && (dp[i+1][j-1] || i+1==j)){
+                    dp[i][j] = true;
+                    if( j-i+1>max){
+                        max = j-i+1;
+                        res = s.substring(i,j+1);
+                    }
+                }
+
+            }
+        }
+        return res;
+    }
+
     public static void main(String[] args) {
 //        System.out.println(new LongestPalindrome().longestPalindrome("babad"));
 //        System.out.println(new LongestPalindrome().longestPalindrome("cbbd"));
