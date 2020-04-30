@@ -1484,6 +1484,10 @@ r   g  ta  e
 * **注意:**
   * 输入是整数数组。只有每个整数的**最低 8 个有效位**用来存储数据。这意味着每个整数只表示 1 字节的数据。
 
+## 476 [数字的补数](https://leetcode-cn.com/problems/number-complement/)
+
+* 给定一个正整数，输出它的补数。补数是对该数的二进制表示取反。
+
 ## 538 [汉明距离](https://leetcode-cn.com/problems/hamming-distance/)
 
 * 两个整数之间的[汉明距离](https://baike.baidu.com/item/汉明距离)指的是这两个数字对应二进制位不同的位置的数目。
@@ -1499,6 +1503,14 @@ r   g  ta  e
 ## 912 [排序数组](https://leetcode-cn.com/problems/sort-an-array/)
 
 * 给你一个整数数组 `nums`，请你将该数组升序排列。
+
+## 1009 [十进制整数的反码](https://leetcode-cn.com/problems/complement-of-base-10-integer/)
+
+* 每个非负整数 `N` 都有其二进制表示。例如， `5` 可以被表示为二进制 `"101"`，`11` 可以用二进制 `"1011"` 表示，依此类推。注意，除 `N = 0` 外，任何二进制表示中都不含前导零。
+
+* 二进制的反码表示是将每个 `1` 改为 `0` 且每个 `0` 变为 `1`。例如，二进制数 `"101"` 的二进制反码为 `"010"`。
+
+* 给你一个十进制数 `N`，请你返回其二进制表示的反码所对应的十进制整数。
 
 ## 1404 [将二进制表示减到 1 的步骤数](https://leetcode-cn.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/)
 
@@ -3038,13 +3050,20 @@ public class Foo {
 
 * 有些数的素因子只有 3，5，7，请设计一个算法找出第 k 个数。注意，不是必须有这些素因子，而是必须不包含其他的素因子。例如，前几个数按顺序应该是 1，3，5，7，9，15，21。
 
-# 随机抽样
+# 蓄水池抽样
 
 ## 382 [链表随机节点](https://leetcode-cn.com/problems/linked-list-random-node/)
 
 - 给定一个单链表，随机选择链表的一个节点，并返回相应的节点值。保证每个节点**被选的概率一样**。
 - **进阶:**
   - 如果链表十分大且长度未知，如何解决这个问题？你能否使用常数级空间复杂度实现？
+
+## 398 [随机数索引](https://leetcode-cn.com/problems/random-pick-index/)
+
+* 给定一个可能含有重复元素的整数数组，要求随机输出给定的数字的索引。 您可以假设给定的数字一定存在于数组中。
+
+* *注意：**
+  * 数组大小可能非常大。 使用太多额外空间的解决方案将不会通过测试。
 
 # 其他
 
@@ -3145,6 +3164,10 @@ public class Foo {
 ## 183 [从不订购的客户](https://leetcode-cn.com/problems/customers-who-never-order/)
 
 * 某网站包含两个表，`Customers`表和 `Orders` 表。编写一个 SQL 查询，找出所有从不订购任何东西的客户。
+
+## 184 [部门工资最高的员工](https://leetcode-cn.com/problems/department-highest-salary/)
+
+* `Employee` 表包含所有员工信息，每个员工有其对应的 Id, salary 和 department Id。
 
 ## 596 [超过5名学生的课](https://leetcode-cn.com/problems/classes-more-than-5-students/)
 
