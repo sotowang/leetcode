@@ -9,19 +9,30 @@ import java.util.Map;
  */
 public class FindTheLongestSubstring {
     public int findTheLongestSubstring(String s) {
-        char[] vowels = {'a','e','i','o','u'};
         Map<Integer,Integer> map = new HashMap<>();
         int len  = s.length();
         int state = 0;
         map.putIfAbsent(state,-1);
         int max  = 0;
         for(int i=0;i<len;i++){
-            char c = s.charAt(i);
-            for(int j=0;j<vowels.length;j++){
-                if(c == vowels[j]){
-                    state ^= (1<<vowels.length-j-1);
+            switch (s.charAt(i)) {
+                case 'a':
+                    state ^= (1 << 0);
                     break;
-                }
+                case 'e':
+                    state ^= (1 << 1);
+                    break;
+                case 'i':
+                    state ^= (1 << 2);
+                    break;
+                case 'o':
+                    state ^= (1 << 3);
+                    break;
+                case 'u':
+                    state ^= (1 << 4);
+                    break;
+                default:
+                    break;
             }
             if(map.containsKey(state)){
                 max = Math.max(max,i-map.get(state));
@@ -32,6 +43,7 @@ public class FindTheLongestSubstring {
     }
 
     public static void main(String[] args) {
-
+        String s = "eleetminicoworoep";
+        assert new FindTheLongestSubstring().findTheLongestSubstring(s) == 13;
     }
 }

@@ -789,6 +789,12 @@ r   g  ta  e
 
 * 如果是，则返回最大元素的索引，否则返回-1。
 
+## 962 [最大宽度坡](https://leetcode-cn.com/problems/maximum-width-ramp/)
+
+* 给定一个整数数组 `A`，*坡*是元组 `(i, j)`，其中 `i < j` 且 `A[i] <= A[j]`。这样的坡的宽度为 `j - i`。
+
+* 找出 `A` 中的坡的最大宽度，如果不存在，返回 0 。
+
 ## 1081 [不同字符的最小子序列](https://leetcode-cn.com/problems/smallest-subsequence-of-distinct-characters/)
 
 * 返回字符串 `text` 中按字典序排列最小的子序列，该子序列包含 `text` 中所有不同字符一次。
