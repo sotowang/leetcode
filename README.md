@@ -3145,6 +3145,12 @@ public class Foo {
 
 * 输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。
 
+# 状态压缩
+
+## 1371 [每个元音包含偶数次的最长子字符串](https://leetcode-cn.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/)
+
+* 给你一个字符串 s ，请你返回满足以下条件的最长子字符串的长度：每个元音字母，即 'a'，'e'，'i'，'o'，'u' ，在子字符串中都恰好出现了偶数次。
+
 # SQL
 
 ## 175  [组合两个表](https://leetcode-cn.com/problems/combine-two-tables/)	

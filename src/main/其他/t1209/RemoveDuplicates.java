@@ -1,6 +1,5 @@
 package 其他.t1209;
 
-import com.sun.org.apache.regexp.internal.RE;
 
 import java.util.LinkedList;
 
