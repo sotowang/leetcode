@@ -1,4 +1,4 @@
-package [1, 3, 2, 2, 3, 1];
+package 排序.t324;
 
 import java.util.Arrays;
 

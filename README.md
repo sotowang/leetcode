@@ -1554,7 +1554,9 @@ r   g  ta  e
 
 * 如果数组中多一半的数都是同一个，则称之为主要元素。给定一个**整数**数组，找到它的主要元素。若没有，返回-1
 
+## 面试题64 [求1+2+…+n](https://leetcode-cn.com/problems/qiu-12n-lcof/)
 
+* 求 `1+2+...+n` ，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。
 
 # 二分查找
 
@@ -2180,6 +2182,10 @@ r   g  ta  e
 * 给定一个只包含数字 `'0'-'9'` 的字符串，编写一个算法来判断给定输入是否是累加数。
 
 * **说明:** 累加序列里的数不会以 0 开头，所以不会出现 `1, 2, 03`或者 `1, 02, 3` 的情况。
+
+## 491 [递增子序列](https://leetcode-cn.com/problems/increasing-subsequences/)
+
+* 给定一个整型数组, 你的任务是找到所有该数组的递增子序列，递增子序列的长度至少是2。
 
 ## 698 [分为k个相等的子集](https://leetcode-cn.com/problems/partition-to-k-equal-sum-subsets/)
 
