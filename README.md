@@ -1143,6 +1143,14 @@ r   g  ta  e
 
 * 给定两个非空二叉树 **s** 和 **t**，检验 **s** 中是否包含和 **t** 具有相同结构和节点值的子树。**s** 的一个子树包括 **s** 的一个节点和这个节点的所有子孙。**s** 也可以看做它自身的一棵子树。
 
+## 589 [N叉树的前序遍历](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/)
+
+* 给定一个 N 叉树，返回其节点值的*前序遍历*。
+
+## 590 [N叉树的后序遍历](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/)
+
+* 给定一个 N 叉树，返回其节点值的*后序遍历*。
+
 ## 617 [合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees/)
 
 * 给定两个二叉树，想象当你将它们中的一个覆盖到另一个上时，两个二叉树的一些节点便会重叠。
