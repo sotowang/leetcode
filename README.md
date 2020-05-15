@@ -1027,6 +1027,10 @@ r   g  ta  e
 
 * 如果每个数的出现次数都是独一无二的，就返回 `true`；否则返回 `false`。
 
+## 1218 [最长定差子序列](https://leetcode-cn.com/problems/longest-arithmetic-subsequence-of-given-difference/)
+
+* 给你一个整数数组 `arr` 和一个整数 `difference`，请你找出 `arr` 中所有相邻元素之间的差等于给定 `difference` 的等差子序列，并返回其中最长的等差子序列的长度。
+
 ## 1248 [ 统计「优美子数组」](https://leetcode-cn.com/problems/count-number-of-nice-subarrays/)
 
 * 给你一个整数数组 `nums` 和一个整数 `k`。
@@ -1178,6 +1182,16 @@ r   g  ta  e
 4. 每个未使用的空间应包含一个空的字符串`""`。
 5. 使用相同的规则输出子树。
 
+## 993 [二叉树的堂兄弟节点](https://leetcode-cn.com/problems/cousins-in-binary-tree/)
+
+* 在二叉树中，根节点位于深度 `0` 处，每个深度为 `k`的节点的子节点位于深度 `k+1` 处。
+
+* 如果二叉树的两个节点深度相同，但**父节点不同**，则它们是一对*堂兄弟节点*。
+
+* 我们给出了具有唯一值的二叉树的根节点 `root`，以及树中两个不同节点的值 `x` 和 `y`。
+
+* 只有与值 `x` 和 `y` 对应的节点是堂兄弟节点时，才返回 `true`。否则，返回 `false`。
+
 ## 1305 [两棵二叉搜索树中的所有元素](https://leetcode-cn.com/problems/all-elements-in-two-binary-search-trees/)
 
 * 给你 `root1` 和 `root2` 这两棵二叉搜索树。
@@ -1203,11 +1217,15 @@ r   g  ta  e
 
 * 设计并实现一个算法，找出二叉树中某两个节点的第一个共同祖先。不得将其他的节点存储在另外的数据结构中。注意：这不一定是二叉搜索树。
 
+## 面试题28 对称的二叉树](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/)
 
+* 请实现一个函数，用来判断一棵二叉树是不是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。
 
 ## 面试题36 [二叉搜索树与双向链表](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
 
 * 输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的循环双向链表。要求不能创建任何新的节点，只能调整树中节点指针的指向。
+
+## 
 
 ---
 
@@ -1366,6 +1384,10 @@ r   g  ta  e
 ## 面试题16.06 [最小差](https://leetcode-cn.com/problems/smallest-difference-lcci/)
 
 * 给定两个整数数组`a`和`b`，计算具有最小差绝对值的一对数值（每个数组中取一个值），并返回该对数值的差
+
+## 面试题17.11 [单词距离](https://leetcode-cn.com/problems/find-closest-lcci/)
+
+* 有个内含单词的超大文本文件，给定任意两个单词，找出在这个文件中这两个单词的最短距离(相隔单词数)。如果寻找过程在这个文件中会重复多次，而每次寻找的单词不同，你能对此优化吗?
 
 # 排序
 
@@ -1889,6 +1911,12 @@ r   g  ta  e
   * 给定 *n* =1 3，返回 [1,10,11,12,13,2,3,4,5,6,7,8,9] 。
 
 * 请尽可能的优化算法的时间复杂度和空间复杂度。 输入的数据 *n* 小于等于 5,000,000。
+
+## 430 [平化多级双向链表](https://leetcode-cn.com/problems/flatten-a-multilevel-doubly-linked-list/)
+
+* 多级双向链表中，除了指向下一个节点和前一个节点指针之外，它还有一个子链表指针，可能指向单独的双向链表。这些子列表也可能会有一个或多个自己的子项，依此类推，生成多级数据结构，如下面的示例所示。
+
+* 给你位于列表第一级的头节点，请你扁平化列表，使所有结点出现在单级双链表中。
 
 ## 695 [岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)
 

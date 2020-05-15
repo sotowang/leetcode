@@ -1,9 +1,5 @@
 package 常用算法.其它;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
-
 /**
  * @auther: sotowang
  * @date: 2020/3/13 20:52
@@ -66,8 +62,5 @@ public class Example2 extends ClassLoader  {
         System.out.println(check("5a 5b 5a"));
         System.out.println(check("5a 12 5b ba 34 5a bb 88 05 5a 75 cd bb 62 5a 34 cd 78 cc da fb 06 5a"));
         System.out.println(check("12 5b ba 34 5b bb 88 05 5a 75 cd bb 62 5a 34 cd 78 cc da fb 06"));
-//        Scanner sc = new Scanner(System.in);
-//        String s = sc.nextLine();
-//        System.out.println(check(s));
     }
 }
