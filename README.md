@@ -1587,8 +1587,11 @@ r   g  ta  e
 * 给你一个以二进制形式表示的数字 `s` 。请你返回按下述规则将其减少到 1 所需要的步骤数：
   * 如果当前数字为偶数，则将其除以 2 。
   * 如果当前数字为奇数，则将其加上 1 。
-
 * 题目保证你总是可以按上述规则将测试用例变为 1 。
+
+## 面试题01.01  [判定字符是否唯一](https://leetcode-cn.com/problems/is-unique-lcci/)
+
+* 实现一个算法，确定一个字符串 <code>s</code> 的所有字符是否全都不同。
 
 ## 面试题17.01 [不用加号的加法](https://leetcode-cn.com/problems/add-without-plus-lcci/)
 
@@ -3128,6 +3131,12 @@ public class Foo {
 * 最小的 24 小时制时间是 00:00，而最大的是 23:59。从 00:00 （午夜）开始算起，过得越久，时间越大。
 
 * 以长度为 5 的字符串返回答案。如果不能确定有效时间，则返回空字符串。
+
+## 1037 [有效的回旋镖](https://leetcode-cn.com/problems/valid-boomerang/)
+
+* <p>回旋镖定义为一组三个点，这些点各不相同且<strong>不</strong>在一条直线上。</p>
+
+* <p>给出平面上三个点组成的列表，判断这些点是否可以构成回旋镖。</p>
 
 ## 1071 [字符串的最大公因子](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)
 
