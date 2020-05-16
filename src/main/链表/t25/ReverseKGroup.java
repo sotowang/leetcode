@@ -7,7 +7,7 @@ import 链表.ListNode;
  * @date: 2019/10/17 20:05
  */
 public class ReverseKGroup {
-    public ListNode reverseKGroup(ListNode head, int k) {
+    public ListNode reverseKGroup1(ListNode head, int k) {
         ListNode preHead = new ListNode(-1);
         ListNode dump = new ListNode(-1);
 
@@ -44,6 +44,42 @@ public class ReverseKGroup {
         }
         return dump.next;
 
+    }
+
+    /**
+     * 2020-05-16
+     * @param head
+     * @param k
+     * @return
+     */
+    public ListNode reverseKGroup(ListNode head, int k) {
+        if(head ==null){
+            return head;
+        }
+        int count = 0;
+        ListNode temHead = head;
+        while(temHead != null && count<k){
+            count++;
+            temHead = temHead.next;
+        }
+        if(count == k){
+            ListNode preHead = new ListNode(-1);
+            ListNode p = head;
+            ListNode q;
+            ListNode rear = head;
+            //完成翻转
+            for(int i=0;i<k;i++){
+                q = p.next;
+                p.next = preHead.next;
+                preHead.next  = p;
+                p = q;
+            }
+            head = preHead.next;
+            rear.next = reverseKGroup(p,k);
+            return head;
+        }else{
+            return head;
+        }
     }
 
 
