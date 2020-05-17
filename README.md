@@ -1143,6 +1143,14 @@ r   g  ta  e
 
 * 给定一棵二叉树，你需要计算它的直径长度。一棵二叉树的直径长度是任意两个结点路径长度中的最大值。这条路径可能穿过根结点。
 
+## 563 [二叉树的坡度](https://leetcode-cn.com/problems/binary-tree-tilt/)
+
+* 给定一个二叉树，计算**整个树**的坡度。
+
+* 一个树的**节点的坡度**定义即为，该节点左子树的结点之和和右子树结点之和的**差的绝对值**。空结点的的坡度是0。
+
+* **整个树**的坡度就是其所有节点的坡度之和。
+
 ## 572 [另一个树的子树](https://leetcode-cn.com/problems/subtree-of-another-tree/)
 
 * 给定两个非空二叉树 **s** 和 **t**，检验 **s** 中是否包含和 **t** 具有相同结构和节点值的子树。**s** 的一个子树包括 **s** 的一个节点和这个节点的所有子孙。**s** 也可以看做它自身的一棵子树。
@@ -1191,6 +1199,12 @@ r   g  ta  e
 * 我们给出了具有唯一值的二叉树的根节点 `root`，以及树中两个不同节点的值 `x` 和 `y`。
 
 * 只有与值 `x` 和 `y` 对应的节点是堂兄弟节点时，才返回 `true`。否则，返回 `false`。
+
+## 1008 [先序遍历构造二叉树](https://leetcode-cn.com/problems/construct-binary-search-tree-from-preorder-traversal/)
+
+* 返回与给定先序遍历 `preorder` 相匹配的二叉搜索树（binary **search** tree）的根结点。
+
+*  (回想一下，二叉搜索树是二叉树的一种，其每个节点都满足以下规则，对于 `node.left` 的任何后代，值总 `<` `node.val`，而 `node.right` 的任何后代，值总 `>` `node.val`。此外，先序遍历首先显示节点的值，然后遍历 `node.left`，接着遍历 `node.right`。）
 
 ## 1305 [两棵二叉搜索树中的所有元素](https://leetcode-cn.com/problems/all-elements-in-two-binary-search-trees/)
 
