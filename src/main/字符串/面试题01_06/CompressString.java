@@ -1,4 +1,4 @@
-package 字符串.面试题01._06;
+package 字符串.面试题01_06;
 
 /**
  * @auther: sotowang

@@ -405,6 +405,10 @@ r   g  ta  e
 
 * 字符串压缩。利用字符重复出现的次数，编写一种方法，实现基本的字符串压缩功能。比如，字符串`aabcccccaaa`会变为`a2b1c5a3`。若“压缩”后的字符串没有变短，则返回原先的字符串。你可以假设字符串中只包含大小写英文字母（a至z）。
 
+## 面试题01.09 [字符串轮转](https://leetcode-cn.com/problems/string-rotation-lcci/)
+
+* <p>字符串轮转。给定两个字符串<code>s1</code>和<code>s2</code>，请编写代码检查<code>s2</code>是否为<code>s1</code>旋转而成（比如，<code>waterbottle</code>是<code>erbottlewat</code>旋转后的字符串）。</p>
+
 ## 面试题50 [第一个只出现一次的字符](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/)
 
 * 在字符串 s 中找出第一个只出现一次的字符。如果没有，返回一个单空格。
@@ -3161,6 +3165,20 @@ public class Foo {
 * <p>回旋镖定义为一组三个点，这些点各不相同且<strong>不</strong>在一条直线上。</p>
 
 * <p>给出平面上三个点组成的列表，判断这些点是否可以构成回旋镖。</p>
+
+## 1041 [困于环中的机器人](https://leetcode-cn.com/problems/robot-bounded-in-circle/)
+
+* <p>在无限的平面上，机器人最初位于&nbsp;<code>(0, 0)</code>&nbsp;处，面朝北方。机器人可以接受下列三条指令之一：</p>
+
+  <ul>
+  	<li><code>&quot;G&quot;</code>：直走 1 个单位</li>
+  	<li><code>&quot;L&quot;</code>：左转 90 度</li>
+  	<li><code>&quot;R&quot;</code>：右转 90 度</li>
+  </ul>
+
+* <p>机器人按顺序执行指令&nbsp;<code>instructions</code>，并一直重复它们。</p>	
+
+* <p>只有在平面中存在环使得机器人永远无法离开时，返回&nbsp;<code>true</code>。否则，返回 <code>false</code>。</p>
 
 ## 1071 [字符串的最大公因子](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/)
 
