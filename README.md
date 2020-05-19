@@ -1396,6 +1396,10 @@ r   g  ta  e
 
 * 给定一个排序好的数组，两个整数 `k` 和 `x`，从数组中找到最靠近 `x`（两数之差最小）的 `k` 个数。返回的结果必须要是按升序排好的。如果有两个数与 `x`的差值一样，优先选择数值较小的那个数。
 
+## 821 [字符的最短距离](https://leetcode-cn.com/problems/shortest-distance-to-a-character/)
+
+* 给定一个字符串 `S` 和一个字符 `C`。返回一个代表字符串 `S` 中每个字符到字符串 `S` 中的字符 `C` 的最短距离的数组。
+
 ## 876 [链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/)
 
 * 给定一个带有头结点 `head` 的非空单链表，返回链表的中间结点。
