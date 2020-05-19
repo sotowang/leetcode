@@ -3305,6 +3305,17 @@ public class Foo {
 
 * 给你一个字符串 s ，请你返回满足以下条件的最长子字符串的长度：每个元音字母，即 'a'，'e'，'i'，'o'，'u' ，在子字符串中都恰好出现了偶数次。
 
+# 多线程
+
+## 1195 [交替打印字符串](https://leetcode-cn.com/problems/fizz-buzz-multithreaded/)
+
+* 编写一个可以从 1 到 n 输出代表这个数字的字符串的程序，但是：
+  * 如果这个数字可以被 3 整除，输出 "fizz"。
+  * 如果这个数字可以被 5 整除，输出 "buzz"。
+  * 如果这个数字可以同时被 3 和 5 整除，输出 "fizzbuzz"。
+
+
+
 # SQL
 
 ## 175  [组合两个表](https://leetcode-cn.com/problems/combine-two-tables/)	
