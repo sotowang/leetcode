@@ -1139,6 +1139,10 @@ r   g  ta  e
   - 所有节点的值都是唯一的。
   - p、q 为不同节点且均存在于给定的二叉树中。
 
+## 404 [左叶子之和](https://leetcode-cn.com/problems/sum-of-left-leaves/)
+
+* 计算给定二叉树的所有左叶子之和。
+
 ## 440 [字典序的第K小数字](https://leetcode-cn.com/problems/k-th-smallest-in-lexicographical-order/)
 
 * 给定整数 `n` 和 `k`，找到 `1` 到 `n` 中字典序第 `k` 小的数字。
@@ -3203,10 +3207,12 @@ public class Foo {
 ## 1323 [ 6 和 9 组成的最大数字](https://leetcode-cn.com/problems/maximum-69-number/)
 
 * 给你一个仅由数字 6 和 9 组成的正整数 `num`。
-
 * 你最多只能翻转一位数字，将 6 变成 9，或者把 9 变成 6 。
-
 * 请返回你可以得到的最大数字。
+
+## 面试题16.01 [交换数字](https://leetcode-cn.com/problems/swap-numbers-lcci/)
+
+* 编写一个函数，不用临时变量，直接交换numbers = [a, b]中a与b的值。
 
 ## 面试题17.09 [第 k 个数](https://leetcode-cn.com/problems/get-kth-magic-number-lcci/)
 
