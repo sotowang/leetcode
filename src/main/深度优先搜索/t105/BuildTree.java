@@ -2,33 +2,28 @@ package 深度优先搜索.t105;
 
 import 深度优先搜索.TreeNode;
 
-import java.util.Arrays;
-
 /**
  * @auther: sotowang
  * @date: 2019/11/06 19:40
  */
 public class BuildTree {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-        if (preorder.length == 0 || inorder.length == 0) {
+        return build(preorder,0,preorder.length-1,inorder,0,inorder.length-1);
+    }
+    private TreeNode build(int[] preorder,int pStart,int pEnd,int[] inorder ,int iStart,int iEnd){
+        if(pStart>pEnd || iStart>iEnd){
             return null;
         }
-        TreeNode root = new TreeNode(preorder[0]);
-        int mark = 0;
-        for (int i = 0; i < inorder.length; i++) {
-            if (inorder[i] == root.val) {
-                mark = i;
+        TreeNode root = new TreeNode(preorder[pStart]);
+        int index = -1;
+        for(int i=iStart;i<inorder.length;i++){
+            if(inorder[i] == preorder[pStart]){
+                index = i;
+                break;
             }
         }
-
-        int[] preLeft = Arrays.copyOfRange(preorder, 1, mark + 1);
-        int[] preRight = Arrays.copyOfRange(preorder, mark + 1, preorder.length);
-
-        int[] inLeft = Arrays.copyOfRange(inorder, 0, mark);
-        int[] inRight = Arrays.copyOfRange(inorder, mark + 1, inorder.length);
-
-        root.left = buildTree(preLeft, inLeft);
-        root.right = buildTree(preRight, inRight);
+        root.left = build(preorder,pStart+1,pStart+index-iStart,inorder,iStart,index);
+        root.right =  build(preorder,pStart + index-iStart+1,pEnd,inorder,index+1,iEnd);
         return root;
     }
 

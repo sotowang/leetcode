@@ -1,4 +1,4 @@
-package 树.t404;
+package 树.子树.t404;
 
 import 广度优先搜索.TreeNode;
 
