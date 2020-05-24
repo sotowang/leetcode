@@ -641,6 +641,12 @@ r   g  ta  e
 
 * 形式上，如果可以找出索引 `i+1 < j` 且满足 `(A[0] + A[1] + ... + A[i] == A[i+1] + A[i+2] + ... + A[j-1] == A[j] + A[j-1] + ... + A[A.length - 1])` 就可以将数组三等分。
 
+## 1053 [交换一次的先前排列](https://leetcode-cn.com/problems/previous-permutation-with-one-swap/)
+
+* <p>给你一个正整数的数组 <code>A</code>（其中的元素不一定完全不同），请你返回可在&nbsp;<strong>一次交换</strong>（交换两数字 <code>A[i]</code> 和 <code>A[j]</code> 的位置）后得到的、按字典序排列小于 <code>A</code> 的最大可能排列。</p>
+
+* <p>如果无法这么操作，就请返回原数组。</p>
+
 ## 1103 [分糖果 II](https://leetcode-cn.com/problems/distribute-candies-to-people/)
 
 * 排排坐，分糖果。
@@ -1207,6 +1213,12 @@ r   g  ta  e
   3. 根节点的值（以字符串格式给出）应当放在可放置的第一行正中间。根节点所在的行与列会将剩余空间划分为两部分（**左下部分和右下部分**）。你应该将左子树输出在左下部分，右子树输出在右下部分。左下和右下部分应当有相同的大小。即使一个子树为空而另一个非空，你不需要为空的子树输出任何东西，但仍需要为另一个子树留出足够的空间。然而，如果两个子树都为空则不需要为它们留出任何空间。
   4. 每个未使用的空间应包含一个空的字符串`""`。
   5. 使用相同的规则输出子树。
+
+## 938 [二叉搜索树的范围和](https://leetcode-cn.com/problems/range-sum-of-bst/)
+
+* <p>给定二叉搜索树的根结点&nbsp;<code>root</code>，返回 <code>L</code> 和 <code>R</code>（含）之间的所有结点的值的和。</p>
+
+* <p>二叉搜索树保证具有唯一的值。</p>
 
 ## 951 [翻转等价二叉树](https://leetcode-cn.com/problems/flip-equivalent-binary-trees/)
 
