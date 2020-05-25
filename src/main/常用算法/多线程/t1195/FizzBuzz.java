@@ -1,5 +1,8 @@
 package 常用算法.多线程.t1195;
 
+import java.util.concurrent.Semaphore;
+import java.util.function.IntConsumer;
+
 /**
  * @auther: sotowang
  * @date: 2020/05/19 22:22
