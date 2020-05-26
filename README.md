@@ -397,6 +397,10 @@ r   g  ta  e
 
 * 你可以按任意顺序以列表形式返回 `A` 中所有的通用单词。
 
+## 1016 [子串能表示从 1 到 N 数字的二进制串](https://leetcode-cn.com/problems/binary-string-with-substrings-representing-1-to-n/)
+
+* 给定一个二进制字符串 S（一个仅由若干 '0' 和 '1' 构成的字符串）和一个正整数 N，如果对于从 1 到 N 的每个整数 X，其二进制表示都是 S 的子串，就返回 true，否则返回 false。
+
 ## 1324 [竖直打印单词](https://leetcode-cn.com/problems/print-words-vertically/)
 
 * 给你一个字符串 `s`。请你按照单词在 `s` 中的出现顺序将它们全部竖直返回。 单词应该以字符串列表的形式返回，必要时用空格补位，但输出尾部的空格需要删除（不允许尾随空格）。 每个单词只能放在一列上，每一列中也只能有一个单词。
@@ -1264,6 +1268,14 @@ r   g  ta  e
 
 * 给你一棵二叉树，它的根为 `root` 。请你删除 1 条边，使二叉树分裂成两棵子树，且它们子树和的乘积尽可能大。
 * 由于答案可能会很大，请你将结果对 10^9 + 7 取模后再返回。
+
+## 1379 [找出克隆二叉树中的相同节点](https://leetcode-cn.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/)
+
+* <p>给你两棵二叉树，原始树 <code>original</code> 和克隆树 <code>cloned</code>，以及一个位于原始树 <code>original</code>&nbsp;中的目标节点&nbsp;<code>target</code>。</p>
+
+* <p>其中，克隆树 <code>cloned</code>&nbsp;是原始树 <code>original</code>&nbsp;的一个<strong> 副本 </strong>。</p>
+
+* <p>请找出在树&nbsp;<code>cloned</code>&nbsp;中，与&nbsp;<code>target</code>&nbsp;<strong>相同&nbsp;</strong>的节点，并返回对该节点的引用（在 C/C++ 等有指针的语言中返回 节点指针，其他语言返回节点本身）。</p>
 
 ## 面试题04.08 [首个共同祖先](https://leetcode-cn.com/problems/first-common-ancestor-lcci/)
 

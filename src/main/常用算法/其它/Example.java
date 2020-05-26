@@ -8,6 +8,7 @@ package 常用算法.其它;
 public  class Example {
 
     public static void main(String[] args) {
+        "sss".contains("s");
 
     }
 
