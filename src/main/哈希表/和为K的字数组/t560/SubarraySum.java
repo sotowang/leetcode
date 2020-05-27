@@ -1,6 +1,5 @@
-package 哈希表.t560;
+package 哈希表.和为K的字数组.t560;
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 /**
