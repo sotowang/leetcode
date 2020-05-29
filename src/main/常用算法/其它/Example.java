@@ -9,7 +9,7 @@ public  class Example {
 
     public static void main(String[] args) {
         "sss".contains("s");
-
+        System.out.println("abc".compareTo("0"));
     }
 
 }
