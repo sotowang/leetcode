@@ -1675,6 +1675,10 @@ r   g  ta  e
 
 * 实现一个算法，确定一个字符串 <code>s</code> 的所有字符是否全都不同。
 
+## 面试题05.06 [ 整数转换](https://leetcode-cn.com/problems/convert-integer-lcci/)
+
+* 整数转换。编写一个函数，确定需要改变几个位才能将整数A转成整数B。
+
 ## 面试题17.01 [不用加号的加法](https://leetcode-cn.com/problems/add-without-plus-lcci/)
 
 - 设计一个函数把两个数字相加。不得使用 + 或者其他算术运算符。
@@ -2874,6 +2878,16 @@ bool search(word)
 * 序列化是将一个数据结构或者对象转换为连续的比特位的操作，进而可以将转换后的数据存储在一个文件或者内存中，同时也可以通过网络传输到另一个计算机环境，采取相反方式重构得到原数据。
 
 * 请设计一个算法来实现二叉树的序列化与反序列化。这里不限定你的序列 / 反序列化算法执行逻辑，你只需要保证一个二叉树可以被序列化为一个字符串并且将这个字符串反序列化为原始的树结构。
+
+## 380 [常数时间插入、删除和获取随机元素](https://leetcode-cn.com/problems/insert-delete-getrandom-o1/)
+
+* <p>设计一个支持在<em>平均&nbsp;</em>时间复杂度 <strong>O(1)</strong>&nbsp;下，执行以下操作的数据结构。</p>
+
+  <ol>
+  	<li><code>insert(val)</code>：当元素 val 不存在时，向集合中插入该项。</li>
+  	<li><code>remove(val)</code>：元素 val 存在时，从集合中移除该项。</li>
+  	<li><code>getRandom</code>：随机返回现有集合中的一项。每个元素应该有<strong>相同的概率</strong>被返回。</li>
+  </ol>
 
 ## 622 [设计循环队列](https://leetcode-cn.com/problems/design-circular-queue/)
 

@@ -6,9 +6,10 @@ import java.util.*;
  * @author: wangsongtao
  * @date: 2020/05/29 21:20
  */
-public class RandomizedSet {
+class RandomizedSet {
     Map<Integer,Integer> map;
     List<Integer> list;
+    private int size;
     /** Initialize your data structure here. */
     public RandomizedSet() {
         map = new HashMap<>();
@@ -17,28 +18,35 @@ public class RandomizedSet {
 
     /** Inserts a value to the set. Returns true if the set did not already contain the specified element. */
     public boolean insert(int val) {
-        if(map.containsKey(val) || map.getOrDefault(val,0) == 0){
+        if( map.containsKey(val)){
             return false;
         }
-        map.put(val,map.get(val)+1);
+        map.put(val,1);
         list.add(val);
+        size++;
         return true;
     }
 
     /** Removes a value from the set. Returns true if the set contained the specified element. */
     public boolean remove(int val) {
-        if(map.containsKey(val) || map.getOrDefault(val,0) == 0){
+        if(!map.containsKey(val)){
             return false;
         }
         list.remove(Integer.valueOf(val));
-        map.put(val,map.get(val)-1);
+        map.remove(val);
+        size--;
         return true;
     }
 
     /** Get a random element from the set. */
     public int getRandom() {
+        if(size ==0){
+            return -1;
+        }else if(size == 1){
+            return list.get(0);
+        }
         Random rd = new Random();
-        return list.get(rd.nextInt(list.size()));
+        return list.get(rd.nextInt(size));
     }
 
     public static void main(String[] args) {
