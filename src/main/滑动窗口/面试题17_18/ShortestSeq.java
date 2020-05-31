@@ -8,50 +8,42 @@ import java.util.*;
  */
 public class ShortestSeq {
     public int[] shortestSeq(int[] big, int[] small) {
-        HashMap<Integer, Integer> map = new HashMap();
-        HashSet<Integer> temSet = new HashSet<>();
-        for (int i = 0; i < small.length; i++) {
-            map.put(small[i], 0);
+        int left = 0;
+        int right = 0;
+        int match = 0;
+        Set<Integer> smallSet = new HashSet<>();
+        Map<Integer,Integer> map = new HashMap<>();
+        for(int i=0;i<small.length;i++){
+            smallSet.add(small[i]);
         }
-        for (int i = 0; i < big.length; i++) {
-            if (map.containsKey(big[i])) {
-                map.put(big[i], map.get(big[i]) + 1);
-                temSet.add(big[i]);
+        int[] res = {-1,big.length};
+        while(right<big.length){
+            if(smallSet.contains(big[right])){
+                int val = map.getOrDefault(big[right],0);
+                if(val == 0){
+                    match++;
+                }
+                map.put(big[right],val+1);
             }
+            while(match == small.length){
+                if(right -left < res[1]-res[0] ||(right -left == res[1]-res[0] && left<res[0]) ){
+                    res[0] = left;
+                    res[1] = right;
+                }
+                int val = map.getOrDefault(big[left],0);
+                if(val==1){
+                    match--;
+                }
+                map.put(big[left],val-1);
+                left++;
+            }
+            right++;
         }
-        if (temSet.size() != small.length) {
+        if(res[0] == -1){
             return new int[]{};
+        }else{
+            return res;
         }
-        int[] res = new int[2];
-        for (int i = 0; i < big.length; i++) {
-            if (!map.containsKey(big[i])) {
-                continue;
-            }
-            int cnt = map.get(big[i]);
-            if (cnt == 0) {
-                return res;
-            }
-            map.put(big[i], cnt - 1);
-            temSet.clear();
-            temSet.add(big[i]);
-            int end = i;
-            for (int j = i + 1; j < big.length && temSet.size() < small.length; j++) {
-                if (map.containsKey(big[j])) {
-                    end = j;
-                    temSet.add(big[j]);
-                }
-            }
-            if (temSet.size() == small.length) {
-                if ((res[0] == 0 && res[1] == 0) || res[1] - res[0] > end - i) {
-                    res[0] = i;
-                    res[1] = end;
-                } else if (res[1] - res[0] == end - i && res[0] > i) {
-                  res[0] = i;
-                  res[1] = end;
-                }
-            }
-        }
-        return res;
     }
 
     public static void main(String[] args) {

@@ -2191,6 +2191,12 @@ r   g  ta  e
   * 字母异位词指字母相同，但排列不同的字符串。
   * 不考虑答案输出的顺序。
 
+## 面试题17.18 [ 最短超串](https://leetcode-cn.com/problems/shortest-supersequence-lcci/)
+
+* <p>假设你有两个数组，一个长一个短，短的元素均不相同。找到长数组中包含短数组所有的元素的最短子数组，其出现顺序无关紧要。</p>
+
+* <p>返回最短子数组的左端点和右端点，如有多个满足条件的子数组，返回左端点最小的一个。若不存在，返回空数组。</p>
+
 # 回溯算法
 
 ## 22 [括号生成](https://leetcode-cn.com/problems/generate-parentheses/)

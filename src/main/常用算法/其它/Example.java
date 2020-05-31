@@ -8,8 +8,10 @@ package 常用算法.其它;
 public  class Example {
 
     public static void main(String[] args) {
-        "sss".contains("s");
-        System.out.println("abc".compareTo("0"));
+        String s = "we are happy now";
+//        s = s.replaceAll("\\s+", "%20");
+        s = s.replace(" ", "20%");
+        System.out.println(s);
     }
 
 }
