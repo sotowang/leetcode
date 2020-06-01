@@ -689,6 +689,12 @@ r   g  ta  e
 
 * 请你返回按上述条件可以组建的作战单位数量。每个士兵都可以是多个作战单位的一部分。
 
+## 1431 [拥有最多糖果的孩子](https://leetcode-cn.com/problems/kids-with-the-greatest-number-of-candies/)
+
+* <p>给你一个数组&nbsp;<code>candies</code>&nbsp;和一个整数&nbsp;<code>extraCandies</code>&nbsp;，其中&nbsp;<code>candies[i]</code>&nbsp;代表第 <code>i</code> 个孩子拥有的糖果数目。</p>
+
+*  <p>对每一个孩子，检查是否存在一种方案，将额外的&nbsp;<code>extraCandies</code>&nbsp;个糖果分配给孩子们之后，此孩子有 <strong>最多</strong>&nbsp;的糖果。注意，允许有多个孩子同时拥有 <strong>最多</strong>&nbsp;的糖果数目。</p>
+
 ## [面试题01.07 旋转矩阵](https://leetcode-cn.com/problems/rotate-matrix-lcci/)
 
 给你一幅由 `N × N` 矩阵表示的图像，其中每个像素的大小为 4 字节。请你设计一种算法，将图像旋转 90 度。
@@ -1449,6 +1455,22 @@ r   g  ta  e
 ## 821 [字符的最短距离](https://leetcode-cn.com/problems/shortest-distance-to-a-character/)
 
 * 给定一个字符串 `S` 和一个字符 `C`。返回一个代表字符串 `S` 中每个字符到字符串 `S` 中的字符 `C` 的最短距离的数组。
+
+## 845 [数组中的最长山脉](https://leetcode-cn.com/problems/longest-mountain-in-array/)
+
+* <p>我们把数组 A 中符合下列属性的任意连续子数组 B 称为 &ldquo;<em>山脉&rdquo;</em>：</p>
+
+* <ul>
+	  <li><code>B.length &gt;= 3</code></li>
+	  <li>存在 <code>0 &lt; i&nbsp;&lt; B.length - 1</code> 使得 <code>B[0] &lt; B[1] &lt; ... B[i-1] &lt; B[i] &gt; B[i+1] &gt; ... &gt; B[B.length - 1]</code></li>
+</ul>
+
+
+* <p>（注意：B 可以是 A 的任意子数组，包括整个数组 A。）</p>
+
+* <p>给出一个整数数组 <code>A</code>，返回最长 <em>&ldquo;山脉&rdquo;</em>&nbsp;的长度。</p>
+
+* <p>如果不含有 &ldquo;<em>山脉&rdquo;&nbsp;</em>则返回 <code>0</code>。</p>
 
 ## 876 [链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/)
 
