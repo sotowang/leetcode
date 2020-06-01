@@ -2,7 +2,6 @@ package 回溯算法.t46;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 public class Permute {
     public List<List<Integer>> permute(int[] nums) {
@@ -29,9 +28,7 @@ public class Permute {
     }
 
     public static void main(String[] args) {
-        List<List<Integer>> result = new Permute().permute(new int[]{1, 1, 2});
-        for (int i = 0; i < result.size(); i++) {
-            System.out.println(result.get(i));
-        }
+        List<List<Integer>> result = new Permute().permute(new int[]{1, 2, 3});
+        System.out.println(result);
     }
 }
