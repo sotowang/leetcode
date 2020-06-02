@@ -387,6 +387,10 @@ r   g  ta  e
   - `s.length` 在1到50,000之间。
   - `s` 只包含“0”或“1”字符。
 
+## 709 [转换成小写字母](https://leetcode-cn.com/problems/to-lower-case/)
+
+* 实现函数 ToLowerCase()，该函数接收一个字符串参数 str，并将该字符串中的大写字母转换成小写字母，之后返回新的字符串。
+
 ## 916 [单词子集](https://leetcode-cn.com/problems/word-subsets/)
 
 * 我们给出两个单词数组 `A` 和 `B`。每个单词都是一串小写字母。
