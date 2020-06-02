@@ -633,6 +633,14 @@ r   g  ta  e
 
 在完成这样的分组后返回 `left` 的**长度**。可以保证存在这样的划分方法。
 
+## 922 [按奇偶排序数组 II](https://leetcode-cn.com/problems/sort-array-by-parity-ii/)
+
+* <p>给定一个非负整数数组&nbsp;<code>A</code>， A 中一半整数是奇数，一半整数是偶数。</p>
+
+  <p>对数组进行排序，以便当&nbsp;<code>A[i]</code> 为奇数时，<code>i</code>&nbsp;也是奇数；当&nbsp;<code>A[i]</code>&nbsp;为偶数时， <code>i</code> 也是偶数。</p>
+
+  <p>你可以返回任何满足上述条件的数组作为答案。</p>
+
 ## 945 [使数组唯一的最小增量](https://leetcode-cn.com/problems/minimum-increment-to-make-array-unique/)
 
 * 给定整数数组 A，每次 *move* 操作将会选择任意 `A[i]`，并将其递增 `1`。
