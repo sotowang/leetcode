@@ -1551,7 +1551,16 @@ r   g  ta  e
 * 给定一位研究者论文被引用次数的数组（被引用次数是非负整数）。编写一个方法，计算出研究者的 h 指数。
 * `h 指数的定义`: “h 代表“高引用次数”（high citations），一名科研人员的 h 指数是指他（她）的 （N 篇论文中）至多有 h 篇论文分别被引用了至少 h 次。（其余的 N - h 篇论文每篇被引用次数不多于 h 次。）”
 
+## 435 [无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals/)
 
+* <p>给定一个区间的集合，找到需要移除区间的最小数量，使剩余区间互不重叠。</p>
+
+  <p><strong>注意:</strong></p>
+
+  <ol>
+  	<li>可以认为区间的终点总是大于它的起点。</li>
+  	<li>区间 [1,2] 和 [2,3] 的边界相互&ldquo;接触&rdquo;，但没有相互重叠。</li>
+  </ol>
 
 ## 763 [划分字母区间](https://leetcode-cn.com/problems/partition-labels/)
 
