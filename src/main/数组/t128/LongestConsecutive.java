@@ -1,7 +1,9 @@
-package 字节跳动.数组.t128;
+package 数组.t128;
 
-import java.util.HashSet;
-
+/**
+ * @auther: sotowang
+ * @date: 2020/06/06 14:32
+ */
 public class LongestConsecutive {
     public int longestConsecutive(int[] nums) {
         if(nums == null || nums.length == 0){
@@ -30,9 +32,5 @@ public class LongestConsecutive {
             res = Math.max(count,res);
         }
         return res;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new LongestConsecutive().longestConsecutive(new int[]{100, 4, 200, 1, 3, 2}));
     }
 }

@@ -517,6 +517,11 @@ r   g  ta  e
 
 * 在杨辉三角中，每个数是它左上方和右上方的数的和。
 
+## 128 [最长连续序列](https://leetcode-cn.com/problems/longest-consecutive-sequence/)
+
+* 给定一个未排序的整数数组，找出最长连续序列的长度。
+* 要求算法的时间复杂度为 *O(n)*。
+
 ## 152 [乘积最大子序列](https://leetcode-cn.com/problems/maximum-product-subarray/)
 
 * 给定一个整数数组 `nums` ，找出一个序列中乘积最大的连续子序列（该序列至少包含一个数）。
