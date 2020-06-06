@@ -1,6 +1,7 @@
 package 字节跳动.数组.t128;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class LongestConsecutive {
     public int longestConsecutive(int[] nums) {
