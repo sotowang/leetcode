@@ -55,11 +55,6 @@ public class MaximalRectangle {
         //{"1","0","1","1","1"}
         //{"1","1","1","1","1"}
         //{"1","0","0","1","0"}
-        char[][] matrix1 = new char[][]{
-                {'1', '0'},
-                {'0', '1'},
-        };
-        assert new MaximalRectangle().maximalRectangle(matrix1) == 1;
         char[][] matrix = new char[][]{
                 {'1', '0', '1', '0', '0'},
                 {'1', '0', '1', '1', '1'},
@@ -67,6 +62,12 @@ public class MaximalRectangle {
                 {'1', '0', '0', '1', '0'}
         };
         assert new MaximalRectangle().maximalRectangle(matrix) == 6;
+        char[][] matrix1 = new char[][]{
+                {'1', '0'},
+                {'0', '1'},
+        };
+        assert new MaximalRectangle().maximalRectangle(matrix1) == 1;
+
 
 
     }

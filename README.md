@@ -3292,10 +3292,14 @@ public class Foo {
 ## 949 [给定数字能组成的最大时间](https://leetcode-cn.com/problems/largest-time-for-given-digits/)
 
 * 给定一个由 4 位数字组成的数组，返回可以设置的符合 24 小时制的最大时间。
-
 * 最小的 24 小时制时间是 00:00，而最大的是 23:59。从 00:00 （午夜）开始算起，过得越久，时间越大。
-
 * 以长度为 5 的字符串返回答案。如果不能确定有效时间，则返回空字符串。
+
+## 976 [三角形的最大周长](https://leetcode-cn.com/problems/largest-perimeter-triangle/)
+
+* 给定由一些正数（代表长度）组成的数组 `A`，返回由其中三个长度组成的、**面积不为零**的三角形的最大周长。
+
+* 如果不能形成任何面积不为零的三角形，返回 `0`。
 
 ## 1037 [有效的回旋镖](https://leetcode-cn.com/problems/valid-boomerang/)
 

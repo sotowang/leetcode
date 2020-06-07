@@ -30,7 +30,7 @@ public class LongestConsecutive {
             }
             while(set.remove(right++)){
                 count++;
-                //set.remove(right-1);
+                //semaximalRectanglet.remove(right-1);
             }
             res = Math.max(count,res);
         }
