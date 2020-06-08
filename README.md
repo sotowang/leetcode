@@ -1356,10 +1356,14 @@ r   g  ta  e
 ## 959 [由斜杠划分区域](https://leetcode-cn.com/problems/regions-cut-by-slashes/)
 
 * 在由 1 x 1 方格组成的 N x N 网格 `grid` 中，每个 1 x 1 方块由 `/`、`` 或空格构成。这些字符会将方块划分为一些共边的区域。
-
 * （请注意，反斜杠字符是转义的，因此 `` 用 `"\\"` 表示。）。
-
 * 返回区域的数目。
+
+## 990 [等式方程的可满足性](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/)
+
+* <p>给定一个由表示变量之间关系的字符串方程组成的数组，每个字符串方程 <code>equations[i]</code> 的长度为 <code>4</code>，并采用两种不同的形式之一：<code>&quot;a==b&quot;</code> 或&nbsp;<code>&quot;a!=b&quot;</code>。在这里，a 和 b 是小写字母（不一定不同），表示单字母变量名。</p>
+
+  <p>只有当可以将整数分配给变量名，以便满足所有给定的方程时才返回&nbsp;<code>true</code>，否则返回 <code>false</code>。&nbsp;</p>
 
 ---
 
