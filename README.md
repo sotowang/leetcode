@@ -1692,6 +1692,10 @@ r   g  ta  e
 * **注意:**
   * 输入是整数数组。只有每个整数的**最低 8 个有效位**用来存储数据。这意味着每个整数只表示 1 字节的数据。
 
+## 405 [数字转换为十六进制数](https://leetcode-cn.com/problems/convert-a-number-to-hexadecimal/)
+
+* 给定一个整数，编写一个算法将这个数转换为十六进制数。对于负整数，我们通常使用 补码运算 方法。
+
 ## 476 [数字的补数](https://leetcode-cn.com/problems/number-complement/)
 
 * 给定一个正整数，输出它的补数。补数是对该数的二进制表示取反。
