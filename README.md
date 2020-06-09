@@ -2101,6 +2101,17 @@ r   g  ta  e
   * 树的根节点的 **深度** 为 `0`，如果某一节点的深度为 `d`，那它的子节点的深度就是 `d+1`
   * 如果我们假定 `A` 是一组节点 `S` 的 **最近公共祖先**，<font color="#c7254e" face="Menlo, Monaco, Consolas, Courier New, monospace">S</font> 中的每个节点都在以 `A` 为根节点的子树中，且 `A` 的深度达到此条件下可能的最大值。
 
+## 1315 [祖父节点值为偶数的节点和](https://leetcode-cn.com/problems/sum-of-nodes-with-even-valued-grandparent/)
+
+* <p>给你一棵二叉树，请你返回满足以下条件的所有节点的值之和：</p>
+
+  <ul>
+  	<li>该节点的祖父节点的值为偶数。（一个节点的祖父节点是指该节点的父节点的父节点。）</li>
+  </ul>
+
+
+  <p>如果不存在祖父节点值为偶数的节点，那么返回&nbsp;<code>0</code> 。</p>
+
 # 拓扑排序
 
 ## 210 [课程表 II](https://leetcode-cn.com/problems/course-schedule-ii/)
