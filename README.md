@@ -632,6 +632,22 @@ r   g  ta  e
 
 * 找出该数组内乘积小于 `k` 的连续的子数组的个数。
 
+## 825 [适龄的朋友](https://leetcode-cn.com/problems/friends-of-appropriate-ages/)
+
+* 人们会互相发送好友请求，现在给定一个包含有他们年龄的数组，`ages[i]` 表示第 i 个人的年龄。
+
+当满足以下条件时，A 不能给 B（A、B不为同一人）发送好友请求：
+
+- `age[B] <= 0.5 * age[A] + 7`
+- `age[B] > age[A]`
+- `age[B] > 100 && age[A] < 100`
+
+* 否则，A 可以给 B 发送好友请求。
+
+* 注意如果 A 向 B 发出了请求，不等于 B 也一定会向 A 发出请求。而且，人们不会给自己发送好友请求。 
+
+* 求总共会发出多少份好友请求?
+
 ## 915 [分割数组](https://leetcode-cn.com/problems/partition-array-into-disjoint-intervals/)
 
 给定一个数组 `A`，将其划分为两个不相交（没有公共元素）的连续子数组 `left` 和 `right`， 使得：
