@@ -9,25 +9,16 @@ import java.util.LinkedList;
  */
 public class DailyTemperatures {
     public int[] dailyTemperatures(int[] T) {
-        if (T == null || T.length == 0) {
-            return new int[]{};
-        }
-        LinkedList<Integer> tem = new LinkedList<>();
+        LinkedList<Integer> stack = new LinkedList<>();
         int[] res = new int[T.length];
-        for (int i = 0; i < res.length; i++) {
-            res[i] = i;
-        }
-        //tem存放下标
-        tem.push(0);
-        for (int i = 1; i < T.length; i++) {
-            while (!tem.isEmpty() && T[tem.peek()] < T[i]) {
-                int index = tem.pop();
-                res[index] = i - index;
+        stack.push(0);
+        for(int i=1;i<T.length;i++){
+            while(!stack.isEmpty() && T[i]>T[stack.peek()]){
+                int index= stack.pop();
+                res[index] = i-index;
             }
-            tem.push(i);
-        }
-        while (!tem.isEmpty()) {
-            res[tem.pop()] = 0;
+            stack.push(i);
+
         }
         return res;
     }
