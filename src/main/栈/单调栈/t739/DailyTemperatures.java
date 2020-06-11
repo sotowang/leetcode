@@ -1,4 +1,4 @@
-package 栈.t739;
+package 栈.单调栈.t739;
 
 import java.util.Arrays;
 import java.util.LinkedList;
