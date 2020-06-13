@@ -1735,10 +1735,14 @@ r   g  ta  e
 ## 1009 [十进制整数的反码](https://leetcode-cn.com/problems/complement-of-base-10-integer/)
 
 * 每个非负整数 `N` 都有其二进制表示。例如， `5` 可以被表示为二进制 `"101"`，`11` 可以用二进制 `"1011"` 表示，依此类推。注意，除 `N = 0` 外，任何二进制表示中都不含前导零。
-
 * 二进制的反码表示是将每个 `1` 改为 `0` 且每个 `0` 变为 `1`。例如，二进制数 `"101"` 的二进制反码为 `"010"`。
-
 * 给你一个十进制数 `N`，请你返回其二进制表示的反码所对应的十进制整数。
+
+## 1017 [负二进制转换](https://leetcode-cn.com/problems/convert-to-base-2/)
+
+* 给定一个整数数组 `A`，返回 `A` 中最长等差子序列的**长度**。
+
+* 回想一下，`A` 的子序列是列表 `A[i_1], A[i_2], ..., A[i_k]`其中 `0 <= i_1 < i_2 < ... < i_k <= A.length - 1`。并且如果 `B[i+1] - B[i]`( `0 <= i < B.length - 1`) 的值都相同，那么序列 `B` 是等差的。
 
 ## 1404 [将二进制表示减到 1 的步骤数](https://leetcode-cn.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/)
 
