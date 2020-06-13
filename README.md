@@ -623,8 +623,13 @@ r   g  ta  e
 ## 605 [种花问题](https://leetcode-cn.com/problems/can-place-flowers/)
 
 * 假设你有一个很长的花坛，一部分地块种植了花，另一部分却没有。可是，花卉不能种植在相邻的地块上，它们会争夺水源，两者都会死去。
-
 * 给定一个花坛（表示为一个数组包含0和1，其中0表示没种植花，1表示种植了花），和一个数 **n** 。能否在不打破种植规则的情况下种入 **n** 朵花？能则返回True，不能则返回False。
+
+## 665 [非递减数列](https://leetcode-cn.com/problems/non-decreasing-array/)
+
+* 给你一个长度为 `n` 的整数数组，请你判断在 **最多** 改变 `1` 个元素的情况下，该数组能否变成一个非递减数列。
+
+* 我们是这样定义一个非递减数列的： 对于数组中所有的 `i` `(0 <= i <= n-2)`，总满足 `nums[i] <= nums[i + 1]`。
 
 ## 713 [乘积小于K的子数组](https://leetcode-cn.com/problems/subarray-product-less-than-k/)
 
@@ -2460,6 +2465,12 @@ r   g  ta  e
 
 * 返回一条可行的路径，路径由经过的网格的行号和列号组成。左上角为 0 行 0 列。
 
+## 面试题38 [字符串的排列](https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/)
+
+* 输入一个字符串，打印出该字符串中字符的所有排列。
+
+* 你可以以任意顺序返回这个字符串数组，但里面不能有重复元素。
+
 # 贪心算法
 
 ## 45 [跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)
@@ -2889,6 +2900,12 @@ F(N) = F(N - 1) + F(N - 2), 其中 N > 1.
 * **词链**是单词 `[word_1, word_2, ..., word_k]` 组成的序列，`k >= 1`，其中 `word_1` 是 `word_2` 的前身，`word_2` 是 `word_3` 的前身，依此类推。
 
 * 从给定单词列表 `words` 中选择单词组成词链，返回词链的最长可能长度。
+
+## 1139 [最大的以 1 为边界的正方形](https://leetcode-cn.com/problems/largest-1-bordered-square/)
+
+* 给你一个由若干 `0` 和 `1` 组成的二维网格 `grid`，请你找出边界全部由 `1` 组成的最大 **正方形** 子网格，并返回该子网格中的元素数量。如果不存在，则返回 `0`。
+
+ 
 
 ## 1312 [让字符串成为回文串的最少插入次数](https://leetcode-cn.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/)
 
