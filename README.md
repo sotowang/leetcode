@@ -710,6 +710,14 @@ r   g  ta  e
 * 形式上，`dominoes[i] = [a, b]` 和 `dominoes[j] = [c, d]` 等价的前提是 `a==c` 且 `b==d`，或是 `a==d` 且 `b==c`。
 * 在 `0 <= i < j < dominoes.length` 的前提下，找出满足 `dominoes[i]` 和 `dominoes[j]` 等价的骨牌对 `(i, j)` 的数量。
 
+## 1300 [转变数组后最接近目标值的数组和](https://leetcode-cn.com/problems/sum-of-mutated-array-closest-to-target/)
+
+* 给你一个整数数组 `arr` 和一个目标值 `target` ，请你返回一个整数 `value` ，使得将数组中所有大于 `value` 的值变成 `value` 后，数组的和最接近 `target` （最接近表示两者之差的绝对值最小）。
+
+* 如果有多种使得和最接近 `target` 的方案，请你返回这些整数中的最小值。
+
+* 请注意，答案不一定是 `arr` 中的数字。
+
 ## 1341 [方阵中战斗力最弱的 K 行](https://leetcode-cn.com/problems/the-k-weakest-rows-in-a-matrix/)
 
 * 给你一个大小为 `m * n` 的方阵 `mat`，方阵由若干军人和平民组成，分别用 0 和 1 表示。
