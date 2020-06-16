@@ -9,45 +9,39 @@ import 广度优先搜索.TreeNode;
 public class Codec {
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
-        String res = serHelp(root, new StringBuilder()).toString();
-        res = res.substring(0, res.length() - 1);
-        return res;
-    }
+        StringBuilder res = new StringBuilder();
+        serHelp(root,res);
+        // System.out.println(res.toString());
+        return res.toString();
 
-    /**
-     * 与题目举例不一样,因为这里不限定序列化逻辑
-     * @param root
-     * @param sb
-     * @return
-     */
-    private StringBuilder serHelp(TreeNode root,StringBuilder sb) {
-        if (root == null) {
-            sb.append("null,");
-            return sb;
+    }
+    private void serHelp(TreeNode root,StringBuilder tem){
+        if(root == null){
+            tem.append("null,");
+            return;
         }
-        sb.append(root.val).append(",");
-        serHelp(root.left, sb);
-        serHelp(root.right, sb);
-        return sb;
+        tem.append(root.val).append(",");
+        serHelp(root.left,tem);
+        serHelp(root.right,tem);
     }
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        String[] nums = data.split(",");
-        return desHelp(nums, new int[]{0});
+        String[] s = data.split(",");
+        return desHelp(s,new int[]{0});
     }
-
-    private TreeNode desHelp(String[] nums, int[] start) {
-        if (start[0] >= nums.length) {
+    private TreeNode desHelp(String[] s,int[] index){
+        if(index[0] == s.length){
             return null;
         }
         TreeNode root = null;
-        if (!nums[start[0]].equals("null")) {
-            root = new TreeNode(Integer.valueOf(nums[start[0]]));
-            start[0]++;
-            root.left = desHelp(nums, start);
-            start[0]++;
-            root.right = desHelp(nums, start);
+        if(!s[index[0]].equals("null")){
+            root = new TreeNode(Integer.valueOf(s[index[0]]));
+            index[0]++;
+            root.left = desHelp(s,index);
+            index[0]++;
+            root.right = desHelp(s,index);
+
         }
         return root;
     }
