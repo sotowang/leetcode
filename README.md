@@ -623,14 +623,35 @@ r   g  ta  e
 ## 605 [种花问题](https://leetcode-cn.com/problems/can-place-flowers/)
 
 * 假设你有一个很长的花坛，一部分地块种植了花，另一部分却没有。可是，花卉不能种植在相邻的地块上，它们会争夺水源，两者都会死去。
-
 * 给定一个花坛（表示为一个数组包含0和1，其中0表示没种植花，1表示种植了花），和一个数 **n** 。能否在不打破种植规则的情况下种入 **n** 朵花？能则返回True，不能则返回False。
+
+## 665 [非递减数列](https://leetcode-cn.com/problems/non-decreasing-array/)
+
+* 给你一个长度为 `n` 的整数数组，请你判断在 **最多** 改变 `1` 个元素的情况下，该数组能否变成一个非递减数列。
+
+* 我们是这样定义一个非递减数列的： 对于数组中所有的 `i` `(0 <= i <= n-2)`，总满足 `nums[i] <= nums[i + 1]`。
 
 ## 713 [乘积小于K的子数组](https://leetcode-cn.com/problems/subarray-product-less-than-k/)
 
 * 给定一个正整数数组 `nums`。
 
 * 找出该数组内乘积小于 `k` 的连续的子数组的个数。
+
+## 825 [适龄的朋友](https://leetcode-cn.com/problems/friends-of-appropriate-ages/)
+
+* 人们会互相发送好友请求，现在给定一个包含有他们年龄的数组，`ages[i]` 表示第 i 个人的年龄。
+
+当满足以下条件时，A 不能给 B（A、B不为同一人）发送好友请求：
+
+- `age[B] <= 0.5 * age[A] + 7`
+- `age[B] > age[A]`
+- `age[B] > 100 && age[A] < 100`
+
+* 否则，A 可以给 B 发送好友请求。
+
+* 注意如果 A 向 B 发出了请求，不等于 B 也一定会向 A 发出请求。而且，人们不会给自己发送好友请求。 
+
+* 求总共会发出多少份好友请求?
 
 ## 915 [分割数组](https://leetcode-cn.com/problems/partition-array-into-disjoint-intervals/)
 
@@ -688,6 +709,14 @@ r   g  ta  e
 * 如果其中某一张多米诺骨牌可以通过旋转 `0` 度或 `180` 度得到另一张多米诺骨牌，我们就认为这两张牌是等价的。
 * 形式上，`dominoes[i] = [a, b]` 和 `dominoes[j] = [c, d]` 等价的前提是 `a==c` 且 `b==d`，或是 `a==d` 且 `b==c`。
 * 在 `0 <= i < j < dominoes.length` 的前提下，找出满足 `dominoes[i]` 和 `dominoes[j]` 等价的骨牌对 `(i, j)` 的数量。
+
+## 1300 [转变数组后最接近目标值的数组和](https://leetcode-cn.com/problems/sum-of-mutated-array-closest-to-target/)
+
+* 给你一个整数数组 `arr` 和一个目标值 `target` ，请你返回一个整数 `value` ，使得将数组中所有大于 `value` 的值变成 `value` 后，数组的和最接近 `target` （最接近表示两者之差的绝对值最小）。
+
+* 如果有多种使得和最接近 `target` 的方案，请你返回这些整数中的最小值。
+
+* 请注意，答案不一定是 `arr` 中的数字。
 
 ## 1341 [方阵中战斗力最弱的 K 行](https://leetcode-cn.com/problems/the-k-weakest-rows-in-a-matrix/)
 
@@ -1719,10 +1748,14 @@ r   g  ta  e
 ## 1009 [十进制整数的反码](https://leetcode-cn.com/problems/complement-of-base-10-integer/)
 
 * 每个非负整数 `N` 都有其二进制表示。例如， `5` 可以被表示为二进制 `"101"`，`11` 可以用二进制 `"1011"` 表示，依此类推。注意，除 `N = 0` 外，任何二进制表示中都不含前导零。
-
 * 二进制的反码表示是将每个 `1` 改为 `0` 且每个 `0` 变为 `1`。例如，二进制数 `"101"` 的二进制反码为 `"010"`。
-
 * 给你一个十进制数 `N`，请你返回其二进制表示的反码所对应的十进制整数。
+
+## 1017 [负二进制转换](https://leetcode-cn.com/problems/convert-to-base-2/)
+
+* 给定一个整数数组 `A`，返回 `A` 中最长等差子序列的**长度**。
+
+* 回想一下，`A` 的子序列是列表 `A[i_1], A[i_2], ..., A[i_k]`其中 `0 <= i_1 < i_2 < ... < i_k <= A.length - 1`。并且如果 `B[i+1] - B[i]`( `0 <= i < B.length - 1`) 的值都相同，那么序列 `B` 是等差的。
 
 ## 1404 [将二进制表示减到 1 的步骤数](https://leetcode-cn.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/)
 
@@ -2440,6 +2473,12 @@ r   g  ta  e
 
 * 返回一条可行的路径，路径由经过的网格的行号和列号组成。左上角为 0 行 0 列。
 
+## 面试题38 [字符串的排列](https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/)
+
+* 输入一个字符串，打印出该字符串中字符的所有排列。
+
+* 你可以以任意顺序返回这个字符串数组，但里面不能有重复元素。
+
 # 贪心算法
 
 ## 45 [跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)
@@ -2869,6 +2908,12 @@ F(N) = F(N - 1) + F(N - 2), 其中 N > 1.
 * **词链**是单词 `[word_1, word_2, ..., word_k]` 组成的序列，`k >= 1`，其中 `word_1` 是 `word_2` 的前身，`word_2` 是 `word_3` 的前身，依此类推。
 
 * 从给定单词列表 `words` 中选择单词组成词链，返回词链的最长可能长度。
+
+## 1139 [最大的以 1 为边界的正方形](https://leetcode-cn.com/problems/largest-1-bordered-square/)
+
+* 给你一个由若干 `0` 和 `1` 组成的二维网格 `grid`，请你找出边界全部由 `1` 组成的最大 **正方形** 子网格，并返回该子网格中的元素数量。如果不存在，则返回 `0`。
+
+ 
 
 ## 1312 [让字符串成为回文串的最少插入次数](https://leetcode-cn.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/)
 
