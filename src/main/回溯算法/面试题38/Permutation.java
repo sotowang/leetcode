@@ -12,7 +12,7 @@ public class Permutation {
     private Set<String> set=  new HashSet<>();
     public String[] permutation(String s) {
         int n = s.length();
-        boolean[] visited = new boolean[n];
+        boolean[] visited = new boole125an[n];
         backTrace(s,visited,"",n);
         //System.out.print(list);
         return set.toArray(new String[0]);
