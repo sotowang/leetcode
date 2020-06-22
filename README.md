@@ -709,6 +709,14 @@ r   g  ta  e
 
 * 返回一个长度为 `num_people`、元素之和为 `candies` 的数组，以表示糖果的最终分发情况（即 `ans[i]` 表示第 `i` 个小朋友分到的糖果数）。
 
+## 1122 [数组的相对排序](https://leetcode-cn.com/problems/relative-sort-array/)
+
+* 给你两个数组，`arr1` 和 `arr2`，
+  * `arr2` 中的元素各不相同
+  * `arr2` 中的每个元素都出现在 `arr1` 中
+
+* 对 `arr1` 中的元素进行排序，使 `arr1` 中项的相对顺序和 `arr2` 中的相对顺序相同。未在 `arr2` 中出现过的元素需要按照升序放在 `arr1` 的末尾。
+
 ## 1128 [等价多米诺骨牌对的数量](https://leetcode-cn.com/problems/number-of-equivalent-domino-pairs/)
 
 * 给你一个由一些多米诺骨牌组成的列表 `dominoes`。
