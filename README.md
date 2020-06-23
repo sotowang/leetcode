@@ -2299,6 +2299,12 @@ r   g  ta  e
   * 字母异位词指字母相同，但排列不同的字符串。
   * 不考虑答案输出的顺序。
 
+## 1438 [对差不超过限制的最长连续子数组](https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
+
+* <p>给你一个整数数组 <code>nums</code> ，和一个表示限制的整数 <code>limit</code>，请你返回最长连续子数组的长度，该子数组中的任意两个元素之间的绝对差必须小于或者等于 <code>limit</code><em> 。</em></p>
+
+* <p>如果不存在满足条件的子数组，则返回 <code>0</code> 。</p>
+
 ## 面试题17.18 [ 最短超串](https://leetcode-cn.com/problems/shortest-supersequence-lcci/)
 
 * <p>假设你有两个数组，一个长一个短，短的元素均不相同。找到长数组中包含短数组所有的元素的最短子数组，其出现顺序无关紧要。</p>
