@@ -3426,6 +3426,14 @@ public class Foo {
 * 你最多只能翻转一位数字，将 6 变成 9，或者把 9 变成 6 。
 * 请返回你可以得到的最大数字。
 
+## 1362 [最接近的因数](https://leetcode-cn.com/problems/closest-divisors/)
+
+* 给你一个整数 `num`，请你找出同时满足下面全部要求的两个整数：
+  * 两数乘积等于  `num + 1` 或 `num + 2`
+  * 以绝对差进行度量，两数大小最接近
+
+* 你可以按任意顺序返回这两个整数。
+
 ## 面试题16.01 [交换数字](https://leetcode-cn.com/problems/swap-numbers-lcci/)
 
 * 编写一个函数，不用临时变量，直接交换numbers = [a, b]中a与b的值。
