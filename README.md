@@ -618,6 +618,10 @@ r   g  ta  e
 
 * 给定一个包含**非负数**的数组和一个目标**整数** k，编写一个函数来判断该数组是否含有连续的子数组，其大小至少为 2，总和为 **k**的倍数，即总和为 n*k，其中 n 也是一个**整数**。
 
+## 561 [数组拆分 I](https://leetcode-cn.com/problems/array-partition-i/)
+
+* 给定长度为 **2n** 的数组, 你的任务是将这些数分成 **n** 对, 例如 (a1, b1), (a2, b2), ..., (an, bn) ，使得从1 到 n 的 min(ai, bi) 总和最大。
+
 ## 581 [ 最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
 
 * 给定一个整数数组，你需要寻找一个**连续的子数组**，如果对这个子数组进行升序排序，那么整个数组都会变为升序排序。
