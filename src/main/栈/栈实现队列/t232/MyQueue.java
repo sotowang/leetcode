@@ -1,4 +1,4 @@
-package 栈.t232;
+package 栈.栈实现队列.t232;
 
 import java.util.LinkedList;
 

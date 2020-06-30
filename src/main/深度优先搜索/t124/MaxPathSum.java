@@ -7,24 +7,23 @@ import 深度优先搜索.TreeNode;
  * @date: 2019/11/08 21:09
  */
 public class MaxPathSum {
-    private int max = Integer.MIN_VALUE;
+    private int max = 0;
     public int maxPathSum(TreeNode root) {
-        calculate(root);
-        return max;
-    }
-
-    public int calculate(TreeNode root) {
-        if (root == null) {
+        if(root == null){
             return 0;
         }
-
-        int left = Math.max(calculate(root.left), 0);
-        int right = Math.max(calculate(root.right), 0);
-
-        int price = root.val + left + right;
-        max = Math.max(max, price);
-        return root.val + Math.max(left, right);
-
+        max = root.val;
+        calMaxSum(root);
+        return max;
+    }
+    public int calMaxSum(TreeNode root){
+        if(root == null){
+            return 0;
+        }
+        int left =Math.max(0,calMaxSum(root.left));
+        int right = Math.max(0,calMaxSum(root.right));
+        max = Math.max(max,left+right+root.val);
+        return Math.max(left,right) + root.val;
     }
 
     public static void main(String[] args) {
