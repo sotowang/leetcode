@@ -1236,6 +1236,10 @@ r   g  ta  e
 
 * 计算给定二叉树的所有左叶子之和。
 
+## 429 [N叉树的层序遍历](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/)
+
+* 给定一个 N 叉树，返回其节点值的层序遍历。 (即从左到右，逐层遍历)。
+
 ## 440 [字典序的第K小数字](https://leetcode-cn.com/problems/k-th-smallest-in-lexicographical-order/)
 
 * 给定整数 `n` 和 `k`，找到 `1` 到 `n` 中字典序第 `k` 小的数字。
