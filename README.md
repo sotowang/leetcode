@@ -2891,6 +2891,10 @@ F(N) = F(N - 1) + F(N - 2), 其中 N > 1.
 
 * 给定一个字符串`s`，找到其中最长的回文子序列。可以假设`s`的最大长度为`1000`。
 
+## 583 [两个字符串的删除操作](https://leetcode-cn.com/problems/delete-operation-for-two-strings/)
+
+* 给定两个单词 *word1* 和 *word2*，找到使得 *word1* 和 *word2* 相同所需的最小步数，每步可以删除任意一个字符串中的一个字符。
+
 ## 647 [回文子串](https://leetcode-cn.com/problems/palindromic-substrings/)
 
 * 给定一个字符串，你的任务是计算这个字符串中有多少个回文子串。
