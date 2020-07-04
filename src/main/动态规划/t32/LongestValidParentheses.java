@@ -6,18 +6,21 @@ package 动态规划.t32;
  */
 public class LongestValidParentheses {
     public int longestValidParentheses(String s) {
-        int[] dp = new int[s.length()];
+        if(s.isEmpty()){
+            return 0;
+        }
+        int len = s.length();
+        int[] dp = new int[len];
         int max = 0;
-        for (int i = 1; i < s.length(); i++) {
-            char c = s.charAt(i);
-            if (c == '(') {
-                dp[i] = 0;
-            } else if (c == ')' && s.charAt(i - 1) == '(') {
-                dp[i] = dp[Math.max(i - 2, 0)] + 2;
-            } else if (c == ')' && i - dp[i - 1] - 1 >= 0 && s.charAt(i - dp[i - 1] - 1) == '(') {
-                dp[i] = dp[i - 1] + 2 + dp[Math.max(i - dp[i - 1] - 2, 0)];
+        for(int i=1;i<len;i++){
+            if(s.charAt(i) == ')'){
+                if(s.charAt(i-1) == '('){
+                    dp[i] = dp[Math.max(0,i-2)] +2;
+                }else if(i-1-dp[i-1]>=0 && s.charAt(i-1-dp[i-1]) == '('){
+                    dp[i] = dp[i-1] +2 + dp[Math.max(0,i-2-dp[i-1])];
+                }
+                max = Math.max(max,dp[i]);
             }
-            max = Math.max(max, dp[i]);
         }
         return max;
     }
