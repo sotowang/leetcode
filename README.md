@@ -3136,6 +3136,8 @@ public class Foo {
 
 * 题目数据保证：任何时候，任一连续数字序列的乘积都在 32-bit 整数范围内，不会溢出。
 
+## 面试题16.25 [ LRU缓存](https://leetcode-cn.com/problems/lru-cache-lcci/)
+
 #  队列
 
 ## 933 [最近的请求次数](https://leetcode-cn.com/problems/number-of-recent-calls/)

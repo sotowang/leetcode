@@ -1,4 +1,4 @@
-package 设计.t146;
+package 设计.LRU.t146;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
