@@ -3159,6 +3159,14 @@ public class Foo {
 
 ---
 
+# 递归 
+
+## 面试题16.11 [跳水板](https://leetcode-cn.com/problems/diving-board-lcci/)
+
+* 你正在使用一堆木板建造跳水板。有两种类型的木板，其中长度较短的木板长度为`shorter`，长度较长的木板长度为`longer`。你必须正好使用`k`块木板。编写一个方法，生成跳水板所有可能的长度。
+
+* 返回的长度需要从小到大排列。
+
 # 精选 TOP 面试题
 
 ## 7 [整数反转](https://leetcode-cn.com/problems/reverse-integer/)
