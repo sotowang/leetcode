@@ -1,4 +1,4 @@
-package 动态规划.面试题17;
+package 动态规划.面试题17_16;
 
 /**
  * @auther: sotowang
