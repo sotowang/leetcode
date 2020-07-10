@@ -6,21 +6,15 @@ package 动态规划.t55;
  */
 public class CanJump {
     public boolean canJump(int[] nums) {
-        if (nums == null || nums.length == 0) {
-            return false;
-        }
-        if (nums.length == 1) {
-            return true;
-        }
-        int len = nums.length;
-
-        int mark = len - 1;
-        for (int i = len - 2; i >= 0; i--) {
-            if (nums[i] >= (mark-i)) {
-                mark = i;
+        int dif = 1;
+        for(int i=nums.length-2;i>=0;i--){
+            if(nums[i]>=dif){
+                dif = 1;
+            }else{
+                dif++;
             }
         }
-        return mark == 0;
+        return dif == 1;
     }
 
     public static void main(String[] args) {
