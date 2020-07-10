@@ -7,25 +7,19 @@ import 深度优先搜索.TreeNode;
  * @date: 2019/11/06 20:56
  */
 public class IsBalanced {
-    private boolean mark = true;
     public boolean isBalanced(TreeNode root) {
-        if (root == null) {
-            return true;
-        }
-        depth(root);
-        return mark;
+        return check(root) >=0;
     }
-
-    private int depth(TreeNode root) {
-        if (root == null) {
+    public int check(TreeNode root){
+        if(root == null ){
             return 0;
         }
-        int left = 1 + depth(root.left);
-        int right = 1 + depth(root.right);
-        if (Math.abs(left - right) > 1) {
-            mark = false;
+        int left = check(root.left);
+        int right = check(root.right);
+        if(left>=0 && right>=0 && Math.abs(left-right)<=1){
+            return Math.max(left,right)+1;
         }
-        return left > right ? left : right;
+        return -1;
     }
 
     public static void main(String[] args) {
