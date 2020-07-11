@@ -1,28 +1,28 @@
 package 二分查找.t69;
 
-import javax.sound.midi.MidiChannel;
-import java.util.function.LongFunction;
-
 /**
  * @auther: sotowang
  * @date: 2019/11/20 20:05
  */
 public class MySqrt {
     public int mySqrt(int x) {
-        long left = 0;
-        long right = (long) x;
+        if(x == 0 || x== 1){
+            return x;
+        }
+        int left = 0;
+        int right = x;
         while (left <= right) {
-            long mid = (left + right) >> 1;
-            if (mid * mid == x) {
+            int mid = left+(right-left>>1);
+            if (mid  == x/mid) {
                 right = mid;
                 break;
-            } else if (mid * mid > x) {
+            } else if (mid  > x/mid) {
                 right = mid - 1;
-            } else if (mid * mid < x) {
+            } else if (mid < x/mid) {
                 left = mid + 1;
             }
         }
-        return (int) right;
+        return  right;
     }
 
     public static void main(String[] args) {

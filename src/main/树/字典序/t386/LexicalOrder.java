@@ -1,4 +1,4 @@
-package 堆.t386;
+package 树.字典序.t386;
 
 import java.util.ArrayList;
 import java.util.List;

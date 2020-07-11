@@ -1,4 +1,4 @@
-package 树.t440;
+package 树.字典序.t440;
 
 /**
  * @auther: sotowang

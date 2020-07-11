@@ -606,6 +606,13 @@ r   g  ta  e
 
 * 你可以不用到任何额外空间并在O(*n*)时间复杂度内解决这个问题吗？
 
+## 443 [压缩字符串](https://leetcode-cn.com/problems/string-compression/)
+
+* 给定一组字符，使用[原地算法](https://baike.baidu.com/item/原地算法)将其压缩。
+* 压缩后的长度必须始终小于或等于原数组长度。
+* 数组的每个元素应该是长度为1 的**字符**（不是 int 整数类型）。
+* 在完成[原地](https://baike.baidu.com/item/原地算法)**修改输入数组**后，返回数组的新长度。
+
 ## 448 [找到所有数组中消失的数字](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/)
 
 * 给定一个范围在 1 ≤ a[i] ≤ *n* ( *n* = 数组大小 ) 的 整型数组，数组中的元素一些出现了两次，另一些只出现一次。
