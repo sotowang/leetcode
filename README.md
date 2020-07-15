@@ -585,6 +585,10 @@ r   g  ta  e
 
 ​	要求算法的时间复杂度为 O(*n*)，空间复杂度为 O(*1*) 。
 
+## 350 [两个数组的交集 II](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/)
+
+* 给定两个数组，编写一个函数来计算它们的交集。
+
 ## 409 [最长回文串](https://leetcode-cn.com/problems/longest-palindrome/)
 
 * 给定一个包含大写字母和小写字母的字符串，找到通过这些字母构造成的最长的回文串。
