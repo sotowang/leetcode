@@ -2,7 +2,7 @@ package 树.t95;
 
 import 深度优先搜索.TreeNode;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -11,34 +11,33 @@ import java.util.List;
  */
 public class GenerateTrees {
     public List<TreeNode> generateTrees(int n) {
-        List<TreeNode> res = new LinkedList<>();
-        if (n > 0) {
-            res = dfs(1, n);
+        if(n == 0){
+            return new ArrayList();
         }
-        return res;
-
+        List<TreeNode> resList =  dfs(1,n);
+        return resList;
     }
-
-    private LinkedList<TreeNode> dfs(int start, int end) {
-        LinkedList<TreeNode> res = new LinkedList();
-        if (start > end) {
-             res.add(null);
-            return res;
+    private List<TreeNode> dfs(int start,int end){
+        ArrayList<TreeNode> list = new ArrayList<>();
+        if(start > end){
+            list.add(null);
+            return list;
         }
-
-        for (int i = start; i <= end; i++) {
-            LinkedList<TreeNode> leftTrees = dfs(start, i - 1);
-            LinkedList<TreeNode> rightTrees = dfs(i + 1, end);
-            for (TreeNode left : leftTrees) {
-                for (TreeNode right : rightTrees) {
+        for(int i=start;i<=end;i++){
+            List<TreeNode> leftNodes = dfs(start,i-1);
+            List<TreeNode> rightNodes = dfs(i+1,end);
+            for(TreeNode left:leftNodes){
+                for(TreeNode right:rightNodes){
                     TreeNode root = new TreeNode(i);
+
                     root.left = left;
                     root.right = right;
-                    res.add(root);
+                    list.add(root);
                 }
             }
         }
-        return res;
+        return list;
+
     }
 
     public static void main(String[] args) {
