@@ -1992,8 +1992,16 @@ r   g  ta  e
 ## 367 [有效的完全平方数](https://leetcode-cn.com/problems/valid-perfect-square/)
 
 * 给定一个正整数 *`num`*，编写一个函数，如果 *`num`* 是一个完全平方数，则返回 True，否则返回 False。
-
 * **说明：**不要使用任何内置的库函数，如  `sqrt`。
+
+## 410 [分割数组的最大值](https://leetcode-cn.com/problems/split-array-largest-sum/)
+
+* 给定一个非负整数数组和一个整数 *m*，你需要将这个数组分成 *m* 个非空的连续子数组。设计一个算法使得这 *m* 个子数组各自和的最大值最小。
+
+* **注意:**
+  * 数组长度 *n* 满足以下条件:
+    * 1 ≤ *n* ≤ 1000
+    * 1 ≤ *m* ≤ min(50, *n*)
 
 ## 668 [乘法表中第k小的数](https://leetcode-cn.com/problems/kth-smallest-number-in-multiplication-table/)
 
@@ -2004,6 +2012,14 @@ r   g  ta  e
 ## 719 [找出第 k 小的距离对](https://leetcode-cn.com/problems/find-k-th-smallest-pair-distance/)
 
 * 给定一个整数数组，返回所有数对之间的第 k 个最小**距离**。一对 (A, B) 的距离被定义为 A 和 B 之间的绝对差值。
+
+## 1011 [在 D 天内送达包裹的能力](https://leetcode-cn.com/problems/capacity-to-ship-packages-within-d-days/)
+
+* 传送带上的包裹必须在 D 天内从一个港口运送到另一个港口。
+
+* 传送带上的第 `i` 个包裹的重量为 `weights[i]`。每一天，我们都会按给出重量的顺序往传送带上装载包裹。我们装载的重量不会超过船的最大运载重量。
+
+* 返回能在 `D` 天内将传送带上的所有包裹送达的船的最低运载能力。
 
 ## 剑指offer 11 [旋转数组的最小数字](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)
 
