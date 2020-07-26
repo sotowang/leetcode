@@ -2179,6 +2179,12 @@ r   g  ta  e
 * 给定一个二叉树，返回所有从根节点到叶子节点的路径。
 * **说明:** 叶子节点是指没有子节点的节点。
 
+## 329 [矩阵中的最长递增路径](https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/)
+
+* 给定一个整数矩阵，找出最长递增路径的长度。
+
+* 对于每个单元格，你可以往上，下，左，右四个方向移动。 你不能在对角线方向上移动或移动到边界外（即不允许环绕）。
+
 ## 386 [字典序排数](https://leetcode-cn.com/problems/lexicographical-numbers/)
 
 * 给定一个整数 *n*, 返回从 *1* 到 *n* 的字典顺序。
