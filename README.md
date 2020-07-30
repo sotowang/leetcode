@@ -3456,6 +3456,10 @@ public class Foo {
 
 * 给定一个整数 (32 位有符号整数)，请编写一个函数来判断它是否是 4 的幂次方。
 
+## 343 [整数拆分](https://leetcode-cn.com/problems/integer-break/)
+
+* 给定一个正整数 *n*，将其拆分为**至少**两个正整数的和，并使这些整数的乘积最大化。 返回你可以获得的最大乘积。
+
 ## 365 [水壶问题](https://leetcode-cn.com/problems/water-and-jug-problem/)
 
 有两个容量分别为 *x*升 和 *y*升 的水壶以及无限多的水。请判断能否通过使用这两个水壶，从而可以得到恰好 *z*升 的水？
