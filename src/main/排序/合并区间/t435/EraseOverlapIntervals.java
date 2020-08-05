@@ -25,4 +25,9 @@ public class EraseOverlapIntervals {
         }
         return intervals.length-count;
     }
+
+    public static void main(String[] args) {
+        int[][] nums = new int[][]{{1, 4}, {1, 2}, {2, 3}, {3, 4}};
+        System.out.println(new EraseOverlapIntervals().eraseOverlapIntervals(nums));
+    }
 }
