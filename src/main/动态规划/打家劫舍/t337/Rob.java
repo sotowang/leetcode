@@ -1,11 +1,9 @@
-package 动态规划.t337;
+package 动态规划.打家劫舍.t337;
 
 import 深度优先搜索.TreeNode;
 
-import java.time.temporal.ValueRange;
-
 /**
- * @auther: sotowang
+ * @author: sotowang
  * @date: 2019/12/12 17:24
  */
 public class Rob {

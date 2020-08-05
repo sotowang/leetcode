@@ -1,6 +1,5 @@
 package 常用算法.其它;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -8,27 +7,46 @@ import java.util.Scanner;
  * @date: 2020/3/29 20:15
  */
 public class Example6 {
-    private static long calc(int n,long[] nums){
-        Arrays.sort(nums);
-        if(nums[n-1]<n){
-            return 0;
-        }else {
-            nums[n-1]-=n;
-            for (int i = 0; i < n-1; i++) {
-                nums[i]++;
+    private static int  lucky(int[] nums, int sum) {
+        int dif = Integer.MAX_VALUE;
+        int index = -1;
+        for (int i = 0; i < nums.length; i++) {
+            if (Math.abs(nums[i] - sum) <= dif) {
+                index = i;
+                dif = Math.abs(nums[i] - sum);
             }
         }
-        return 1 + calc(n, nums);
+        return index;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        long[] nums = new long[n];
-        for(int i = 0; i < n; i++){
-            nums[i] = sc.nextLong();
+        String candidate = sc.next();
+        if (candidate.length() > 10) {
+            return;
         }
-        "aaa".contains("aa");
-        System.out.println(calc(n,nums));
+        int[] nums = new int[5];
+        String[] names = new String[5];
+        for(int i = 0; i < 5; i++){
+            String tem = sc.next();
+            if (tem.length() > 10) {
+                return;
+            }
+            names[i] =  tem;
+            int sum = 0;
+            for (int j = 0; j < tem.length();j++) {
+                sum += (Character.toLowerCase(tem.charAt(j)) - 'a') + 1;
+            }
+            nums[i] = sum;
+        }
+        int sum = 0;
+        for (int i = 0; i < candidate.length(); i++) {
+            sum += (Character.toLowerCase(candidate.charAt(i)) - 'a') + 1;
+        }
+        if (nums.length != 5) {
+            return;
+        }
+        int index = lucky(nums, sum);
+        System.out.println(names[index]);
     }
 }
