@@ -65,7 +65,7 @@ public class BlockingQueue {
             @Override
             public void run() {
                 int index = 0;
-                while (index < 100) {
+                while (index < 10) {
                     bq.put(index++);
                 }
             }
