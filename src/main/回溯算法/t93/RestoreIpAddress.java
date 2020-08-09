@@ -6,32 +6,31 @@ import java.util.List;
 public class RestoreIpAddress {
 
     public List<String> restoreIpAddresses(String s) {
-        List<String> res = new ArrayList<>();
-        backTrace(s, 0, new ArrayList<>(), res);
-        return res;
+        List<String> resList= new ArrayList<>();
+        backTrace(s,0,resList,new LinkedList());
+        return resList;
     }
-
-    private boolean backTrace(String s, int start, ArrayList<String> tem, List<String> res) {
-        if (start >= s.length() && tem.size() == 4) {
-            String ip = tem.get(0) + "." + tem.get(1) + "." + tem.get(2) + "." + tem.get(3);
-            res.add(ip);
-            return true;
-        } else if (((4 - tem.size()) * 3 < s.length() - start) ||(s.length() - start < (4 - tem.size()))) {
-            return false;
+    private void backTrace(String s,int start,List<String> resList,LinkedList<Integer> temList){
+        if(start == s.length() && temList.size() == 4){
+            String res = temList.get(3) + "." + temList.get(2) + "." + temList.get(1) + "." + temList.get(0);
+            resList.add(res);
+            return;
+        }else if (s.length() - start > (4 - temList.size()) * 3 || s.length() - start < 4 - temList.size()) {
+            return;
         }
-
-        for (int i = start + 1; i < start + 4 && i <= s.length(); i++) {
-            String sub = s.substring(start, i);
-            if (sub.startsWith("0") && sub.length() > 1) {
+        for(int i=start+1;i<start+4 && i<=s.length();i++){
+            String res = s.substring(start,i);
+            if(res.startsWith("0") && res.length() > 1){
                 break;
             }
-            tem.add(sub);
-            if (Integer.valueOf(sub) <= 255 && tem.size() <= 4) {
-                backTrace(s, i, tem, res);
+            int tem = Integer.valueOf(res);
+            temList.push(tem);
+            if(tem>=0 && tem<=255 && temList.size() <=4){
+                backTrace(s,i,resList,temList);
             }
-            tem.remove(tem.size() - 1);
+            temList.pop();
         }
-        return false;
+
     }
 
     public static void main(String[] args) {

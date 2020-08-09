@@ -21,4 +21,12 @@ public class LowestCommonAncestor {
             return right;
         }
     }
+
+    public static void main(String[] args) {
+        TreeNode p = new TreeNode(3);
+        TreeNode q = new TreeNode(4);
+        p.left = q;
+        TreeNode root = new TreeNode(1, new TreeNode(2, p, null), null);
+        new LowestCommonAncestor().lowestCommonAncestor(root, p, q);
+    }
 }
