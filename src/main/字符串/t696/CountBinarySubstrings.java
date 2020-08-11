@@ -6,25 +6,27 @@ package 字符串.t696;
  */
 public class CountBinarySubstrings {
     public int countBinarySubstrings(String s) {
-        if (s.length() <= 1) {
+        if(s == null || s.isEmpty()){
             return 0;
         }
-        int res = 0;
+        //last记录前一数的个数
+        // cur记录当前数的个数
         int last = 0;
         int cur = 1;
-        for (int i = 1; i < s.length(); i++) {
-            if (s.charAt(i) == s.charAt(i - 1)) {
+        int count = 0;
+        for(int i=1;i<s.length();i++){
+            if(s.charAt(i)  == s.charAt(i-1)){
                 cur++;
             }else{
                 last = cur;
                 cur = 1;
-            }
-            if (last >= cur) {
-                res++;
-            }
 
+            }
+            if(cur<=last){
+                count++;
+            }
         }
-        return res;
+        return count;
     }
 
     public static void main(String[] args) {

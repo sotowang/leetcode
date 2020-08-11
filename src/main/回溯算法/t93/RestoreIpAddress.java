@@ -1,6 +1,7 @@
 package 回溯算法.t93;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class RestoreIpAddress {
@@ -10,7 +11,7 @@ public class RestoreIpAddress {
         backTrace(s,0,resList,new LinkedList());
         return resList;
     }
-    private void backTrace(String s,int start,List<String> resList,LinkedList<Integer> temList){
+    private void backTrace(String s, int start, List<String> resList, LinkedList<Integer> temList){
         if(start == s.length() && temList.size() == 4){
             String res = temList.get(3) + "." + temList.get(2) + "." + temList.get(1) + "." + temList.get(0);
             resList.add(res);
