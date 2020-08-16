@@ -1,5 +1,6 @@
 package 常用算法.其它;
 
+import java.util.LinkedList;
 import java.util.Scanner;
 
 /**
@@ -20,33 +21,42 @@ public class Example6 {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String candidate = sc.next();
-        if (candidate.length() > 10) {
-            return;
-        }
-        int[] nums = new int[5];
-        String[] names = new String[5];
-        for(int i = 0; i < 5; i++){
-            String tem = sc.next();
-            if (tem.length() > 10) {
-                return;
-            }
-            names[i] =  tem;
-            int sum = 0;
-            for (int j = 0; j < tem.length();j++) {
-                sum += (Character.toLowerCase(tem.charAt(j)) - 'a') + 1;
-            }
-            nums[i] = sum;
-        }
-        int sum = 0;
-        for (int i = 0; i < candidate.length(); i++) {
-            sum += (Character.toLowerCase(candidate.charAt(i)) - 'a') + 1;
-        }
-        if (nums.length != 5) {
-            return;
-        }
-        int index = lucky(nums, sum);
-        System.out.println(names[index]);
+//        Scanner sc = new Scanner(System.in);
+//        String candidate = sc.next();
+//        if (candidate.length() > 10) {
+//            return;
+//        }
+//        int[] nums = new int[5];
+//        String[] names = new String[5];
+//        for(int i = 0; i < 5; i++){
+//            String tem = sc.next();
+//            if (tem.length() > 10) {
+//                return;
+//            }
+//            names[i] =  tem;
+//            int sum = 0;
+//            for (int j = 0; j < tem.length();j++) {
+//                sum += (Character.toLowerCase(tem.charAt(j)) - 'a') + 1;
+//            }
+//            nums[i] = sum;
+//        }
+//        int sum = 0;
+//        for (int i = 0; i < candidate.length(); i++) {
+//            sum += (Character.toLowerCase(candidate.charAt(i)) - 'a') + 1;
+//        }
+//        if (nums.length != 5) {
+//            return;
+//        }
+//        int index = lucky(nums, sum);
+//        System.out.println(names[index]);
+        Integer l1 = -128;
+        int l2 = -128;
+        Integer l3 = Integer.valueOf(-128);
+        Integer l4 = new Integer(-128);
+        System.out.println(l1 == l2);
+        System.out.println(l2 == l4);
+//        System.out.println(l1 == l3);
+
+//        System.out.println(l3 == l4);
     }
 }

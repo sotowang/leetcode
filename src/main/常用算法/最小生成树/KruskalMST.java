@@ -6,7 +6,9 @@ import java.util.*;
 /**
  * @author: sotowang
  * @date: 2020/08/12 13:26
+ * https://www.pdai.tech/md/algorithm/alg-basic-graph-min-tree.html
  */
+
 public class KruskalMST  {
 
     static class Edge {
