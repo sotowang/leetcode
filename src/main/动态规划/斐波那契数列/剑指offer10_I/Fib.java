@@ -1,4 +1,4 @@
-package 动态规划.斐波那契数列.斐波那契数列;
+package 动态规划.斐波那契数列.剑指offer10_I;
 
 /**
  * @auther: sotowang
