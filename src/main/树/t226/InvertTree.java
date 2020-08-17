@@ -1,12 +1,21 @@
 package 树.t226;
 
-import 深度优先搜索.TreeNode;
+
 
 /**
  * @auther: sotowang
  * @date: 2019/11/26 21:10
  */
 public class InvertTree {
+    public static class TreeNode{
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        public TreeNode(int val) {
+            this.val = val;
+        }
+    }
     public TreeNode invertTree(TreeNode root) {
         if (root == null) {
             return null;
