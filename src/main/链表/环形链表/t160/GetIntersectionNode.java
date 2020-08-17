@@ -1,4 +1,4 @@
-package 链表.t160;
+package 链表.环形链表.t160;
 
 import 链表.ListNode;
 

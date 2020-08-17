@@ -13,7 +13,8 @@ public class MergeSort {
         int[] tem = new int[high - low + 1];
         int index = 0;
         int left = low;
-        int right = mid+1;
+        int right = mid + 1;
+        //合并low到high
         while (left <= mid && right <= high) {
             if (nums[left] > nums[right]) {
                 tem[index++] = nums[right++];
@@ -38,17 +39,20 @@ public class MergeSort {
             return;
         }
         int mid = low + ((high - low) >> 1);
+        //左边
         mergeSort(nums, low, mid);
+        //右边
         mergeSort(nums, mid + 1, high);
+        //左右归并
         merge(nums, low, high);
     }
 
     public static void main(String[] args) {
-        int[] nums = {7, 5, 6, 4,6,3,4,5,2,4,5,6,7,8,22};
+        int[] nums = {7, 5, 6, 4, 6, 3, 4, 5, 2, 4, 5, 6, 7, 8, 22};
         int low = 0;
-        int high = nums.length-1;
+        int high = nums.length - 1;
         new MergeSort().mergeSort(nums, low, high);
-        Arrays.stream(nums).forEach((e)->{
+        Arrays.stream(nums).forEach((e) -> {
             System.out.print(e + ",");
         });
 

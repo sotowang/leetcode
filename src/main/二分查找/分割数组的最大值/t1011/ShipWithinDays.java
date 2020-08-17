@@ -11,6 +11,7 @@ public class ShipWithinDays {
         }
         int low = Integer.MIN_VALUE;
         int high = 0;
+        //载运能力在low 和 high之间
         for(int weight:weights){
             if(weight>low){
                 low = weight;
@@ -18,6 +19,7 @@ public class ShipWithinDays {
             high += weight;
         }
         while(low<high){
+            //mid == 载运能力
             int mid = low + (high-low >>1);
             int capacity = 0;
             int day  = 1;

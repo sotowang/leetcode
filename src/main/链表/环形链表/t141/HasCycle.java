@@ -1,11 +1,9 @@
-package 链表.t141;
+package 链表.环形链表.t141;
 
 import 链表.ListNode;
 
-import java.util.List;
-
 /**
- * @auther: wangsongtao_sx
+ * @author: wangsongtao_sx
  * @date: 2019/10/19 18:27
  */
 public class HasCycle {
