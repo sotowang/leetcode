@@ -1,4 +1,4 @@
-package 回溯算法.t46;
+package 回溯算法.全排列.t46;
 
 import java.util.ArrayList;
 import java.util.List;
