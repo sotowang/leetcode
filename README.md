@@ -1653,6 +1653,10 @@ r   g  ta  e
 * 给定一位研究者论文被引用次数的数组（被引用次数是非负整数）。编写一个方法，计算出研究者的 h 指数。
 * `h 指数的定义`: “h 代表“高引用次数”（high citations），一名科研人员的 h 指数是指他（她）的 （N 篇论文中）至多有 h 篇论文分别被引用了至少 h 次。（其余的 N - h 篇论文每篇被引用次数不多于 h 次。）”
 
+## 315 [计算右侧小于当前元素的个数](https://leetcode-cn.com/problems/count-of-smaller-numbers-after-self/)
+
+* 给定一个整数数组 `nums`，按要求返回一个新数组` counts`。数组 `counts` 有该性质：` counts[i] `的值是  `nums[i]` 右侧小于 `nums[i]` 的元素的数量。
+
 ## 435 [无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals/)
 
 * <p>给定一个区间的集合，找到需要移除区间的最小数量，使剩余区间互不重叠。</p>
