@@ -13,31 +13,29 @@ import java.util.List;
  */
 public class LevelOrderBottom {
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
-        LinkedList<List<Integer>> res = new LinkedList();
-        if (root == null) {
-            return res;
+        LinkedList<List<Integer>> resList = new LinkedList<>();
+        if(root == null){
+            return resList;
         }
-
         LinkedList<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
-        while (!queue.isEmpty()) {
-            List list = new ArrayList();
+        while(!queue.isEmpty()){
+            List<Integer> list = new ArrayList<>();
             int size = queue.size();
-            for (int i = 0; i < size; i++) {
+            for(int i=0;i<size;i++){
                 TreeNode cur = queue.poll();
                 list.add(cur.val);
-                if (i == size - 1) {
-                    res.addFirst(new ArrayList<>(list));
+                if(cur.left != null){
+                    queue.offer(cur.left);
                 }
-                if (cur.left != null) {
-                    queue.add(cur.left);
+                if(cur.right != null){
+                    queue.offer(cur.right);
                 }
-                if (cur.right != null) {
-                    queue.add(cur.right);
-                }
+
             }
+            resList.push(list);
         }
-        return res;
+        return resList;
     }
 
     public static void main(String[] args) {
