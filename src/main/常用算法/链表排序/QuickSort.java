@@ -7,53 +7,53 @@ import 链表.ListNode;
  * @date: 2020/09/04 20:58
  */
 public class QuickSort {
+    public static void quickSort(ListNode head,ListNode end) {
+        if (head == null ||  head == end) {
+            return;
+        }
+       ListNode first = head;
+        ListNode second = head.next;
 
-    public static ListNode quickSort(ListNode head) {
-        if (head == null) {
-            return head;
-        }
-        ListNode bigHead = new ListNode(-1);
-        ListNode smallHead = new ListNode(-1);
-        ListNode cur = head.next;
-        int val = head.val;
-        while (cur != null) {
-            ListNode next = cur.next;
-            if (cur.val > val) {
-                cur.next = bigHead.next;
-                bigHead.next = cur;
-            } else {
-                cur.next = smallHead.next;
-                smallHead.next = cur;
+        int piv = head.val;
+        while (second != end.next && second != null) {
+            if (second.val < piv) {
+                first = first.next;
+                if (first != second) {
+                    int tem = first.val;
+                    first.val = second.val;
+                    second.val = tem;
+                }
             }
-            cur = next;
+            second = second.next;
         }
-        ListNode left = quickSort(smallHead.next);
-        ListNode right = quickSort(bigHead.next);
-        ListNode rear = left;
-        if (left == null) {
-            head.next = right;
-            return head;
+
+        if (head != first) {
+            int tem = head.val;
+            head.val = first.val;
+            first.val = tem;
         }
-        while (rear.next != null) {
-            rear = rear.next;
-        }
-        rear.next = head;
-        head.next = right;
-        return left;
+        quickSort(head, first);
+        quickSort(first.next, end);
     }
 
+
     public static void main(String[] args) {
-        ListNode l3 = new ListNode(4);
-        ListNode l2 = new ListNode(3);
-        ListNode l1 = new ListNode(2);
-        ListNode l4 = new ListNode(1);
+        ListNode l3 = new ListNode(3);
+        ListNode l2 = new ListNode(2);
+        ListNode l1 = new ListNode(1);
+        ListNode l4 = new ListNode(4);
         l3.next = l2;
         l2.next = l1;
         l1.next = l4;
-        ListNode head = quickSort(l3);
-        while (head != null) {
-            System.out.print(head.val + " ");
-            head = head.next;
+        //3--2--1--4
+        ListNode p = l3;
+        while (p.next != null) {
+            p = p.next;
+        }
+        quickSort(l3, p);
+        while (l3 != null) {
+            System.out.print(l3.val + " ");
+            l3 = l3.next;
         }
     }
 }
