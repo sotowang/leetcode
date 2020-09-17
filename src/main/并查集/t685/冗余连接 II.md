@@ -37,6 +37,8 @@ v   v
 - 二维数组大小的在3到1000范围内。
 - 二维数组中的每个整数在1到N之间，其中 N 是二维数组的大小。
 
+https://leetcode-cn.com/problems/redundant-connection-ii/solution/bing-cha-ji-java-by-liweiwei1419/
+
 Related Topics
 
 - 树
