@@ -1328,6 +1328,10 @@ r   g  ta  e
 
 * 通过给定的数组构建最大二叉树，并且输出这个树的根节点。
 
+## 637 [二叉树的层平均值](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/)
+
+* 给定一个非空二叉树, 返回一个由每层节点平均值组成的数组。
+
 ## 655 [输出二叉树](https://leetcode-cn.com/problems/print-binary-tree/)
 
 * 在一个 `m*n` 的二维字符串数组中输出二叉树，并遵守以下规则：
