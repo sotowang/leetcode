@@ -1,4 +1,4 @@
-package 树.t538;
+package 树.二叉搜索树.t538;
 
 import 广度优先搜索.TreeNode;
 
