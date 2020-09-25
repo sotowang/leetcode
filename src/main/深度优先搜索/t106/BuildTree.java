@@ -2,34 +2,30 @@ package 深度优先搜索.t106;
 
 import 深度优先搜索.TreeNode;
 
-import java.util.Arrays;
-
 /**
  * @auther: sotowang
  * @date: 2019/11/06 20:15
  */
 public class BuildTree {
     public TreeNode buildTree(int[] inorder, int[] postorder) {
-        if (inorder.length == 0 || postorder.length == 0) {
+
+        return build(inorder,0,inorder.length-1,postorder,0,postorder.length-1);
+    }
+
+    private TreeNode build(int[] inorder,int instart,int inend,int[] postorder,int pstart,int pend){
+        if(instart>inend || pstart>pend){
             return null;
         }
-        int len = postorder.length;
-        TreeNode root = new TreeNode(postorder[len - 1]);
-        int mark = 0;
-        for (int i = 0; i < inorder.length; i++) {
-            if (root.val == inorder[i]) {
-                mark = i;
+        TreeNode root = new TreeNode(postorder[pend]);
+        int index = -1;
+        for(int i=instart;i<=inend;i++){
+            if(root.val == inorder[i]){
+                index = i;
+                break;
             }
         }
-
-        int[] postLeft = Arrays.copyOfRange(postorder, 0, mark);
-        int[] postRight = Arrays.copyOfRange(postorder, mark, len-1);
-
-        int[] inLeft = Arrays.copyOfRange(inorder, 0, mark);
-        int[] inRight = Arrays.copyOfRange(inorder, mark + 1, inorder.length);
-
-        root.left = buildTree(inLeft, postLeft);
-        root.right = buildTree(inRight, postRight);
+        root.left = build(inorder,instart,index-1,postorder,pstart,pend-(inend-index)-1);
+        root.right = build(inorder,index+1,inend,postorder,pend-(inend-index),pend-1);
         return root;
     }
 
