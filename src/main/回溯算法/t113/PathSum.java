@@ -3,6 +3,7 @@ package 回溯算法.t113;
 import 深度优先搜索.TreeNode;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -12,26 +13,26 @@ import java.util.List;
 public class PathSum {
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
         List<List<Integer>> res = new ArrayList<>();
-        pathSum(root, sum, 0, new ArrayList<>(), res);
+        pathSum(root, sum, 0, new LinkedList<>(), res);
         return res;
     }
 
-    private void pathSum(TreeNode root, int sum, int temp, List<Integer> list, List res) {
+    private void pathSum(TreeNode root, int sum, int temp, LinkedList<Integer> list, List res) {
         if (root == null) {
             return;
         }
-        list.add(root.val);
+        list.offer(root.val);
         temp += root.val;
         if (root.left == null && root.right == null) {
             if (temp == sum) {
                 res.add(new ArrayList<>(list));
             }
-            list.remove(list.size() - 1);
+            list.pollLast();
             return;
         }
         pathSum(root.left, sum, temp, list, res);
         pathSum(root.right, sum, temp, list, res);
-        list.remove(list.size() - 1);
+        list.pollLast();
 
     }
 
