@@ -8,28 +8,31 @@ import 深度优先搜索.Node;
  */
 public class Connect {
     public Node connect(Node root) {
-        if (root != null && (root.left != null || root.right != null)) {
-            //有左右子节点
-            if (root.left != null && root.right != null) {
-                root.left.next = root.right;
-            }
-            //有一个节点
-            Node node = root.right != null ? root.right : root.left;
-            //头节点右移
-            Node head = root.next;
-            while (head != null && !(head.left != null || head.right != null)) {
-                //head不断右移
-                head = head.next;
-            }
-            if (head != null) {
-                node.next = head.left == null ? head.right : head.left;
-            } else {
-                node.next = null;
-            }
-
-            connect(root.right);
-            connect(root.left);
+        if(root == null || (root.left == null && root.right == null)){
+            return root;
         }
+        if(root.left !=null && root.right != null){
+            root.left.next = root.right;
+        }
+        Node lastNode;
+        if(root.right != null){
+            lastNode = root.right;
+        }else{
+            lastNode = root.left;
+        }
+        Node head = root.next;
+        while(head != null && (head.left == null && head.right == null)){
+            head = head.next;
+        }
+        if(head != null){
+            if(head.left != null){
+                lastNode.next = head.left;
+            }else{
+                lastNode.next = head.right;
+            }
+        }
+        connect(root.right);
+        connect(root.left);
         return root;
     }
 
