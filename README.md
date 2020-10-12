@@ -1299,6 +1299,10 @@ r   g  ta  e
 
 * 给定一个二叉树，在树的最后一行找到最左边的值。
 
+## 530 [二叉搜索树的最小绝对差](https://leetcode-cn.com/problems/minimum-absolute-difference-in-bst/)
+
+* 给你一棵所有节点为非负值的二叉搜索树，请你计算树中任意两节点的差的绝对值的最小值。
+
 ## 538 [把二叉搜索树转换为累加树](https://leetcode-cn.com/problems/convert-bst-to-greater-tree/)
 
 * 给定一个二叉搜索树（Binary Search Tree），把它转换成为累加树（Greater Tree)，使得每个节点的值是原来的节点值加上所有大于它的节点值之和。
@@ -1357,6 +1361,10 @@ r   g  ta  e
   3. 根节点的值（以字符串格式给出）应当放在可放置的第一行正中间。根节点所在的行与列会将剩余空间划分为两部分（**左下部分和右下部分**）。你应该将左子树输出在左下部分，右子树输出在右下部分。左下和右下部分应当有相同的大小。即使一个子树为空而另一个非空，你不需要为空的子树输出任何东西，但仍需要为另一个子树留出足够的空间。然而，如果两个子树都为空则不需要为它们留出任何空间。
   4. 每个未使用的空间应包含一个空的字符串`""`。
   5. 使用相同的规则输出子树。
+
+## 783 [二叉搜索树节点最小距离](https://leetcode-cn.com/problems/minimum-distance-between-bst-nodes/)
+
+* 给定一个二叉搜索树的根节点?`root`，返回树中任意两节点的差的最小值。
 
 ## 938 [二叉搜索树的范围和](https://leetcode-cn.com/problems/range-sum-of-bst/)
 
