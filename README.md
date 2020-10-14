@@ -412,12 +412,15 @@ r   g  ta  e
 ## 916 [单词子集](https://leetcode-cn.com/problems/word-subsets/)
 
 * 我们给出两个单词数组 `A` 和 `B`。每个单词都是一串小写字母。
-
 * 现在，如果 `b` 中的每个字母都出现在 `a`中，**包括重复出现的字母**，那么称单词 `b` 是单词 `a` 的子集。 例如，“wrr” 是 “warrior” 的子集，但不是 “world” 的子集。
-
 * 如果对 `B` 中的每一个单词 `b`，`b` 都是 `a`的子集，那么我们称 `A` 中的单词 `a` 是*通用的*。
-
 * 你可以按任意顺序以列表形式返回 `A` 中所有的通用单词。
+
+## 1002 [查找常用字符](https://leetcode-cn.com/problems/find-common-characters/)
+
+* 给定仅有小写字母组成的字符串数组 `A`，返回列表中的每个字符串中都显示的全部字符（**包括重复字符**）组成的列表。例如，如果一个字符在每个字符串中出现 3 次，但不是 4 次，则需要在最终答案中包含该字符 3 次。
+
+* 你可以按任意顺序返回答案。
 
 ## 1016 [子串能表示从 1 到 N 数字的二进制串](https://leetcode-cn.com/problems/binary-string-with-substrings-representing-1-to-n/)
 
