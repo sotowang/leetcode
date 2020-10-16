@@ -1663,6 +1663,10 @@ r   g  ta  e
 * 给定一个带有头结点 `head` 的非空单链表，返回链表的中间结点。
 * 如果有两个中间结点，则返回第二个中间结点。
 
+## 977 [有序数组的平方](https://leetcode-cn.com/problems/squares-of-a-sorted-array/)
+
+* 给定一个按非递减顺序排序的整数数组 `A`，返回每个数字的平方组成的新数组，要求也按非递减顺序排序。
+
 ## 1095 [山脉数组中查找目标值](https://leetcode-cn.com/problems/find-in-mountain-array/)
 
 * （这是一个 **交互式问题** ）
