@@ -593,6 +593,10 @@ r   g  ta  e
 
 ​	要求算法的时间复杂度为 O(*n*)，空间复杂度为 O(*1*) 。
 
+## 349 [两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/)
+
+* 给定两个数组，编写一个函数来计算它们的交集。
+
 ## 350 [两个数组的交集 II](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/)
 
 * 给定两个数组，编写一个函数来计算它们的交集。
