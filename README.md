@@ -1570,7 +1570,7 @@ r   g  ta  e
   * 时间复杂度小于 `O(n2)` 。
   * 数组中只有一个重复的数字，但它可能不止重复出现一次。
 
-# 392 [判断子序列](https://leetcode-cn.com/problems/is-subsequence/)
+## 392 [判断子序列](https://leetcode-cn.com/problems/is-subsequence/)
 
 * 给定字符串 **s** 和 **t** ，判断 **s** 是否为 **t** 的子序列。
 
@@ -1606,6 +1606,10 @@ r   g  ta  e
 
 * 给定一个带有头结点 `head` 的非空单链表，返回链表的中间结点。
 * 如果有两个中间结点，则返回第二个中间结点。
+
+## 941 [有效的山脉数组](https://leetcode-cn.com/problems/valid-mountain-array/)
+
+* 给定一个整数数组?`A`，如果它是有效的山脉数组就返回?`true`，否则返回 `false`。
 
 ## 1095 [山脉数组中查找目标值](https://leetcode-cn.com/problems/find-in-mountain-array/)
 
