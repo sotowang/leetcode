@@ -1,43 +1,135 @@
 package 常用算法.其它;
-import java.util.Scanner;
+
 /**
  * @author: sotowang
  * @date: 2020/3/13 20:22
  */
-public class Example  {
-    private static int min = Integer.MAX_VALUE;
-    private static  int[][] dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
-    private static void minPath(int[][] matrix, boolean[][] visited, int row, int col, int n,int sum,int orgin) {
-        if (col == n - 1 && row == n - 1) {
-            min = Math.min(min, sum);
-            return;
-        }
-        for (int i = 0; i < dirs.length; i++) {
-            int x = row + dirs[i][0];
-            int y= col + dirs[i][1];
-            if (x >= 0 && y >= 0 && x < n && y < n && !visited[x][y]) {
-                visited[x][y] = true;
-                minPath(matrix, visited, x, y, n, sum + Math.abs(matrix[x][y] - orgin), matrix[row][col]);
-                visited[x][y] = false;
-            }
-        }
+public class Example {
+   int w,x,y, z;
 
+    public Example(int a, int b) {
+        x = a;
+        y = b;
     }
 
+    public Example(int a, int b, int c, int d) {
+
+        w = d;
+        z = c;
+    }
 
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[][] matrix = new int[n][n];
-        boolean[][] visited = new boolean[n][n];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                matrix[i][j] = sc.nextInt();
-            }
+        char[] a = new char[255];
+        for (int i = 0; i <= 255; i++) {
+            a[i] = (char) i;
         }
-        visited[0][0] = true;
-        minPath(matrix, visited, 0, 0, n, 0, matrix[0][0]);
-        System.out.println(min);
     }
+
+    public void change(String str, char[] ch) {
+        str = "test ok";
+        ch[0] = 'g';
+    }
+    private static void build(int[][] matrix, int n, int start) {
+        int[] dir = new int[5];
+        dir[0] = 0;
+        dir[1] = n - 1;
+        dir[2] = 0;
+        dir[3] = n - 1;
+        dir[4] = start;
+        boolean flag = true;
+        while (dir[4] <= n * n) {
+            if (flag) {
+                spiralOrder1(matrix, dir);
+            } else {
+                spiralOrder2(matrix, dir);
+            }
+            flag = !flag;
+        }
+    }
+    //顺时针
+    public static void spiralOrder1(int[][] matrix,int[] dir) {
+        //向右走,到尽头
+        for (int i = dir[2]; i <= dir[3]; i++) {
+            matrix[dir[0]][i] = dir[4]++;
+        }
+        //重新设定上边界
+        if (++dir[0] > dir[1]) {
+            return;
+        }
+        //向下走 到尽头
+        for (int i = dir[0]; i <= dir[1]; i++) {
+            matrix[i][dir[3]] = dir[4]++;
+        }
+        //重新设定右边界
+        if (--dir[3] < dir[2]) {
+            return;
+        }
+        //向左走 到尽头
+        for (int i = dir[3]; i >= dir[2]; i--) {
+            matrix[dir[1]][i] = dir[4]++;
+        }
+        //重新设定下边界
+        if (--dir[1] < dir[0]) {
+            return;
+        }
+
+        //向上走 到尽头
+        for (int i = dir[1]; i >= dir[0]; i--) {
+            matrix[i][dir[2]] = dir[4]++;
+
+        }
+        //重新设定左边界
+        if (++dir[2] > dir[3]) {
+            return;
+        }
+    }
+
+    /**
+     * 上 0
+     * 下 1
+     * 左 2
+     * 右 3
+     * @param matrix
+     * @param dir
+     */
+    public static void spiralOrder2(int[][] matrix,int[] dir) {
+        //向下走 到尽头
+        for (int i = dir[0]; i <= dir[1]; i++) {
+            matrix[i][dir[2]] = dir[4]++;
+        }
+        //重新设定左边界
+        if (++dir[2] > dir[3]) {
+            return;
+        }
+
+        //向右走,到尽头
+        for (int i = dir[2]; i <= dir[3]; i++) {
+            matrix[dir[1]][i] = dir[4]++;
+        }
+        //重新设定下边界
+        if (--dir[1] < dir[0]) {
+            return;
+        }
+
+        //向上走 到尽头
+        for (int i = dir[1]; i >= dir[0]; i--) {
+            matrix[i][dir[3]] = dir[4]++;
+        }
+        //重新设定右边界
+        if (--dir[3] < dir[2]) {
+            return;
+        }
+
+        //向左走 到尽头
+        for (int i = dir[3]; i >= dir[2]; i--) {
+            matrix[dir[0]][i] = dir[4]++;
+        }
+
+        //重新设定上边界
+        if (++dir[0] > dir[1]) {
+            return;
+        }
+    }
+
 }
+

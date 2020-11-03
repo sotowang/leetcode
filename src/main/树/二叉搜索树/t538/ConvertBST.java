@@ -1,4 +1,4 @@
-package 树.t538;
+package 树.二叉搜索树.t538;
 
 import 广度优先搜索.TreeNode;
 
@@ -7,20 +7,16 @@ import 广度优先搜索.TreeNode;
  * @date: 2020/01/10 19:31
  */
 public class ConvertBST {
-    private int preNum = 0;
+    private int pre;
     public TreeNode convertBST(TreeNode root) {
-         cvBST(root);
-        return root;
-    }
-    private void cvBST(TreeNode root) {
-        if (root == null) {
-            return;
+        if(root == null){
+            return null;
         }
-        //右根左
-        cvBST(root.right);
-        root.val += preNum;
-        preNum = root.val;
-        cvBST(root.left);
+        convertBST(root.right);
+        root.val += pre;
+        pre = root.val;
+        convertBST(root.left);
+        return root;
     }
 
     public static void main(String[] args) {

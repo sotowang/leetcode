@@ -10,44 +10,42 @@ import java.util.List;
  */
 public class FourSum {
     public List<List<Integer>> fourSum(int[] nums, int target) {
-        List<List<Integer>> res = new ArrayList<>();
-        if (nums == null || nums.length < 4) {
-            return res;
+        List<List<Integer>> resList = new ArrayList<>();
+        if(nums == null || nums.length <4){
+            return resList;
         }
         Arrays.sort(nums);
-        for (int i = 0; i < nums.length-1; i++) {
-            int start = i + 1;
-            int end = nums.length - 1;
-            while (start < end) {
-                int cur = start + 1;
-                //更新end
-                end = nums.length - 1;
-                while (cur < end) {
-                    int sum = nums[i] + nums[start] + nums[cur] + nums[end];
-                    if (sum  == target) {
-                        res.add(new ArrayList<Integer>(Arrays.asList(nums[i], nums[start], nums[cur], nums[end])));
-                        //去重处理
-                        while (cur < nums.length - 1 && nums[cur] == nums[cur + 1]) {
+        for(int i=0;i<nums.length-3;i++){
+            int end = nums.length-1;
+            int start = i+1;
+            while(start<end){
+                int cur = start+1;
+                end = nums.length-1;
+                while(cur<end){
+                    int sum = nums[i] + nums[start] + nums[end] + nums[cur];
+                    if(sum == target){
+                        resList.add(new ArrayList<>(Arrays.asList(nums[i],nums[start],nums[cur],nums[end])));
+                        while(cur<end && nums[cur] == nums[cur+1]){
                             cur++;
                         }
                         cur++;
-                    } else if (sum < target) {
+                    }else if(sum < target){
                         cur++;
-                    } else {
+                    }else{
                         end--;
                     }
                 }
-                //去重处理
-                while (start <nums.length - 1 &&nums[start] == nums[start + 1]) {
+                while(start<end && nums[start] == nums[start+1]){
                     start++;
                 }
                 start++;
             }
-            while (i<nums.length - 1 && nums[i] == nums[i + 1]) {
+            while(i<nums.length-3 && nums[i]==nums[i+1]){
                 i++;
             }
+
         }
-        return res;
+        return resList;
     }
 
     public static void main(String[] args) {

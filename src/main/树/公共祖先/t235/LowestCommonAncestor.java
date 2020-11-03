@@ -8,19 +8,19 @@ import 深度优先搜索.TreeNode;
  */
 public class LowestCommonAncestor {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        if (root == null) {
+        if(root == null){
             return null;
         }
-        if ((p.val <= root.val && q.val >= root.val) || (p.val >= root.val && q.val <= root.val)) {
+        if((p.val <= root.val && q.val >= root.val) || (p.val >=root.val && q.val <= root.val) ){
             return root;
         }
-        TreeNode res = null;
-        if (p.val < root.val && q.val < root.val) {
-           res =   lowestCommonAncestor(root.left, p, q);
-        } else {
-            res = lowestCommonAncestor(root.right, p, q);
+        if(p.val <=root.val && q.val<=root.val){
+            return lowestCommonAncestor(root.left,p,q);
         }
-        return res;
+        if(p.val >=root.val && q.val >= root.val){
+            return lowestCommonAncestor(root.right,p,q);
+        }
+        return null;
     }
 
     public static void main(String[] args) {
