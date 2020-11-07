@@ -1857,6 +1857,14 @@ r   g  ta  e
 
 * 只有在爱丽丝在游戏中取得胜利时才返回 `True`，否则返回 `false`。假设两个玩家都以最佳状态参与游戏。
 
+## 1356 [根据数字二进制下 1 的数目排序](https://leetcode-cn.com/problems/sort-integers-by-the-number-of-1-bits/)
+
+* 给你一个整数数组?`arr`?。请你将数组中的元素按照其二进制表示中数字 **1** 的数目升序排序。
+
+* 如果存在多个数字二进制中?**1**?的数目相同，则必须将它们按照数值大小升序排列。
+
+* 请你返回排序后的数组。
+
 ## 1404 [将二进制表示减到 1 的步骤数](https://leetcode-cn.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/)
 
 * 给你一个以二进制形式表示的数字 `s` 。请你返回按下述规则将其减少到 1 所需要的步骤数：
