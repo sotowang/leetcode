@@ -1724,6 +1724,11 @@ r   g  ta  e
   	<li>区间 [1,2] 和 [2,3] 的边界相互&ldquo;接触&rdquo;，但没有相互重叠。</li>
   </ol>
 
+## 493 [翻转对](https://leetcode-cn.com/problems/reverse-pairs/)
+
+* 给定一个数组?`nums`?，如果?`i < j`?且?`nums[i] > 2*nums[j]`?我们就将?`(i, j)`?称作一个***重要翻转对\***。
+* 你需要返回给定数组中的重要翻转对的数量。
+
 ## 763 [划分字母区间](https://leetcode-cn.com/problems/partition-labels/)
 
 * 字符串 `S` 由小写字母组成。我们要把这个字符串划分为尽可能多的片段，同一个字母只会出现在其中的一个片段。返回一个表示每个字符串片段的长度的列表。
