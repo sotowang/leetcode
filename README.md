@@ -1039,6 +1039,12 @@ r   g  ta  e
 
 * 你的 `KthLargest` 类需要一个同时接收整数 `k` 和整数数组`nums` 的构造器，它包含数据流中的初始元素。每次调用 `KthLargest.add`，返回当前数据流中第K大的元素。
 
+## 767 [重构字符串](https://leetcode-cn.com/problems/reorganize-string/)
+
+* 给定一个字符串`S`，检查是否能重新排布其中的字母，使得两相邻的字符不同。
+
+* 若可行，输出任意可行的结果。若不可行，返回空字符串。
+
 ## 778 [水位上升的泳池中游泳](https://leetcode-cn.com/problems/swim-in-rising-water/)
 
 * 在一个 N x N 的坐标方格 `grid` 中，每一个方格的值 `grid[i][j]` 表示在位置 `(i,j)` 的平台高度。
