@@ -8,33 +8,31 @@ import java.util.Arrays;
  */
 public class SearchRange {
     public int[] searchRange(int[] nums, int target) {
-        int[] res = {-1, -1};
+        int left = -1;
+        int right = -1;
         int low = 0;
-        int high = nums.length - 1;
-        while (low <= high) {
-            int mid = (low + high) >> 1;
-            if (nums[mid] < target) {
-                low = mid + 1;
-            } else if (nums[mid] > target) {
-                high = mid - 1;
-            } else if (nums[mid] == target) {
-                int count = 0;
-                while (mid + count < nums.length || mid - count >= 0) {
-                    while (mid + count < nums.length && nums[mid + count] == target) {
-                        count++;
-                    }
-                    res[1] = mid + count - 1;
-                    count = 0;
-                    while (mid - count >=0 && nums[mid - count] == target) {
-                        count++;
-                    }
-                    res[0] = mid - count + 1;
-                    break;
+        int high = nums.length-1;
+        while(low<=high){
+            int mid = low+((high-low)>>1);
+            if(nums[mid] == target){
+                left = mid;
+                right = mid;
+                while(left>=0 && nums[left] ==target){
+                    left--;
                 }
+                left = Math.max(0,left+1);
+                while(right<nums.length && nums[right] == target){
+                    right++;
+                }
+                right = Math.min(right-1,nums.length-1);
                 break;
+            }else if(nums[mid]>target){
+                high = mid-1;
+            }else{
+                low = mid+1;
             }
         }
-        return res;
+        return new int[]{left,right};
     }
 
     public static void main(String[] args) {
