@@ -8,9 +8,6 @@ import java.util.Arrays;
  */
 public class LeastInterval {
     public int leastInterval(char[] tasks, int n) {
-        if (tasks == null || tasks.length == 0) {
-            return -1;
-        }
         int[] type = new int[26];
         for (int i = 0; i < tasks.length; i++) {
             type[tasks[i] - 'A']++;
