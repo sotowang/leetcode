@@ -1,8 +1,5 @@
 package 回溯算法.t842;
 
-import sun.rmi.runtime.Log;
-import 链表.ListNode;
-
 import java.util.ArrayList;
 import java.util.List;
 
