@@ -3345,6 +3345,8 @@ public class Foo {
 
 #  队列
 
+## 649 [Dota2 参议院](https://leetcode-cn.com/problems/dota2-senate/)
+
 ## 933 [最近的请求次数](https://leetcode-cn.com/problems/number-of-recent-calls/)
 
 * 写一个 `RecentCounter` 类来计算最近的请求。
