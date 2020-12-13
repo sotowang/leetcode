@@ -12,13 +12,10 @@ public class ContainsDuplicate {
             return false;
         }
         HashSet<Integer> hashSet = new HashSet<>();
-        for (int num :
-                nums) {
-            if (!hashSet.add(num)) {
-                return true;
-            }
+        for (int num :nums) {
+            hashSet.add(num);
         }
-        return false;
+        return hashSet.size() != nums.length;
     }
 
     public static void main(String[] args) {
