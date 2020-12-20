@@ -8,6 +8,24 @@ import java.util.LinkedList;
  */
 public class RemoveDuplicateLetters {
     public String removeDuplicateLetters(String s) {
+        LinkedList<Character> stack = new LinkedList<>();
+        char[] cs = s.toCharArray();
+        for(int i=0;i<cs.length;i++){
+            if(stack.contains(cs[i])){
+                continue;
+            }
+            while(!stack.isEmpty() && stack.peek()>cs[i] && s.indexOf(stack.peek(),i) !=-1){
+                stack.pop();
+            }
+            stack.push(cs[i]);
+        }
+        StringBuilder sb = new StringBuilder();
+        for(int i=stack.size()-1;i>=0;i--){
+            sb.append(stack.get(i));
+        }
+        return sb.toString();
+    }
+    public String removeDuplicateLetters1(String s) {
         if (s.length() < 2) {
             return s;
         }
