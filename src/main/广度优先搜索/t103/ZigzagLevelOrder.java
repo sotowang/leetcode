@@ -10,6 +10,27 @@ import java.util.*;
  */
 public class ZigzagLevelOrder {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        List<List<Integer>> resList = new ArrayList<>();
+        traversal(root, resList, 0);
+        return resList;
+    }
+
+    private void traversal(TreeNode root, List<List<Integer>> resList, int level) {
+        if (root == null) {
+            return;
+        }
+        if (resList.size() == level) {
+            resList.add(new LinkedList<Integer>());
+        }
+        if ((level & 1) == 1) {
+            resList.get(level).add(0, root.val);
+        }else {
+            resList.get(level).add(root.val);
+        }
+        traversal(root.left, resList, level + 1);
+        traversal(root.right, resList, level + 1);
+    }
+    public List<List<Integer>> zigzagLevelOrder1(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         if (root == null) {
             return res;
