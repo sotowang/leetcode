@@ -21,10 +21,8 @@ public class IsIsomorphic {
                 }
                 //映射
                 map.put(s.charAt(i), t.charAt(i));
-            } else {
-                if (map.get(s.charAt(i)) != t.charAt(i)) {
-                    return false;
-                }
+            } else if (map.get(s.charAt(i)) != t.charAt(i)) {
+                return false;
             }
         }
         return true;
