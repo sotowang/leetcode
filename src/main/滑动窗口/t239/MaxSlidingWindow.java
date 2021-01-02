@@ -1,8 +1,7 @@
 package 滑动窗口.t239;
 
-import com.sun.xml.internal.bind.v2.model.core.ID;
-
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
@@ -11,7 +10,7 @@ import java.util.Queue;
  * @date: 2020/01/02 17:23
  */
 public class MaxSlidingWindow {
-    public int[] maxSlidingWindow(int[] nums, int k) {
+    public int[] maxSlidingWindow2(int[] nums, int k) {
         if (nums == null || nums.length == 0) {
             return nums;
         }
@@ -31,15 +30,30 @@ public class MaxSlidingWindow {
         return res;
     }
 
+    public int[] maxSlidingWindow(int[] nums, int k) {
+        if (nums == null || nums.length < 2) {
+            return nums;
+        }
+        LinkedList<Integer> win = new LinkedList<>();
+        int[] res = new int[nums.length + 1 - k];
+        for (int i = 0; i < nums.length; i++) {
+            while (!win.isEmpty() && nums[win.peekLast()] <= nums[i]) {
+                win.pollLast();
+            }
+            win.offer(i);
+            if (win.peek() <= i - k) {
+                win.pollFirst();
+            }
+            if (i + 1 >= k) {
+                res[i + 1 - k] = nums[win.peek()];
+            }
+        }
+        return res;
+    }
+
     public static void main(String[] args) {
         int[] nums = new int[]{1, 3, -1, -3, 5, 3, 6, 7};
         Arrays.stream(new MaxSlidingWindow().maxSlidingWindow(nums, 3)).forEach(e -> System.out.print(e + " "));
-        System.out.println();
-        PriorityQueue<Integer> pq = new PriorityQueue<>((x, y) -> y - x);
-        pq.add(5);
-        pq.add(10);
-        pq.add(8);
-        pq.add(5);
-        System.out.println(pq.peek());
+
     }
 }
