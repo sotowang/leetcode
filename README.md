@@ -746,6 +746,12 @@ r   g  ta  e
 
 * 返回使 `A` 中的每个值都是唯一的最少操作次数。
 
+## 989 [数组形式的整数加法](https://leetcode-cn.com/problems/add-to-array-form-of-integer/)
+
+* 对于非负整数 `X` 而言，*`X`* 的*数组形式*是每位数字按从左到右的顺序形成的数组。例如，如果 `X = 1231`，那么其数组形式为 `[1,2,3,1]`。
+
+* 给定非负整数 `X` 的数组形式 `A`，返回整数 `X+K` 的数组形式。
+
 ## 1013 [将数组分成和相等的三个部分](https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/)
 
 * 给你一个整数数组 `A`，只有可以将其划分为三个和相等的非空部分时才返回 `true`，否则返回 `false`。
