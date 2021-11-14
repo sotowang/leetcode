@@ -1,6 +1,6 @@
 package 常用算法.其它;
 
-import java.util.LinkedList;
+
 import java.util.Scanner;
 
 /**
@@ -8,55 +8,42 @@ import java.util.Scanner;
  * @date: 2020/3/29 20:15
  */
 public class Example6 {
-    private static int  lucky(int[] nums, int sum) {
-        int dif = Integer.MAX_VALUE;
-        int index = -1;
-        for (int i = 0; i < nums.length; i++) {
-            if (Math.abs(nums[i] - sum) <= dif) {
-                index = i;
-                dif = Math.abs(nums[i] - sum);
-            }
+    static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        public TreeNode(int val) {
+            this.val = val;
         }
-        return index;
+    }
+    public int rob(TreeNode root) {
+        int[] res = dfs(root);
+        return Math.max(res[0], res[1]);
+    }
+    private int[] dfs(TreeNode root) {
+        if (root == null) {
+            return new int[2];
+        }
+        int[] res = new int[2];
+
+        int[] left =dfs(root.left);
+        int[] right = dfs(root.right);
+        //当前节点不偷 = 左节点 偷/不偷最大值+右节点偷/不偷最大值
+        res[0] = Math.max(left[1], left[0]) + Math.max(right[1], right[0]);
+        //当前节点偷 = 左节点不偷 + 右节点不偷 + 当前节点
+        res[1] = left[0] + right[0] + root.val;
+        return res;
     }
 
     public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//        String candidate = sc.next();
-//        if (candidate.length() > 10) {
-//            return;
-//        }
-//        int[] nums = new int[5];
-//        String[] names = new String[5];
-//        for(int i = 0; i < 5; i++){
-//            String tem = sc.next();
-//            if (tem.length() > 10) {
-//                return;
-//            }
-//            names[i] =  tem;
-//            int sum = 0;
-//            for (int j = 0; j < tem.length();j++) {
-//                sum += (Character.toLowerCase(tem.charAt(j)) - 'a') + 1;
-//            }
-//            nums[i] = sum;
-//        }
-//        int sum = 0;
-//        for (int i = 0; i < candidate.length(); i++) {
-//            sum += (Character.toLowerCase(candidate.charAt(i)) - 'a') + 1;
-//        }
-//        if (nums.length != 5) {
-//            return;
-//        }
-//        int index = lucky(nums, sum);
-//        System.out.println(names[index]);
-        Integer l1 = -128;
-        int l2 = -128;
-        Integer l3 = Integer.valueOf(-128);
-        Integer l4 = new Integer(-128);
-        System.out.println(l1 == l2);
-        System.out.println(l2 == l4);
-//        System.out.println(l1 == l3);
+        Scanner sc = new Scanner(System.in);
+        int cnt = sc.nextInt();
+        int edge = sc.nextInt();
+        for (int i = 0; i < cnt; i++) {
+            TreeNode r = new TreeNode(sc.nextInt());
+        }
+        for (int i = 0; i < edge; i++) {
 
-//        System.out.println(l3 == l4);
+        }
     }
 }
